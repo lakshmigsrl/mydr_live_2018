@@ -1,0 +1,36 @@
+---
+#- hosts: all
+#  sudo: true
+#  vars_files:
+#    - vars/all.yml
+#  roles:
+#    - server
+#    - vagrant_local
+#    - php
+#    - apache
+#    - mysql
+#    - app
+#    - role: telusdigital.nodejs
+#      node_packages:
+#        - bower
+#        - brunch
+#        - decking
+#        - express
+
+- hosts: mydr_pro
+  sudo: true
+  vars_files:
+    - vars/mydr_pro.yml
+  roles:
+    - server
+    - vagrant_local
+    - php
+    - apache
+    - mysql
+    - app
+    - role: telusdigital.nodejs
+      node_packages:
+        - bower
+        - brunch
+        - decking
+        - express

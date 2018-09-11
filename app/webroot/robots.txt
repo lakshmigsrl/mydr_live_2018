@@ -1,0 +1,34 @@
+User-agent: *
+Disallow: /5440
+
+User-agent: *
+Disallow: /admin/
+
+User-agent: *
+Disallow: /cmis/*.html
+User-agent: *
+Disallow: /cmis/*.htm
+
+User-agent: *
+Disallow: /webroot/cmis/
+User-agent: *
+Disallow: /webroot/cmis
+
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: discobot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: LexxeBot
+Disallow: /
+
+User-agent: Typhoeus
+Disallow: /
+
+User-agent: Ruby
+Disallow: /

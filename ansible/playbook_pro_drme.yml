@@ -1,0 +1,17 @@
+---
+- hosts: mydr_pro_drme
+  sudo: true
+  vars_files:
+    - vars/mydr_pro_drme.yml
+  roles:
+    - server
+    - php
+    - apache
+    - mysql
+    - app
+    - role: telusdigital.nodejs
+      node_packages:
+        - bower
+        - brunch
+        - decking
+        - express

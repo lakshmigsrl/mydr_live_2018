@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg viewBox="0 0 120 40" width="100px" height="40px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs xmlns="http://www.w3.org/1999/xhtml"><style type="text/css"><![CDATA[
+body { min-width: 100%; text-size-adjust: 100%; margin: 0px; padding: 0px; width: 100% !important; }
+.ExternalClass { width: 100%; }
+.ExternalClass { line-height: 100%; }
+#backgroundTable { margin: 0px; padding: 0px; width: 100% !important; line-height: 100% !important; }
+img { outline: none; text-decoration: none; width: auto; max-width: 100%; float: left; clear: both; display: block; }
+body { color: rgb(34, 34, 34); font-family: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0px; margin: 0px; text-align: left; line-height: 1.3; }
+body { font-size: 14px; line-height: 19px; }
+a:hover { color: rgb(39, 149, 182) !important; }
+a:active { color: rgb(39, 149, 182) !important; }
+a:visited { color: rgb(43, 166, 203) !important; }
+h1 a:active { color: rgb(43, 166, 203) !important; }
+h2 a:active { color: rgb(43, 166, 203) !important; }
+h3 a:active { color: rgb(43, 166, 203) !important; }
+h4 a:active { color: rgb(43, 166, 203) !important; }
+h5 a:active { color: rgb(43, 166, 203) !important; }
+h6 a:active { color: rgb(43, 166, 203) !important; }
+h1 a:visited { color: rgb(43, 166, 203) !important; }
+h2 a:visited { color: rgb(43, 166, 203) !important; }
+h3 a:visited { color: rgb(43, 166, 203) !important; }
+h4 a:visited { color: rgb(43, 166, 203) !important; }
+h5 a:visited { color: rgb(43, 166, 203) !important; }
+h6 a:visited { color: rgb(43, 166, 203) !important; }
+table.button:hover td { background: rgb(39, 149, 182) !important; }
+table.button:visited td { background: rgb(39, 149, 182) !important; }
+table.button:active td { background: rgb(39, 149, 182) !important; }
+table.button:hover td a { color: rgb(255, 255, 255) !important; }
+table.button:visited td a { color: rgb(255, 255, 255) !important; }
+table.button:active td a { color: rgb(255, 255, 255) !important; }
+table.button:hover td { background: rgb(39, 149, 182) !important; }
+table.tiny-button:hover td { background: rgb(39, 149, 182) !important; }
+table.small-button:hover td { background: rgb(39, 149, 182) !important; }
+table.medium-button:hover td { background: rgb(39, 149, 182) !important; }
+table.large-button:hover td { background: rgb(39, 149, 182) !important; }
+table.button:hover td a { color: rgb(255, 255, 255) !important; }
+table.button:active td a { color: rgb(255, 255, 255) !important; }
+table.button td a:visited { color: rgb(255, 255, 255) !important; }
+table.tiny-button:hover td a { color: rgb(255, 255, 255) !important; }
+table.tiny-button:active td a { color: rgb(255, 255, 255) !important; }
+table.tiny-button td a:visited { color: rgb(255, 255, 255) !important; }
+table.small-button:hover td a { color: rgb(255, 255, 255) !important; }
+table.small-button:active td a { color: rgb(255, 255, 255) !important; }
+table.small-button td a:visited { color: rgb(255, 255, 255) !important; }
+table.medium-button:hover td a { color: rgb(255, 255, 255) !important; }
+table.medium-button:active td a { color: rgb(255, 255, 255) !important; }
+table.medium-button td a:visited { color: rgb(255, 255, 255) !important; }
+table.large-button:hover td a { color: rgb(255, 255, 255) !important; }
+table.large-button:active td a { color: rgb(255, 255, 255) !important; }
+table.large-button td a:visited { color: rgb(255, 255, 255) !important; }
+table.secondary:hover td { color: rgb(85, 85, 85); background: rgb(208, 208, 208) !important; }
+table.secondary:hover td a { color: rgb(85, 85, 85) !important; }
+table.secondary td a:visited { color: rgb(85, 85, 85) !important; }
+table.secondary:active td a { color: rgb(85, 85, 85) !important; }
+table.success:hover td { background: rgb(69, 122, 26) !important; }
+table.alert:hover td { background: rgb(151, 11, 14) !important; }
+body.outlook p { display: inline !important; }]]></style></defs><g fill="none" fill-rule="evenodd"><rect fill="#161616" width="120" height="40" rx="20"/><path d="M38.856 15.096c.712 0 1.32-.272 1.672-.624v-2.304h-1.824v.76h.992v1.128c-.168.152-.456.232-.752.232-1.048 0-1.6-.72-1.6-1.912 0-1.176.624-1.896 1.552-1.896.488 0 .792.2 1.056.456l.496-.6a2.154 2.154 0 0 0-1.584-.664c-1.392 0-2.472 1.016-2.472 2.728 0 1.736 1.048 2.696 2.464 2.696zm4.499 0c-1.088 0-1.936-.76-1.936-2.056 0-1.28.888-2.064 1.808-2.064 1.064 0 1.624.768 1.624 1.864 0 .176-.016.352-.04.448h-2.496c.08.696.528 1.096 1.16 1.096.336 0 .624-.104.912-.288l.312.576a2.479 2.479 0 0 1-1.344.424zm-1.048-2.432h1.744c0-.608-.264-.976-.8-.976-.464 0-.864.344-.944.976zm4.794 2.432c.312 0 .584-.072.8-.144l-.16-.68a1.126 1.126 0 0 1-.408.088c-.376 0-.552-.224-.552-.688V11.8h1v-.728h-1V10h-.768l-.112 1.072-.608.04v.688h.56v1.872c0 .848.336 1.424 1.248 1.424zM50.34 15h.92v-3.928h-.92V15zm.464-4.616c.328 0 .568-.216.568-.52 0-.312-.24-.528-.568-.528-.328 0-.568.216-.568.528 0 .304.24.52.568.52zm3.082 4.712c.312 0 .584-.072.8-.144l-.16-.68a1.126 1.126 0 0 1-.408.088c-.376 0-.552-.224-.552-.688V11.8h1v-.728h-1V10h-.768l-.112 1.072-.608.04v.688h.56v1.872c0 .848.336 1.424 1.248 1.424zm4.846 0c-.976 0-1.864-.752-1.864-2.056 0-1.312.888-2.064 1.864-2.064.984 0 1.872.752 1.872 2.064 0 1.304-.888 2.056-1.872 2.056zm0-.752c.576 0 .928-.52.928-1.304 0-.792-.352-1.312-.928-1.312-.576 0-.92.52-.92 1.312 0 .784.344 1.304.92 1.304zm2.85.656h.92v-2.744c.328-.32.552-.488.896-.488.432 0 .616.24.616.888V15h.92v-2.464c0-.992-.368-1.56-1.208-1.56-.536 0-.936.28-1.288.624h-.032l-.064-.528h-.76V15zM40.998 29.168c1.246 0 2.31-.476 2.926-1.092v-4.032h-3.192v1.33h1.736v1.974c-.294.266-.798.406-1.316.406-1.834 0-2.8-1.26-2.8-3.346 0-2.058 1.092-3.318 2.716-3.318.854 0 1.386.35 1.848.798l.868-1.05a3.77 3.77 0 0 0-2.772-1.162c-2.436 0-4.326 1.778-4.326 4.774 0 3.038 1.834 4.718 4.312 4.718zm7.697 0c-1.708 0-3.262-1.316-3.262-3.598 0-2.296 1.554-3.612 3.262-3.612 1.722 0 3.276 1.316 3.276 3.612 0 2.282-1.554 3.598-3.276 3.598zm0-1.316c1.008 0 1.624-.91 1.624-2.282 0-1.386-.616-2.296-1.624-2.296s-1.61.91-1.61 2.296c0 1.372.602 2.282 1.61 2.282zm7.752 1.316c-1.708 0-3.262-1.316-3.262-3.598 0-2.296 1.554-3.612 3.262-3.612 1.722 0 3.276 1.316 3.276 3.612 0 2.282-1.554 3.598-3.276 3.598zm0-1.316c1.008 0 1.624-.91 1.624-2.282 0-1.386-.616-2.296-1.624-2.296s-1.61.91-1.61 2.296c0 1.372.602 2.282 1.61 2.282zm7.333 4.186c-1.638 0-2.856-.588-2.856-1.792 0-.574.35-1.078.98-1.47v-.056c-.35-.224-.616-.588-.616-1.148 0-.532.364-.994.756-1.274v-.056a2.322 2.322 0 0 1-.896-1.82c0-1.582 1.274-2.464 2.716-2.464.378 0 .728.07 1.008.168h2.464v1.19h-1.26c.224.266.392.686.392 1.162 0 1.526-1.148 2.338-2.604 2.338-.294 0-.63-.056-.938-.182-.21.182-.336.35-.336.658 0 .392.28.63 1.12.63h1.218c1.652 0 2.52.504 2.52 1.694 0 1.358-1.428 2.422-3.668 2.422zm.084-6.23c.658 0 1.19-.504 1.19-1.386 0-.854-.518-1.358-1.19-1.358-.672 0-1.204.49-1.204 1.358 0 .882.532 1.386 1.204 1.386zm.168 5.18c1.106 0 1.862-.518 1.862-1.106 0-.532-.434-.686-1.218-.686h-.938c-.378 0-.672-.028-.938-.098-.364.28-.532.588-.532.91 0 .616.672.98 1.764.98zm6.269-1.82c.378 0 .658-.056.854-.14l-.21-1.204c-.126.028-.182.028-.252.028-.168 0-.35-.14-.35-.532v-8.204h-1.61v8.12c0 1.19.42 1.932 1.568 1.932zm5.232 0c-1.904 0-3.388-1.33-3.388-3.598 0-2.24 1.554-3.612 3.164-3.612 1.862 0 2.842 1.344 2.842 3.262 0 .308-.028.616-.07.784h-4.368c.14 1.218.924 1.918 2.03 1.918.588 0 1.092-.182 1.596-.504l.546 1.008c-.658.434-1.484.742-2.352.742zM73.7 24.912h3.052c0-1.064-.462-1.708-1.4-1.708-.812 0-1.512.602-1.652 1.708zM82.765 29v-9.156h2.884c2.03 0 3.542.7 3.542 2.828 0 2.03-1.512 2.968-3.486 2.968h-1.316V29h-1.624zm1.624-4.662h1.19c1.358 0 2.016-.546 2.016-1.666 0-1.148-.714-1.526-2.072-1.526h-1.134v3.192zm8.018 4.83c.378 0 .658-.056.854-.14l-.21-1.204c-.126.028-.182.028-.252.028-.168 0-.35-.14-.35-.532v-8.204h-1.61v8.12c0 1.19.42 1.932 1.568 1.932zm3.959 0c-1.204 0-2.03-.812-2.03-2.016 0-1.47 1.218-2.24 4.046-2.548-.028-.728-.322-1.344-1.26-1.344-.672 0-1.316.308-1.932.672l-.588-1.078c.756-.476 1.736-.896 2.828-.896 1.708 0 2.562 1.05 2.562 2.968V29h-1.33l-.112-.756h-.056c-.616.518-1.316.924-2.128.924zm.518-1.26c.56 0 .98-.28 1.498-.756v-1.54c-1.876.238-2.492.728-2.492 1.414 0 .616.42.882.994.882zm5.569 3.92c1.498 0 2.212-.966 2.786-2.52l2.492-7.182h-1.554L105.14 25.5c-.168.616-.35 1.302-.518 1.932h-.056c-.21-.644-.406-1.33-.602-1.932l-1.19-3.374h-1.638l2.702 6.79-.126.434c-.224.686-.644 1.176-1.372 1.176a1.69 1.69 0 0 1-.49-.098l-.294 1.26c.252.084.518.14.896.14z" fill="#FFF"/><g fill-rule="nonzero"><path d="M26.419 22.564l3.902-2.099c.441-.237.903-.842 0-1.326l-3.905-2.093-2.795 2.767 2.798 2.751z" fill="#FFE300"/><path d="M23.62 19.813l-8.941 8.852c.202.025.445-.027.724-.177l11.016-5.924-2.799-2.75z" fill="#FF4E54"/><path d="M23.62 19.813l2.796-2.767-11.013-5.903c-.239-.128-.5-.173-.73-.123l8.947 8.793z" fill="#00F085"/><path d="M23.62 19.813l-8.948-8.793c-.37.081-.672.396-.672 1.027V27.61c0 .595.238 1.013.679 1.055l8.941-8.852z" fill="#00E0FF"/></g></g></svg>

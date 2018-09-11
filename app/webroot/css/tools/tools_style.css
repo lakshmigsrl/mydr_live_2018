@@ -1,0 +1,1775 @@
+	h2{width: 100%;}
+	/* START of Clickable/Expandable Reference items...*/
+	#ClickableReferenceDiv{
+	 border: 1px dotted #555;
+	 border: none;
+	}
+	#ClickableReferenceDiv h2{
+	 cursor: pointer;
+	 margin-top: 0px;
+	}
+	#ClickableReferenceDiv ul li{
+	 background-image: none;
+	 color: #555;
+	}
+	/* END of Clickable/Expandable Reference items...*/
+
+	#tool p.copyright {
+		color:#555;
+		margin:15px 0 0 0;
+	}
+	
+	#tool #related {
+		margin-top: 20px;
+		border: none;
+		border-top: 1px #A4BFDC solid;
+		padding-top: 5px;
+	}
+
+	div.borderBlue{margin: 0; padding: 0; border: 0; border-bottom: 2px solid #3687c8; }
+	h2.resultLabel{
+		background: none;
+		width: 100%;
+		color: #004685;
+		font-size: 16px;
+		font-familty: "myriad-pro-1","myriad-prod-2";
+		font-weight: 600;
+		line-height: 25px;
+		padding-bottom: 2px;
+	}
+
+/* START Common Style */
+	div.resultHead {
+		color: #004685;
+		font-size: 16px;
+		font-family: "myriad-pro-1","myriad-pro-2";
+		font-weight: 600;
+		margin-top: 10px;
+	}
+	div.resultHead a, div.resultHead span { line-height: 35px; }
+	div.resultsWrapperBlue div#resultsWrapper {
+		margin-top: 10px;
+	}
+	div.resultsWrapperBlue div#resultsWrapper div#bmiValue {
+		margin-bottom: 10px;
+	}
+	div.resultsWrapperBlue div#resultsWrapper div#bmiValue input {
+		background-color: #ffffff;
+	}
+	div.resultsWrapperBlue div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin: 5px 0 5px 0;
+	}
+	div.resultsWrapperBlue div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	div.resultsWrapperBlue div.resultLevels div.level div.label,
+	div.resultsWrapperBlue div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	div.resultsWrapperBlue div.resultLevels div.level div.value{
+		background-color: #ffffff;
+		vertical-align: top;
+		border: 1px solid #a0a0a0;
+	}
+	div.resultsWrapperBlue div.resultLevels div.indication {
+		float: left;
+		width: 74%;
+		padding: 0 0 0 0;
+		border-left: 1px solid #aeaeae;
+	}
+	div.resultsWrapperBlue div.resultLevels div.indication.maxWidth {
+		width: 100%;
+		border-left: none;
+	}
+	div.resultsWrapperBlue div.resultLevels div.description {
+	}
+	div.resultsWrapperBlue div.resultLevels div.description div.name {
+		color: #000000;
+		background-color: #ffffff;
+		font-weight: bold;
+		width: 96%;
+		padding-left: 4%;
+	}
+	div.resultsWrapperBlue div.resultLevels div.description p {
+		line-height: 16px;
+		padding: 1% 0 0 4%;
+	}
+	div.resultsWrapperBlue div.noTopBorder {
+		border-top: none;
+	}
+	div.resultsWrapperBlue div.noBotBorder {
+		border-bottom: none;
+	}
+	div.resultsWrapperBlue div.grayBorder {
+		border: 1px solid #a0a0a0; 
+	}
+/* END Common Style */
+
+
+
+/* CSS for Alcohol calculator... */
+	.H2equivalentBlue
+	{
+		COLOR: Blue;
+		FONT-FAMILY: arial, helvetica, sans-serif;
+		FONT-SIZE: 16px;
+		FONT-WEIGHT: bold
+	}
+	.alcoholLogTitle {
+		FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif
+	}
+	.alcoholLogHighlight {
+		FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff0000; FONT-FAMILY: Arial, Helvetica, sans-serif
+	}
+	.style3 {
+		color: #FFFFFF; font-weight: bold; 
+	}
+
+/* CSS for Basal Metabolic Rate calculator.... */
+/* CSS for Calories Burned Calculator... */
+
+/* CSS for Child Energy Requirements calculator... */
+	#container1 {
+		padding:30px;
+		display:none;
+	}
+	#container2 {
+		padding:30px;
+		display:none;
+	}
+	#source {
+		padding:30px;
+		display:none;
+	}
+	#search-box b {color:#333; }
+	#res1 { border:1px solid #bbbbbb; padding:4px; font-weight: bold;}
+	#res2 { border:1px solid #bbbbbb; padding:4px; font-weight: bold;}
+	#error { display:none;font-weight:normal;color:#cc0000; }
+	#age_err { color:#cc0000; font-weight:bold; }
+	#error li { color: #cc0000; }     
+	.input {
+		width:65px;
+	}
+	.txtSuper {VERTICAL-ALIGN: super;font-size:6pt;}
+	.txtErr {font-size:8pt;color: #cc0000;}
+	.ageBox {padding-left: 10px;}
+	.ddl { width: 80px; font-size:9pt;}
+	.ddl2 {width: 130px; font-size:9pt; }
+	.warning {color:#808080; font-weight:normal;}
+	.tbl {width:420px; padding:5px;}
+	.tblNoBrd{
+		border-right: #dcdcdc 1px solid;border-top: #dcdcdc 1px solid;
+		border-left: #dcdcdc 1px solid;border-bottom: #dcdcdc 1px solid;
+	}
+
+/* CSS for Infectious diseases Exclusion... */
+	#infectiousDiseaseTool div.formWrapper { 
+		border: 4px solid #eaeaea;
+		background-color: #f7f7f7;
+	}
+	#infectiousDiseaseTool div.formWrapper div.introDiv { 
+		padding: 6px;
+	}
+	#infectiousDiseaseTool div.formWrapper div.inputDiv { 
+		padding: 6px;
+	}
+	#infectiousDiseaseTool div.buttonsArea { 
+		width: 100%; 
+		padding: 10px 0 6px 0;
+		background-color: #eaeaea;
+		clear: both;
+		text-align: center;
+	}
+	#infectiousDiseaseTool div.buttonsArea a.BurnedCalculatorLink { font-weight: bold; float: none; margin-right: 10px; }
+	#infectiousDiseaseTool div.buttonsArea input { float: none; }
+
+	#infectiousDiseaseTool div.introDiv img { 
+		margin: 4px 10px 10px 10px;
+		width: 86px;
+		height: 86px;
+		float: left; 
+	}
+	#infectiousDiseaseTool div.inputDiv select#disease { 
+		width: 96%;
+		font-size: 16px;
+		color: #666666;
+		padding: 1%;
+	}
+	#infectiousDiseaseTool div#resultContainer { 
+		padding: 15px;
+		padding-left: 2%;
+		padding-right: 2%;
+		font-weight: bold; 
+		width: 92%;
+		display:none;
+	}
+
+	#asdjb, #asasddjb, #asasdaddjb {
+		border:1px #222222 solid;
+		font-weight:normal;
+
+		width: 92%;
+		margin: 2%;
+		padding: 2%;
+	}
+	#infectiousDiseaseTool div#resultContainer a { font-size: 15px; }
+
+/* CSS for Daily Calcium Requirements calculator. */
+	#dailyCalciumTool h2{
+		font-family: "myriad-pro-1","myriad-pro-2";
+		font-size: 18px;
+		color: #004685;
+		line-height: 30px;
+		font-weight: 600;
+	
+		background-color: transparent;
+		padding: 0;
+		width: 460px;
+		float: none;
+		clear: both;
+	}
+	#dailyCalciumTool div.formWrapper { 
+		border: 4px solid #eaeaea;
+		background-color: #f7f7f7;
+	}
+	#dailyCalciumTool div.formWrapper div.introDiv,
+	#dailyCalciumTool div.formWrapper div.inputDiv { 
+		padding: 6px;
+	}
+	#dailyCalciumTool div.introDiv img {
+		margin: 4px 10px 10px 10px;
+		width: 86px;
+		height: 86px;
+		float: left; 
+	}
+	#dailyCalciumTool div.inputDiv {
+		clear: both;
+	}
+
+	#dailyCalciumTool div.buttonsArea { 
+		width: 100%; 
+		padding: 10px 0 6px 0;
+		background-color: #eaeaea;
+		clear: both;
+		text-align: center;
+	}
+	#dailyCalciumTool div.buttonsArea a.BurnedCalculatorLink { font-weight: bold; float: none; margin-right: 10px; }
+	#dailyCalciumTool div.buttonsArea input { float: none; }
+
+	#dailyCalciumTool #error { display:none;font-weight:normal;color:#cc0000; }
+	#dailyCalciumTool #age_err { color:#cc0000; font-weight:bold; }
+	#dailyCalciumTool #error li { color: #cc0000; }
+	#dailyCalciumTool .input {
+		width:65px;
+	}
+	#dailyCalciumTool table.inputData {
+		color: #323232;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 20px;	
+		font-family: arial;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#dailyCalciumTool table.inputData td {
+		height: 25px;
+		padding: 4px;
+	}
+	#dailyCalciumTool table.inputData td.tdLeft {
+		width: 40%;
+	}
+	#dailyCalciumTool select{
+		font-size:16px;
+	}
+
+	#dailyCalciumTool #resultContainer { 
+		display:none;
+		padding-top: 10px;
+	}
+	#dailyCalciumTool #resultContainer div#resultContainerChild { 
+	/* #dailyCalciumTool #resultContainer { */
+		background-color: #d3eaff;
+		padding: 2px;
+	}
+	#dailyCalciumTool div#resultContainer div.resultLevels {
+		background-color: #e9f5ff;
+		margin: 1%;
+		padding: 1%;
+		width: 96%;
+	}
+	#dailyCalciumTool div#resultContainer div.level {
+		float: left;
+		width: 50%;
+		padding: 0;
+	}
+	#dailyCalciumTool div#resultContainer div.fullLevel {
+		width: 100%;
+		clear: both;
+		padding-top: 10px;
+	}
+	#dailyCalciumTool div#resultContainer div.fullLevel div.description {
+		font-style: italic;
+		border-top: 1px solid #bebebe;
+	}
+	#dailyCalciumTool div#resultContainer div.description {
+		padding: 4px 10px 4px 4px;
+	}
+	#dailyCalciumTool div#resultContainer div.value {
+		background-color: #ffffff;
+		vertical-align: top;
+		padding: 4px 4px 4px 40px;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	@media only screen and (max-width : 480px) {
+		#dailyCalciumTool div#resultContainer div.value {
+			min-height: 40px;
+		}
+		
+	}
+
+/* CSS for Daily Fibre Requirements calculator. */
+	#dailyFibreTool h2{
+        	font-family: "myriad-pro-1","myriad-pro-2";
+	        font-size: 18px;
+        	color: #004685;
+	        line-height: 30px;
+        	font-weight: 600;
+	
+        	background-color: transparent;
+	        padding: 0;
+        	width: 460px;
+	        float: none;
+        	clear: both;
+	}
+        #dailyFibreTool div.formWrapper {
+                border: 4px solid #eaeaea;
+                background-color: #f7f7f7;
+        }
+        #dailyFibreTool div.formWrapper div.introDiv,
+        #dailyFibreTool div.formWrapper div.inputDiv {
+                padding: 6px;
+        }
+        #dailyFibreTool div.introDiv img {
+                margin: 4px 10px 10px 10px;
+                width: 86px;
+                height: 86px;
+                float: left;
+        }
+        #dailyFibreTool div.inputDiv {
+                clear: both;
+        }
+
+        #dailyFibreTool div.buttonsArea {
+                width: 100%;
+                padding: 10px 0 6px 0;
+                background-color: #eaeaea;
+                clear: both;
+                text-align: center;
+        }
+        #dailyFibreTool div.buttonsArea a.BurnedCalculatorLink { font-weight: bold; float: none; margin-right: 10px; }
+        #dailyFibreTool div.buttonsArea input { float: none; }
+
+        #dailyFibreTool #error { display:none;font-weight:normal;color:#cc0000; }
+        #dailyFibreTool #age_err { color:#cc0000; font-weight:bold; }
+        #dailyFibreTool #error li { color: #cc0000; }
+        #dailyFibreTool .input {
+                width:65px;
+        }
+        #dailyFibreTool table.inputData {
+                color: #323232;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                font-family: arial;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        #dailyFibreTool table.inputData td {
+                height: 25px;
+                padding: 4px;
+        }
+        #dailyFibreTool table.inputData td.tdLeft {
+                width: 40%;
+        }
+        #dailyFibreTool select{
+                font-size:16px;
+        }
+
+        #dailyFibreTool #resultContainer {
+                display:none;
+                padding-top: 10px;
+        }
+        #dailyFibreTool #resultContainer div#resultContainerChild {
+                background-color: #d3eaff;
+                padding: 2px;
+        }
+        #dailyFibreTool div#resultContainer div.resultLevels {
+                background-color: #e9f5ff;
+                margin: 1%;
+                padding: 1%;
+                width: 96%;
+        }
+        #dailyFibreTool div#resultContainer div.level {
+                float: left;
+                width: 50%;
+                padding: 0;
+        }
+        #dailyFibreTool div#resultContainer div.fullLevel {
+                width: 100%;
+                clear: both;
+                padding-top: 10px;
+        }
+        #dailyFibreTool div#resultContainer div.fullLevel div.description {
+                font-style: italic;
+                border-top: 1px solid #bebebe;
+		display: none;
+        }
+        #dailyFibreTool div#resultContainer div.description {
+                padding: 4px 10px 4px 4px;
+        }
+        #dailyFibreTool div#resultContainer div.value {
+                background-color: #ffffff;
+                vertical-align: top;
+                padding: 4px 4px 4px 40px;
+                font-size: 18px;
+                line-height: 25px;
+        }
+        @media only screen and (max-width : 480px) {
+                #dailyFibreTool div#resultContainer div.value {
+                        min-height: 40px;
+                }
+
+        }
+
+
+
+/* CSS for Child Energy Requirement calculator. */
+        #childEnergyReqTool div.formWrapper {
+                border: 4px solid #eaeaea;
+                background-color: #f7f7f7;
+        }
+        #childEnergyReqTool div.formWrapper div.introDiv,
+        #childEnergyReqTool div.formWrapper div.inputDiv {
+                padding: 6px;
+        }
+        #childEnergyReqTool div.introDiv img {
+                margin: 4px 10px 10px 10px;
+                width: 86px;
+                height: 86px;
+                float: left;
+        }
+        #childEnergyReqTool div.inputDiv {
+                clear: both;
+        }
+	#childEnergyReqTool div.inputDiv label.yesno { padding: 6px 6px; }
+
+        #childEnergyReqTool div.buttonsArea {
+                width: 100%;
+                padding: 10px 0 6px 0;
+                background-color: #eaeaea;
+                clear: both;
+                text-align: center;
+        }
+        #childEnergyReqTool div.buttonsArea a.BurnedCalculatorLink { font-weight: bold; float: none; margin-right: 10px; }
+        #childEnergyReqTool div.buttonsArea input { float: none; }
+
+        #childEnergyReqTool #error { display:none;font-weight:normal;color:#cc0000; }
+        #childEnergyReqTool #age_err { color:#cc0000; font-weight:bold; }
+        #childEnergyReqTool #error li { color: #cc0000; }
+        #childEnergyReqTool .input {
+                width:65px;
+        }
+        #childEnergyReqTool table.inputData {
+                color: #323232;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                font-family: arial;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        #childEnergyReqTool table.inputData td {
+                height: 25px;
+                padding: 4px;
+        }
+        #childEnergyReqTool table.inputData td.tdLeft {
+                width: 40%;
+        }
+        #childEnergyReqTool select{
+                font-size:16px;
+        }
+
+        #childEnergyReqTool #resultContainer {
+                display:none;
+                padding-top: 10px;
+        }
+        #childEnergyReqTool #resultContainer div#resultContainerChild {
+        /* #childEnergyReqTool #resultContainer { */
+                background-color: #d3eaff;
+                padding: 2px;
+		clear: both;
+        }
+        #childEnergyReqTool div#resultContainer div.resultLevels {
+                background-color: #e9f5ff;
+                margin: 1%;
+                padding: 1%;
+                width: 96%;
+        }
+        #childEnergyReqTool div#resultContainer div.level {
+                float: left;
+                width: 50%;
+                padding: 0;
+        }
+        #childEnergyReqTool div#resultContainer div.fullLevel {
+                width: 100%;
+                clear: both;
+                padding-top: 10px;
+        }
+        #childEnergyReqTool div#resultContainer div.fullLevel div.description {
+                font-style: italic;
+                border-top: 1px solid #bebebe;
+        }
+        #childEnergyReqTool div#resultContainer div.description {
+                padding: 4px 10px 4px 4px;
+        }
+        #childEnergyReqTool div#resultContainer div.value {
+                background-color: #ffffff;
+                vertical-align: top;
+                padding: 4px 4px 4px 40px;
+                font-size: 18px;
+                line-height: 25px;
+        }
+        #childEnergyReqTool #resultContainer div#resultContainerChild div#container1,
+        #childEnergyReqTool #resultContainer div#resultContainerChild div#container2 {
+		background-color: #e9f5ff;
+		margin: 1%;
+		
+	}
+        #childEnergyReqTool #resultContainer div#resultContainerChild div#container1 span#res1,
+        #childEnergyReqTool #resultContainer div#resultContainerChild div#container2 span#res2{
+		background-color: #FFF;
+	}
+        @media only screen and (max-width : 480px) {
+                #childEnergyReqTool div#resultContainer div.value {
+                        min-height: 40px;
+                }
+                div#childEnergyReqTool div.inputDiv table{
+			width: 260px;
+		}
+
+        }
+
+
+
+
+/* CSS for Ovulation Calculator. */
+	#ovulationCalculatorWrapper #container { padding:1px; display:none; }
+	#ovulationCalculatorWrapper img.introImage { margin:10px; width:145px; height:97px; float: left; }
+	#ovulationCalculatorWrapper #res { border:1px solid #bbbbbb; padding:4px;}
+	#ovulationCalculatorWrapper #error { display:none;font-weight:normal;color:#cc0000; }
+	#ovulationCalculatorWrapper #age_err { color:#cc0000; font-weight:bold; }
+	#ovulationCalculatorWrapper #error li { color: #cc0000; }
+	#ovulationCalculatorWrapper .input { width:65px; }
+	#ovulationCalculatorWrapper .txtDM { font-size: 9pt; width: 25px; background-color: white; }
+	#ovulationCalculatorWrapper .txtY { font-size: 9pt; width: 60px; background-color: white; }
+	#ovulationCalculatorWrapper .txtDY { font-size: 9pt; width: 50px; background-color: white; }
+	#ovulationCalculatorWrapper .month { color: white; font: 10pt sans-serif; }
+	#ovulationCalculatorWrapper .nav{ cursor: pointer; cursor: hand; }
+	#ovulationCalculatorWrapper .dayHeader{ color: black; font: 10pt sans-serif; border-bottom: 1px black solid; font-weight: bold; }
+	#ovulationCalculatorWrapper .empty{ background-color: white; border-bottom: 1px black solid; }
+	#ovulationCalculatorWrapper .days{ color: black; background-color: rgb(235,235,235);; font: 10pt sans-serif; border-bottom: 1px black solid; border-left: 1px black solid; border-right: 1px black solid; cursor: pointer; cursor: hand; }
+	#ovulationCalculatorWrapper .date{ color: maroon; font: 10pt sans-serif; font-weight: bold; border-bottom: 1px black solid; border-left: 1px black solid; border-right: 1px black solid; cursor: pointer; cursor: hand; }
+	#ovulationCalculatorWrapper .tableCal { border-right: 5px outset; padding-right: 0px; border-top: 10px outset; padding-left: 0px; padding-bottom: 0px; vertical-align: baseline; border-left: 5px outset; width: 178px; padding-top: 0px; border-bottom: 10px outset; background-color: #99ccff; text-align: center;}
+
+	#ovulationCalculatorWrapper table.tableCal,
+	#ovulationCalculatorWrapper table.tableCalIn { border-collapse: collapse; border: 1px solid #C0C0C0; }
+	#ovulationCalculatorWrapper table.tableCalIn .tdDate{ text-align: left; border-spacing: 0; padding: 3px; }
+	#ovulationCalculatorWrapper table.tableCal { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; }
+	#ovulationCalculatorWrapper table.tableCalIn .trDay{ 
+		border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc; background-color: #004685; padding:3px;
+		font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #323232; background-color:#e5e5e5;
+	}
+	#ovulationCalculatorWrapper table.tableCalIn .trMth {
+		background-color:#c5e1fa; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #cccccc;	
+		font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000;
+	}
+
+	#ovulationCalculatorWrapper .tableCal { border: none; width: 100%; }
+	#ovulationCalculatorWrapper .tableCalIn { border: none; width: 100%; }
+	#ovulationCalculatorWrapper .tableCalIn { vertical-align: baseline; background-color: #fefefe; text-align: center; }
+	#ovulationCalculatorWrapper .tdCurDate { font-weight: bold; font-size:-1; vertical-align: baseline; width: 35px; height: 30px; background-color: #c5e1fa; text-align: center; }
+	#ovulationCalculatorWrapper .tdCu { vertical-align: baseline; width: 35px; height: 30px; background-color: #c5e1fa; text-align: center; }
+	#ovulationCalculatorWrapper .tdSelected { 
+		border-right: #c5e1fa 3px solid; border-top: #c5e1fa 3px solid; font-weight: bold; border-left: #c5e1fa 3px solid; 
+		color: #3687c8; border-bottom: #c5e1fa 3px solid; background-color: #c5e1fa; 
+	}
+	#ovulationCalculatorWrapper TD { FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+	#ovulationCalculatorWrapper TR { FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+	#ovulationCalculatorWrapper HR { size: 1; shade: none }
+	#ovulationCalculatorWrapper .H2equivalentBlue { FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: blue; FONT-FAMILY: arial, helvetica, sans-serif }
+	#ovulationCalculatorWrapper .alcoholLogTitle { FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif }
+	#ovulationCalculatorWrapper .alcoholLogHighlight { FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff0000; FONT-FAMILY: Arial, Helvetica, sans-serif }
+	#ovulationCalculatorWrapper .foot { font-family: verdana; font-weight: normal; font-size: 7pt; }
+	#ovulationCalculatorWrapper .err { font-family: verdana; font-weight: normal; font-size: 8pt; color: red; }
+	#ovulationCalculatorWrapper .tblErr { color: red; }
+	#ovulationCalculatorWrapper .liIndent { left: 10px; list-style-type: none; position: relative; width: 90% }
+
+	#ovulationCalculatorWrapper div.insideDiv { 
+		width: 220px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#ovulationCalculatorWrapper div.intro p { padding-top: 10px; }
+	#ovulationCalculatorWrapper div.fullWidthInputs { clear: both; }
+	#ovulationCalculatorWrapper div.toolButtons { text-align: center; padding-top: 20px; padding-bottom: 20px; }
+	#ovulationCalculatorWrapper div.toolButtons a.BurnedCalculatorLink { font-weight: bold; float: none; padding-right: 20px; }
+	#ovulationCalculatorWrapper input#datepickerPuck {padding: 4px 10px; font-size: 16px; color: #606060; width: 105px;}
+	#ovulationCalculatorWrapper select#dy {padding: 4px 10px; font-size: 16px; color: #606060; }
+
+	#ovulationCalculatorWrapper #tblResult h2 {
+		color: #004685;
+		font-size: 18px;
+		padding-left: 0;
+		background: none;
+	}
+
+	@media only screen and (max-width : 480px) {
+		div#ovulationCalculatorWrapper .tableCal{ width: initial;}
+		div#InternalLeft div#ovulationCalculatorWrapper table{ width: 100%;}
+		div#ovulationCalculatorWrapper div#calShow div.insideDiv { width: 220px; margin-left: auto; margin-right: auto; float: none; display: block; }	
+		div#ovulationCalculatorWrapper .desktopOnly { display: none; }
+
+		div#ui-datepicker-div { width: 24em; left: 30px; }
+		div#ui-datepicker-div a.ui-state-default { font-size: 15px; }
+		div#ui-datepicker-div span.ui-datepicker-month { line-height: 3em; }
+		div#ui-datepicker-div a.ui-corner-all { padding: 8px; }
+	}
+
+/* CSS for Bowel Cancer Risk Test */
+	#bowelcancerrisktest input:active, #bowelcancerrisktest input:focus{ outline: 1px solid #FFD373; }
+	#bowelcancerrisktest #container{ padding:15px; display:none; }
+	#bowelcancerrisktest #res { border:1px solid #bbbbbb; padding:4px;}
+	#bowelcancerrisktest #error { display:none;font-weight:normal;color:#cc0000; }
+	#bowelcancerrisktest #error li { color: #cc0000; }
+	#bowelcancerrisktest select, #bowelcancerrisktest option{ font-family:verdana; font-size:10px; }
+	#bowelcancerrisktest td.oddrow{ background-color:#E9EEFC; }
+	#bowelcancerrisktest #bmiText{ display:none; }
+
+/* CSS for Breast Cancer Risk Test */
+	#breastcancerrisk input:active, #breastcancerrisk  input:focus{ outline: 1px solid #FFD373; }
+	#breastcancerrisk label, #breastcancerrisk button {cursor:pointer;}
+	#breastcancerrisk #data { clear:both; }
+	#breastcancerrisk #errors { border:1px dashed #900; padding:10px; background-color:#FFEAEA; color:#900; font-size:12px; margin-bottom:5px; }
+	#breastcancerrisk h3 { margin:5px 0; }
+	#breastcancerrisk p.descr { padding: 6px; }
+	#breastcancerrisk #data p { margin:12px 0;}
+	#breastcancerrisk ul { margin:5px 0 0 25px;}
+	#breastcancerrisk li {margin:4px 0;}
+	#breastcancerrisk span.tip { color:blue;font-size:11px;cursor:pointer;}
+	#breastcancerrisk #minihelp { font-weight:bold;display:none; color:green;font-size:11px;font-family:"Courier New"; }	
+	#breastcancerrisk #answers { margin:4px 0 10px 0;}
+	#breastcancerrisk #answers p {padding:2px;margin:0;margin-left:7px;}	
+	#breastcancerrisk #answers input {margin-right:5px;}	
+	#breastcancerrisk span { color:#666;font-size:10px; }
+	#breastcancerrisk #prev { width:129px;height:19px;border:none;background:white;background-image:url(/files/images/generic/previouspage.gif); }
+	#breastcancerrisk #next { width:101px;height:19px;border:none;background:white;background-image:url(/files/images/generic/nextpage.gif); }	
+	#breastcancerrisk #score { width:64px;height:19px;border:none;background:white;background-image:url(/files/images/generic/submit_out.gif); }
+	#breastcancerrisk #reset { width:59px;height:19px;border:none;background:white;background-image:url(/files/images/generic/reset_out.gif); }
+
+	#breastcancerrisk div.formWrapper { border: 4px solid #eaeaea; background-color: #eaeaea; }
+	#breastcancerrisk div.introDiv,
+	#breastcancerrisk div.inputDiv { background-color: #f3f3f3; }
+	#breastcancerrisk div.introDiv img { float: left; padding: 10px; }
+	#breastcancerrisk div.inputDiv div#data div.questions { padding: 12px; }
+	#breastcancerrisk div.inputDiv div.infoNote { color: #666; font-size: 9px; font-style: italic; padding: 0 12px 12px 12px;}
+	#breastcancerrisk a.BurnedCalculatorLink { float: none; margin-right: 10px; }
+	#breastcancerrisk div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 35px; padding: 10px; }
+	#breastcancerrisk div.fullWidthInputs.buttonsArea div.toolButtons{ text-align: center; margin-left: auto; margin-right: auto; }
+	#breastcancerrisk div.inputDiv label.yesno { padding: 6px 6px; }
+	#breastcancerrisk div.inputDiv input[type=text], #breastcancerrisk div.inputDiv input[type=number] { padding: 4px; font-size: 20px; width: 40%;  }
+	#breastcancerrisk input.btnCalculateGreenButton.leftButton { margin-right: 12px; }
+	#breastcancerrisk div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#breastcancerrisk div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#breastcancerrisk div.resultLevels div.level div.label,
+	#breastcancerrisk div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#breastcancerrisk div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+
+/* CSS for Depression Self Assessment */
+	#depressionself-assessment div.introDiv img.featureImage { float: left; padding: 0 4px 4px 4px; }
+	#depressionself-assessment input:active, #depressionself-assessment input:focus{ outline: 1px solid #FFD373; }
+	#depressionself-assessment #container { padding:15px; display:none; }
+	#depressionself-assessment #res { border:1px solid #bbbbbb; padding:4px;}
+	#depressionself-assessment #error { display:none;font-weight:normal;color:#cc0000; }
+	#depressionself-assessment #error li { color: #cc0000; }
+	#depressionself-assessment select, #depressionself-assessment option { font-family:verdana; font-size:10px; }
+	#depressionself-assessment td.oddrow { background-color:#E9EEFC;}
+	#depressionself-assessment .scbTbl {
+		border-right: #00008b 1px solid;
+		border-top: #00008b 1px solid;
+		border-left: #00008b 1px solid;
+		width: 99%;
+		padding:20px;
+		border-bottom: #00008b 1px solid;
+	}
+	#depressionself-assessment .brTbl {
+		border-right: #E9EEFC 1px solid;
+		border-top: #E9EEFC 1px solid;
+		border-left: #E9EEFC 1px solid;
+		border-bottom: #E9EEFC 1px solid;
+	}
+	#depressionself-assessment .idnt { margin-left: 5px; margin-top: 5px; }
+	#depressionself-assessment .strongbold { color:#000; font-weight:bolder; }
+	
+	#depressionself-assessment div.inputDiv label.yesno { padding: 6px 6px; }
+
+	#depressionself-assessment div.buttonsArea { text-align: center; }
+	#depressionself-assessment div.buttonsArea a.BurnedCalculatorLink { float: none; margin-right: 20px; }
+
+	#depressionself-assessment #bmiText {
+		display:none;
+	}
+
+	#depressionself-assessment div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#depressionself-assessment div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#depressionself-assessment div.resultLevels div.level div.label,
+	#depressionself-assessment div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#depressionself-assessment div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+/* CSS for Diabetes Risk Test */
+	#diabetesrisktest input:active, #diabetesrisktest input:focus{ outline: 1px solid #FFD373; }
+	#diabetesrisktest .leftcell {padding-left:5px; padding-right:5px; vertical-align:top;}
+	#diabetesrisktest td.oddrow{ background-color:#E9EEFC; }
+	#diabetesrisktest  div.introDiv img.featureImage { float: left; padding: 0 4px 4px 4px; width: 86px; height: 86px; }
+	#diabetesrisktest div.inputDiv label.yesno { padding: 6px 6px; }
+
+	#diabetesrisktest div.buttonsArea { text-align: center; }
+	#diabetesrisktest div.buttonsArea a.BurnedCalculatorLink { float: none; margin-right: 20px; }
+
+	#diabetesrisktest div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#diabetesrisktest div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#diabetesrisktest div.resultLevels div.level div.label,
+	#diabetesrisktest div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#diabetesrisktest div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+
+/* CSS for Heart Disease risk assessment */
+	#heartdiseaserisk-assessment #container { display:none; }
+	#heartdiseaserisk-assessment #res { border: none; padding:4px;}
+	#heartdiseaserisk-assessment #res2 { border: none; padding:4px;}
+	#heartdiseaserisk-assessment #error { display:none; font-weight:normal;color:#cc0000; }
+	#heartdiseaserisk-assessment #age_err { color:#cc0000; font-weight:bold; }
+	#heartdiseaserisk-assessment #error li { color: #cc0000; list-style: none; }
+	#heartdiseaserisk-assessment select { width:100px; }
+	#heartdiseaserisk-assessment input.input { width:100px; font-family:Verdana;font-size:11px; }
+	#heartdiseaserisk-assessment .input { width:65px; }
+
+	#heartdiseaserisk-assessment div.introDiv ul li { list-style: none; }
+	#heartdiseaserisk-assessment div.formWrapper { border: 4px solid #eaeaea; background-color: #eaeaea; }
+	#heartdiseaserisk-assessment div.introDiv,
+	#heartdiseaserisk-assessment div.inputDiv { padding: 6px; background-color: #f3f3f3; }
+	#heartdiseaserisk-assessment div.inputDiv div.infoNote { color: #666; font-size: 9px; font-style: italic; padding: 0 12px 12px 12px;}
+	#heartdiseaserisk-assessment a.BurnedCalculatorLink { float: none; margin-right: 10px; }
+
+	#heartdiseaserisk-assessment div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 35px; padding: 10px; }
+	#heartdiseaserisk-assessment div.fullWidthInputs.buttonsArea div.toolButtons{ text-align: center; margin-left: auto; margin-right: auto; }
+	#heartdiseaserisk-assessment div.inputDiv label.yesno { padding: 6px 6px; }
+
+	#heartdiseaserisk-assessment div.inputDiv input[type=text],
+	#heartdiseaserisk-assessment div.inputDiv input[type=number] { padding: 4px; font-size: 20px; width: 40%;  }
+	#heartdiseaserisk-assessment div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#heartdiseaserisk-assessment div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#heartdiseaserisk-assessment div.resultLevels div.level div.label,
+	#heartdiseaserisk-assessment div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#heartdiseaserisk-assessment div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+/* CSS for Macular Degeneration Tool */
+	#maculardegenerationtool #container { padding:15px; display:block; }
+	#maculardegenerationtool #res { border:1px solid #bbbbbb; padding:4px;}
+	#maculardegenerationtool #error { display:none;font-weight:normal;color:#cc0000; }
+	#maculardegenerationtool #error li { color: #cc0000; }
+	#maculardegenerationtool select, #maculardegenerationtool option { font-family:verdana; font-size:10px; }
+	#maculardegenerationtool ul, #maculardegenerationtool ul li { font-weight: normal; }
+	#maculardegenerationtool .caption {font-size:0.8em; font-style:italic;}
+
+/* CSS for Osteoporosis Risk Test */
+	#osteoporosisrisktest input:active, #osteoporosisrisktest input:focus{ outline: 1px solid #FFD373; }
+	#osteoporosisrisktest .maleRow { display: none; }
+	#osteoporosisrisktest .femaleRow { display: none; }
+	#osteoporosisrisktest .leftcell {padding-left:5px; padding-right:5px; vertical-align:top;}
+	#osteoporosisrisktest td.oddrow{ background-color:#E9EEFC; }
+
+	#osteoporosisrisktest div.buttonsArea { text-align: center; }
+	#osteoporosisrisktest div.buttonsArea a.BurnedCalculatorLink { float: none; margin-right: 20px; }
+	#osteoporosisrisktest div.inputDiv label.yesno { padding: 6px 6px; }
+
+	#osteoporosisrisktest div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#osteoporosisrisktest div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#osteoporosisrisktest div.resultLevels div.level div.label,
+	#osteoporosisrisktest div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#osteoporosisrisktest div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+	
+
+
+/* CSS for Prostate Symptoms Self-assessment */
+	#prostatesymptoms-self-assessment input:active, input:focus{ outline: 1px solid #FFD373; }
+	#prostatesymptoms-self-assessment #container { padding:15px; display:none; }
+	#prostatesymptoms-self-assessment #res { border:1px solid #bbbbbb; padding:4px;}
+	#prostatesymptoms-self-assessment #error { display:none;font-weight:normal;color:#cc0000; }
+	#prostatesymptoms-self-assessment #error li { color: #cc0000; }
+	#prostatesymptoms-self-assessment select, #prostatesymptoms-self-assessment option {font-family:verdana; font-size:10px; }
+	#prostatesymptoms-self-assessment td.oddrow { background-color:#E9EEFC; }
+	#prostatesymptoms-self-assessment div.inputDiv table td label span { padding: 6px 70px 6px 10px; line-height: 20px; }
+	#prostatesymptoms-self-assessment .bt { font-weight: bold; }
+	#prostatesymptoms-self-assessment .nt { font-weight: normal; }
+	#prostatesymptoms-self-assessment .cpr { font-size: 7pt; }
+	/* the following is to show/hide the Q.2 Link/Text for BMI depending on the quiz version */
+	#prostatesymptoms-self-assessment #bmiCalcLink { }
+	#prostatesymptoms-self-assessment #bmiText { display:none; }
+	#prostatesymptoms-self-assessment div.introDiv img { float: left; padding: 0 4px 4px 4px; }
+	#prostatesymptoms-self-assessment div.buttonsArea { text-align: center; }
+	#prostatesymptoms-self-assessment div.buttonsArea a.BurnedCalculatorLink { float: none; margin-right: 20px; }
+	#prostatesymptoms-self-assessment div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+	}
+	#prostatesymptoms-self-assessment div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#prostatesymptoms-self-assessment div.resultLevels div.level div.label,
+	#prostatesymptoms-self-assessment div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#prostatesymptoms-self-assessment div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+/* CSS for Stroke Risk Test */
+	#strokerisk-test input:active, #strokerisk-test input:focus{ outline: 1px solid #FFD373; }
+	#strokerisk-test #container { display:none; }
+	#strokerisk-test #res,#strokerisk-test #res1,#strokerisk-test #res2,#strokerisk-test #res4 { border: none; padding:4px; }
+	#strokerisk-test #error { display:none;font-weight:normal;color:#cc0000; }
+	#strokerisk-test #age_err { color:#cc0000; font-weight:bold; }
+	#strokerisk-test #error li { color: #cc0000;list-style:disc; background-image:none; }
+	#strokerisk-test li { list-style:decimal; }
+	#strokerisk-test select { width:100px; }
+	#strokerisk-test input.input { width:100px;font-family:Verdana;font-size:11px; }
+	#strokerisk-test .input { width:65px; color:black; }
+
+	#strokerisk-test div.introDiv ul li { list-style: none; }
+	#strokerisk-test div.formWrapper { border: 4px solid #eaeaea; background-color: #eaeaea; }
+	#strokerisk-test div.introDiv, #strokerisk-test div.inputDiv { padding: 6px; background-color: #f3f3f3; display: inline-block; }
+	#strokerisk-test div.introDiv img { float: left; padding: 0 6px 6px 6px; }
+	#strokerisk-test div.inputDiv div.infoNote { color: #666; font-size: 9px; font-style: italic; padding: 0 12px 12px 12px; }
+	#strokerisk-test a.BurnedCalculatorLink { float: none; margin-right: 10px; }
+
+	#strokerisk-test div.inputDiv label.yesno { padding: 6px 6px; white-space: nowrap; }
+
+	#strokerisk-test div.fullWidthInputs { padding: 4px; clear: both; height: 50px; }
+	#strokerisk-test div.fullWidthInputs div.toolInputs { clear: both; padding: 10px 0; }
+	#strokerisk-test div.fullWidthInputs div.toolInputs div.inputBox { width: 45%; float: left; }
+	#strokerisk-test div.fullWidthInputs div.toolInputs div.labelBox { width: 52%; float: left; padding: 0; text-align: left; }
+	#strokerisk-test div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 2%; }
+	#strokerisk-test div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 35px; padding: 10px; }
+	#strokerisk-test div.fullWidthInputs.buttonsArea div.toolButtons{ text-align: center; margin-left: auto; margin-right: auto; }
+
+	#strokerisk-test div.introDiv .indented { margin-left: 12px;}
+	#strokerisk-test div.inputDiv input[type=text],
+	#strokerisk-test div.inputDiv input[type=number] { padding: 4px; font-size: 20px; width: 40%;  }
+	#strokerisk-test div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#strokerisk-test div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#strokerisk-test div.resultLevels div.level div.label,
+	#strokerisk-test div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#strokerisk-test div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+
+
+/* CSS for Erectile Dsyfunction Tool */
+        div#erectileTool { float: left; margin-bottom: 12px; width: 100%; }
+        div#erectileTool div.toolColQuestion { width: 98%; padding: 4px; }
+        div#erectileTool div.toolColRadio { padding: 2px 2px 2px 15px; margin: 2px; }
+        div#erectileTool div.toolRow { width: 100%; margin-top: 6px; clear: both; float: left; }
+        div#erectileTool div.toolRowColor { background-color: #e9eefc; }
+        div#erectileTool div.toolCol input { clear: both; }
+        div#erectileTool div#displayMessage { background-color: #d9edff; padding: 4%; margin-top: 0; clear: both; float: left; width: 92%; display: none; }
+        div#erectileTool label { font-size:12px; color:#666666; font-weight:normal; line-height:20px; font-family:Arial; padding:0px; margin:0px; padding-bottom: 6px; }
+        div#erectileTool input#submitSurvey { margin-top: 8px; }
+        div#erectileTool img { padding: 6px 10px 10px 0; float: left; }
+        /* div#erectileTool h2 { padding-left: 0px; background: none; color: #000; } */
+
+/* CSS for Target Heart Rate Calculator */
+	div#targetHeartRateCalculator div#fullWidthChart { width: 100%; font-weight: bold; font-family: Verdana, Helvetica, sans-serif; font-size: 10px; }
+	div#targetHeartRateCalculator div#fullWidthChart div.fullHead{ width: 100%; clear: both; color: #FF0000; text-align: center; }
+	div#targetHeartRateCalculator div#fullWidthChart div.leftResult{ width: 74px; float: left; color: #3399ff; }
+	div#targetHeartRateCalculator div#fullWidthChart div.midResult{ width: 308px; float: left; }
+	div#targetHeartRateCalculator div#fullWidthChart div.rightResult{ width: 74px; padding-left: 4px; float: left; color: #0000FF; }
+	div#targetHeartRateCalculator div#fullInfo { width: 100%; clear: both; }
+	div#targetHeartRateCalculator input {
+		padding: 4px;
+		font-size: 16px;
+        	-webkit-border-radius: 4px 4px 4px 4px;
+	        border-radius: 4px 4px 4px 4px;
+        	-webkit-box-shadow:inset 1px 1px 1px 1px #D6D6D6;
+	        box-shadow:inset 1px 1px 1px 1px #D6D6D6;
+	}
+	div#targetHeartRateCalculator div#fullWidthInputs { background-color: #e9f5ff; height: 80px; padding: 2%; width: 96%; font-weight: bold; font-family: Verdana, Helvetica, sans-serif; font-size: 12px; margin-bottom: 10px;}	
+	div#targetHeartRateCalculator div.toolInputs { color: #004685;  }
+	div#targetHeartRateCalculator div.toolButtons { width: 200px; margin-left: auto; margin-right: auto; clear: both; padding-top: 6px; }
+	div#targetHeartRateCalculator div.toolButtons a { float: left; margin-top: 8px;}
+	div#targetHeartRateCalculator div.extraNote { background-color: #e9f5ff; padding: 0 8px 0 8px; }
+	div#targetHeartRateCalculator div.extraNote span.headInline{ 
+		color: #004685; font-family: "myriad-pro-1","mydriad-pro-2"; font-weight: 600; line-height: 35px; font-size: 24px; 
+	}
+	@media only screen and (max-width : 480px) {
+		div#targetHeartRateCalculator { width: 100%; }
+		div#targetHeartRateCalculator div#fullWidthChart div.midResult{float: none; margin-left: auto; margin-right: auto; }
+		div#targetHeartRateCalculator div#fullWidthChart div.leftResult,
+		div#targetHeartRateCalculator div#fullWidthChart div.rightResult{ 
+			float: none; width: 200px; margin-left: auto; margin-right: auto; 
+		}
+
+	}
+
+/* CSS for Baby Due Date*/
+	div#babyduedateCalculator table.centeredTable {
+		width: 301px;
+	}
+	div#babyduedateCalculator table.information {
+		width: 100%;
+	}
+	div#babyduedateCalculator input[type="text"] {
+		font-size: 16px;
+		color: #606060;
+		text-align: center;
+	}
+	div#babyduedateCalculator input.prTextInput {
+		width: 60px;
+	}
+	div#babyduedateCalculator div.ResultLabel {
+		padding-left: 6px;
+		width: inherit;
+		height: inherit;
+	}
+	div#babyduedateCalculator input.btnCalculateGreenButton {
+		font-size: 16px;
+	}
+	@media only screen and (max-width : 400px) {
+		div#babyduedateCalculator table.centeredTable {
+			width: 95%;
+		}
+		div#babyduedateCalculator table.information {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width : 480px) {
+		div#babyduedateCalculator div#ResultContainer {
+			width: 100%;
+		}
+	}
+
+/* CSS for Basal Metabolic Rate */
+	div#basalmetabolicrate-tool div.BurnedCalculatorField, 
+	div#basalmetabolicrate-tool div.ToolsNetstarterLabel {
+		width:100%
+	}
+	div#basalmetabolicrate-tool p img.parImage {
+		padding: 0 8px 2px 0;
+		float: left;
+	}
+	div#basalmetabolicrate-tool label.RadioText {
+		line-height: 25px;
+		padding-left: 8px;
+	}
+	div#basalmetabolicrate-tool input.SmallTextInput {
+		font-size: 16px;
+		color: #606060;
+		padding: 3px 0px 0px 3px;
+	}
+	div#basalmetabolicrate-tool div.ToolsNetstarterLabel {
+		height: 24px;
+	}
+	div#basalmetabolicrate-tool input.btnCalculateGreenButton {
+		font-size: 16px;
+	}
+	@media only screen and (max-width : 480px) {
+		div#basalmetabolicrate-tool table#toolsTableContainer {
+			width: 100%;
+		}
+		div#basalmetabolicrate-tool div#ResultContent div.ResultBottomFiled {
+			width: 100%;
+			}
+		div#basalmetabolicrate-tool div#ResultContent div.ResultBottomFiled div.ResultLabel3,
+		div#basalmetabolicrate-tool div#ResultContent div.ResultBottomFiled div.ResultField1 {
+			width: 35%;
+		}
+
+		div#basalmetabolicrate-tool table#toolsTableContainer div#ResultContainer {
+			width: 100%;
+		}
+		div#basalmetabolicrate-tool table#toolsTableContainer div#ResultContent {
+			width: 94%;
+			padding: 1%;
+			border: 4px solid #d2eaff;
+		}
+
+	}
+
+/* CSS for Body Mass Index (BMI) */
+	div#bodymassindexCalculator h2 {
+		background-color: transparent;
+		padding-left: 0px;
+		margin-bottom: 0px;
+	}
+	div#bodymassindexCalculator span.boldSpan {
+		font-weight: bold;
+	}
+	div#bodymassindexCalculator div.formWrapper {
+		border: 4px solid #eaeaea; background-color: #f7f7f7;
+	}
+	div#bodymassindexCalculator.mini div.formWrapper {
+		border: 4px solid #eaeaea; background-color: #f7f7f7;
+	}
+	div#bodymassindexCalculator.mini div.formWrapper div.description {
+		padding: 0 10px;
+	}
+	div#bodymassindexCalculator.mini div.blueBorder {
+		border-top: 2px solid #3687c8; 
+	}
+	div#bodymassindexCalculator.mini div.formWrapper {
+		border-top: 4px solid #eaeaea; 
+	}
+	div#bodymassindexCalculator div.formWrapper p { color: #000; padding: 3px; line-height: 16px; }
+	div#bodymassindexCalculator img.featureImage {
+		float: left; width: 146px; height: 96px; padding: 4px 6px 4px 4px;
+	}
+
+	div#bodymassindexCalculator div.fullWidthInputs { padding: 15px; clear: both; height: 100px; }
+	div#bodymassindexCalculator.mini div.fullWidthInputs { 
+		padding: 4px; 
+		clear: both; 
+		height: 120px; 
+		background-color: #f7f7f7;
+		margin: 0 6px;
+	}
+	div#bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level{ background: none; }
+	div#bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level div.value{ background: none; }
+	div#bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level div.value input.bmi_inputs{ margin-top: 2px; }
+	div#bodymassindexCalculator.mini div.fullWidthInputs h2 { 
+		font-family: "myriad-pro-1","myriad-pro-2"; color: #004685; font-size:18px; line-height: 30px; font-weight: 600; background-color: transparent; padding: 0; width: 90%; float: none; clear: both;
+	}
+	div#bodymassindexCalculator div.fullWidthInputs div.toolInputs { clear: both; padding-top: 12px; }
+	div#bodymassindexCalculator div.fullWidthInputs div.toolInputs div.inputBox { width: 45%; float: left; }
+	div#bodymassindexCalculator div.fullWidthInputs div.toolInputs div.labelBox { width: 45%; float: left; padding-top: 6px; }
+	div#bodymassindexCalculator.mini div.fullWidthInputs div.toolInputs div.inputBox { width: 50%; float: left; }
+	div#bodymassindexCalculator.mini div.fullWidthInputs div.toolInputs div.labelBox { width: 35%; float: left; padding-top: 6px; }
+	div#bodymassindexCalculator div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 5%; }
+	div#bodymassindexCalculator div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 25px; }
+	div#bodymassindexCalculator.mini div.fullWidthInputs.buttonsArea { 
+		background-color: #eaeaea;
+		height: 38px;
+		margin: 15px 0 0 0;
+		padding: 8px 0 0 0;
+	}
+	div#bodymassindexCalculator div.fullWidthInputs.buttonsArea div.toolButtons{ width: 200px; margin-left: auto; margin-right: auto; }
+
+	div#bodymassindexCalculator a.BurnedCalculatorLink { float: left; font-weight: bold; width: initial; }
+	div#bodymassindexCalculator input.btnCalculateGreenButton  { float: left; margin-left: 15px; }
+	div#bodymassindexCalculator input.bmi_inputs {
+		font-size: 20px; padding: 4px;
+	}
+	div#bodymassindexCalculator.mini input.bmi_inputs {
+		-webkit-border-radius: 6px 6px 6px 6px;
+		border-radius: 6px 6px 6px 6px;
+	}
+	div#bodymassindexCalculator div#resultsWrapper {
+		margin-top: 10px;
+	}
+	div#bodymassindexCalculator div#resultsWrapper div#bmiValue {
+		margin-bottom: 10px;
+		margin-bottom: 0px;
+		border-bottom: none;
+	}
+	div#bodymassindexCalculator div#resultsWrapper div#bmiUnderWeight {
+		border-top: none;
+	}
+	div#bodymassindexCalculator div#resultsWrapper div#bmiValue input {
+		background-color: transparent;
+		border: none;
+	}
+	div#bodymassindexCalculator div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+	}
+	div#bodymassindexCalculator div.resultContent {
+		display: none;
+	}
+	div#bodymassindexCalculator div.resultLevels div.level {
+		/* display: inline-block; */
+		float: left;
+		width: 40%;
+		padding: 0 0 0 0;
+	}
+	div#bodymassindexCalculator div.resultLevels div.level div.label,
+	div#bodymassindexCalculator div.resultLevels div.indication div.label{
+		/* background-color: #d2eaff; */
+		/* border-bottom: 1px solid #aeaeae; */
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	div#bodymassindexCalculator.mini div.resultLevels div.level div.label,
+	div#bodymassindexCalculator.mini div.resultLevels div.indication div.label{
+		height: 25px;
+	}
+	div#bodymassindexCalculator div.resultLevels div.level div.value{
+		background-color: #e9f5ff;
+		vertical-align: top;
+	}
+	div#bodymassindexCalculator div.resultLevels div.indication {
+		/* display: inline-block; */
+		float: left;
+		width: 58%;
+		padding: 0 0 0 0;
+		font-weight: bold;
+		font-size: 12px;
+		/* border-left: 1px solid #aeaeae; */
+	}
+	div#bodymassindexCalculator div.resultLevels div.description {
+	}
+	div#bodymassindexCalculator div.resultLevels div.description div.name {
+		color: #000000;
+		background-color: transparent;
+		font-weight: bold;
+		width: 96%;
+		padding-left: 4%;
+	}
+	div#bodymassindexCalculator div.resultLevels div.description p {
+		line-height: 16px;
+		padding: 1% 0 0 4%;
+	}
+	div#bodymassindexCalculator span.h4clone { font-size: 15px; color: #64574b; font-family: "myriad-pro-1", "myriad-pro-2"; font-weight: 600; padding: 0; margin: 0; text-shadow: 0px 1px 0px #ffffff; line-height: 22px; }
+
+/* CSS for Mini Body Mass Index (BMI) */
+        div#mini_bodymassindexCalculator.mini {
+		margin-top: 10px;
+	}
+        div#mini_bodymassindexCalculator.mini div.formWrapper {
+                border: 4px solid #eaeaea; background-color: #f7f7f7;
+        }
+        div#mini_bodymassindexCalculator.mini div.formWrapper div.description {
+                padding: 0 10px;
+        }
+        div#mini_bodymassindexCalculator.mini div.blueBorder {
+                border-top: 2px solid #3687c8;
+        }
+        div#mini_bodymassindexCalculator.mini div.formWrapper {
+                border-top: 4px solid #eaeaea;
+        }
+        div#mini_bodymassindexCalculator div.formWrapper p { color: #000; padding: 3px; line-height: 16px; }
+        div#mini_bodymassindexCalculator img.featureImage {
+                float: left; width: 146px; height: 96px; padding: 4px 6px 4px 4px;
+        }
+
+        div#mini_bodymassindexCalculator.mini div.fullWidthInputs {
+                padding: 4px;
+                clear: both;
+                height: 120px;
+                background-color: #f7f7f7;
+                margin: 0 6px;
+        }
+        div#mini_bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level{ background: none; }
+        div#mini_bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level div.value{ background: none; }
+        div#mini_bodymassindexCalculator.mini div#bmiValue.resultLevels form div.level div.value input.bmi_inputs{ margin-top: 2px; }
+        div#mini_bodymassindexCalculator.mini div.fullWidthInputs h2 {
+                font-family: "myriad-pro-1","myriad-pro-2"; color: #004685; font-size:18px; line-height: 30px; font-weight: 600; background-color: transparent; padding: 0; width: 90%; float: none; clear: both;
+        }
+        div#mini_bodymassindexCalculator div.fullWidthInputs div.toolInputs { clear: both; padding-top: 12px; }
+        div#mini_bodymassindexCalculator.mini div.fullWidthInputs div.toolInputs div.inputBox { width: 50%; float: left; }
+        div#mini_bodymassindexCalculator.mini div.fullWidthInputs div.toolInputs div.labelBox { width: 35%; float: left; padding-top: 6px; }
+        div#mini_bodymassindexCalculator div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 5%; }
+        div#mini_bodymassindexCalculator.mini div.fullWidthInputs.buttonsArea {
+                background-color: #eaeaea;
+                height: 38px;
+                margin: 15px 0 0 0;
+                padding: 8px 0 0 0;
+        }
+        div#mini_bodymassindexCalculator div.fullWidthInputs.buttonsArea div.toolButtons{ width: 200px; margin-left: auto; margin-right: auto; }
+
+        div#mini_bodymassindexCalculator a.BurnedCalculatorLink { float: left; font-weight: bold; width: initial; }
+        div#mini_bodymassindexCalculator input.btnCalculateGreenButton  { float: left; margin-left: 15px; }
+        div#mini_bodymassindexCalculator.mini input.bmi_inputs {
+                font-size: 20px; padding: 4px;
+                -webkit-border-radius: 6px 6px 6px 6px;
+                border-radius: 6px 6px 6px 6px;
+        }
+        div#mini_bodymassindexCalculator div#resultsWrapper {
+                margin-top: 10px;
+        }
+        div#mini_bodymassindexCalculator div#resultsWrapper div#bmiValue {
+                margin-bottom: 10px;
+        }
+        div#mini_bodymassindexCalculator div#resultsWrapper div#bmiValue input {
+                background-color: #ffffff;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels {
+                background-color: #e9f5ff;
+                border: 4px solid #d2eaff;
+                padding: 2px;
+                float: left;
+                display: block;
+                width: 97%;
+                max-width: 450px;
+                display: none;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.level {
+                /* display: inline-block; */
+                float: left;
+                width: 25%;
+                padding: 0 0 0 0;
+        }
+        div#mini_bodymassindexCalculator.mini div.resultLevels div.level div.label,
+        div#mini_bodymassindexCalculator.mini div.resultLevels div.indication div.label{
+                background-color: #d2eaff;
+                border-bottom: 1px solid #aeaeae;
+                text-align: center;
+                font-weight: bold;
+                padding: 5px;
+                margin-bottom: 4px;
+                height: 25px;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.level div.value{
+                background-color: #ffffff;
+                vertical-align: top;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.indication {
+                /* display: inline-block; */
+                float: left;
+                width: 74%;
+                padding: 0 0 0 0;
+                border-left: 1px solid #aeaeae;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.description {
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.description div.name {
+                color: #000000;
+                background-color: #ffffff;
+                font-weight: bold;
+                width: 96%;
+                padding-left: 4%;
+        }
+        div#mini_bodymassindexCalculator div.resultLevels div.description p {
+                line-height: 16px;
+                padding: 1% 0 0 4%;
+        }
+        div#mini_bodymassindexCalculator span.h4clone { font-size: 15px; color: #64574b; font-family: "myriad-pro-1", "myriad-pro-2"; font-weight: 600; padding: 0; margin: 0; text-shadow: 0px 1px 0px #ffffff; line-height: 22px; }
+
+
+/* CSS for Ideal Weight Calculator */
+	div#idealweightCalculator div.fullWidthInputs { padding: 15px; clear: both; height: 50px; }
+	div#idealweightCalculator div.fullWidthInputs div.toolInputs { clear: both; padding-top: 12px; }
+	div#idealweightCalculator div.fullWidthInputs div.toolInputs div.inputBox { width: 35%; float: left; }
+	div#idealweightCalculator div.fullWidthInputs div.toolInputs div.labelBox { width: 55%; float: left; padding-top: 6px; text-align: right; }
+	div#idealweightCalculator div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 5%; }
+	div#idealweightCalculator div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 25px; }
+	div#idealweightCalculator div.fullWidthInputs.buttonsArea div.toolButtons{ width: 200px; margin-left: auto; margin-right: auto; }
+	div#idealweightCalculator a.BurnedCalculatorLink { float: left; font-weight: bold; width: initial; }
+	div#idealweightCalculator input.btnCalculateGreenButton  { float: left; margin-left: 15px; }
+	div#idealweightCalculator input.btnCalculateGreenButton  { float: left; margin-left: 15px; }
+	div#idealweightCalculator div.toolsIntro { padding: 4px;}
+	div#idealweightCalculator div.formWrapper { border: 4px solid #eaeaea; background-color: #f3f3f3; }
+	div#idealweightCalculator span.h4clone { 
+		font-size: 15px; color: #64574b; 
+		font-family: "myriad-pro-1", "myriad-pro-2"; 
+		font-weight: 600; padding: 0; margin: 0; 
+		text-shadow: 0px 1px 0px #ffffff; line-height: 22px; 
+	}
+	div#idealweightCalculator div.formWrapper div.toolsIntro img {
+		width: 145px;	/*160*/
+		height: 96px;	/*160*/
+		padding: 0 6px 4px 0;
+		float: left;
+	}
+	div#idealweightCalculator div.formWrapper p { color: #000; padding: 3px; line-height: 16px; }
+	div#idealweightCalculator div#idealWeightResult {
+		border: 2px solid #3366cc;
+		width: 160px;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		-webkit-border-radius: 30px 30px 2px 2px;
+		border-radius: 30px 30px 2px 2px;
+		/*
+			-webkit-box-shadow: 5px 5px 0 1px #999999;
+			box-shadow: 5px 5px 0 1px #999999;
+		*/
+	}
+	div#idealweightCalculator div#idealWeightResult div.weightRange {
+		padding: 10px 4px 20px 4px;
+	}
+	div#idealweightCalculator div#idealWeightResult div.scaleGifImage {
+		text-align: center;
+	}
+	div#idealweightCalculator div#idealWeightResult div.weightRange input {
+		width: 50px;
+		padding: 4px;
+		font-size: 14px;
+		text-align: center;
+
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+	}
+	div#idealweightCalculator h3 a.btnPrintResult { display: none; }
+	@media only screen and (max-width : 480px) {
+		div#printToolResult { font-size: 16px; }		
+		div#printToolResult p.MainCopy { font-size: 16px; }		
+		div#printToolResult div#originalurl a { font-size: 10px; }		
+		div#printToolResult div#ResultContent div.ResultBottomFiled { padding-bottom: 12px; }		
+		div#printToolResult div#ResultContent div.ResultField { width: 40%; }		
+		div#printToolResult div#ResultContent div.ResultBottomFiled div.ResultField1 { width: 40%; }		
+
+		div#printToolResult div#ReferenceContain { width: 100%; }		
+		div#printToolResult div#ReferenceContain ol li { width: 100%; }		
+	}
+
+
+/* CSS for Waist To Hip Calculator */
+	div#waist2hipCalculator div.formWrapper { border: 4px solid #eaeaea; background-color: #f3f3f3; min-height: 390px; display: inline-block; }
+	div#waist2hipCalculator div.formWrapper p { color: #000; padding: 3px; line-height: 16px; }
+	div#waist2hipCalculator img.featureImage { float: left; padding: 6px 10px 6px 6px; width: 145px; height: 96px; }
+	div#waist2hipCalculator div.inputBox input[type=text] { font-size: 20px; padding: 4px; width: 60%; }
+	div#waist2hipCalculator div.inputBox label.RadioText { float:left; padding:2px 6px 2px 6px; display: block; line-height: 24px; }
+
+	div#waist2hipCalculator div.resultsWrapperBlue div.resultLevels div.level {
+		width: 35%;
+	}
+	div#waist2hipCalculator div.resultsWrapperBlue div.resultLevels div.grayBorder,
+	div#waist2hipCalculator div.resultsWrapperBlue div.resultLevels div.valueLabel {
+		width: 60%;
+		border: none;
+	}
+	div#waist2hipCalculator div.fullWidthInputs { padding: 15px; clear: both; height: 50px; }
+	div#waist2hipCalculator div.fullWidthInputs div.toolInputs { clear: both; padding-top: 12px; }
+	div#waist2hipCalculator div.fullWidthInputs div.toolInputs div.inputBox { width: 35%; float: left; }
+	div#waist2hipCalculator div.fullWidthInputs div.toolInputs div.labelBox { width: 55%; float: left; padding-top: 6px; }
+	div#waist2hipCalculator div.fullWidthInputs div.toolInputs div.labelBox a.infoImg{ 
+		background: url(/images/netstarter/buttons/icnInformation.png) no-repeat top left; 
+		cursor: pointer; 
+		width: 22px;
+		height: 20px;
+		display: none; 
+	}
+	div#waist2hipCalculator div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 5%; }
+	div#waist2hipCalculator div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 25px; height: 34px; }
+	div#waist2hipCalculator div.fullWidthInputs.buttonsArea div.toolButtons{ text-align: center; margin-left: auto; margin-right: auto; }
+	div#waist2hipCalculator span.h4clone { font-size: 15px; color: #64574b; font-family: "myriad-pro-1", "myriad-pro-2"; font-weight: 600; padding: 0; margin: 0; text-shadow: 0px 1px 0px #ffffff; line-height: 22px; }
+	div#waist2hipCalculator a.BurnedCalculatorLink { float: none; margin-right: 12px; }
+	div#waist2hipCalculator form#frmTool p.inputDef { width: 100%; }
+	div#waist2hipCalculator div#resultsWrapper div#waist2hipResult{ margin: 5px 0 0 0; }
+	div#waist2hipCalculator div#resultsWrapper div#waist2hipResult form div input.bmi_inputs { font-size: 20px; padding: 2%; width: 96%; }
+	div#waist2hipCalculator div#resultsWrapper div#waistMeasurement form div input.bmi_inputs { font-size: 20px; padding: 2%; width: 96%; }
+	div#waist2hipCalculator div#resultsWrapper div.level div.value { border: none; background-color: transparent;}
+	div#waist2hipCalculator div#resultsWrapper div.level div.value { border: none; }
+	div#waist2hipCalculator div#resultsWrapper div.resultLevels { margin: 0 0 0 0; }
+	div#waist2hipCalculator table, 
+	div#waist2hipCalculator td, 
+	div#waist2hipCalculator th {
+		border: 1px solid grey;
+	}
+	@media only screen and (max-width : 480px) {
+		div#printToolResult { font-size: 16px; }		
+		div#printToolResult p.MainCopy { font-size: 16px; }		
+		div#printToolResult div#originalurl a { font-size: 10px; }		
+		div#printToolResult div#ResultContent div.ResultBottomFiled { padding-bottom: 12px; }		
+		div#printToolResult div#ResultContent div.ResultField { width: 40%; }		
+		div#printToolResult div#ResultContent div.ResultBottomFiled div.ResultField1 { width: 40%; }		
+
+		div#printToolResult div#ReferenceContain { width: 100%; }		
+		div#printToolResult div#ReferenceContain ol li { width: 100%; }		
+		div#waist2hipCalculator div.formWrapper { min-height: 310px; }
+		div#waist2hipCalculator div.formWrapper p.desktopOnly { display: none; }
+		div#waist2hipCalculator div.fullWidthInputs div.toolInputs div.labelBox a.infoImg{ display: inline-block; }
+		div#waist2hipCalculator form#frmTool p.inputDef { 
+			display: none; 
+			width: 230px;
+			height: 70px;
+			position: absolute;
+			background-color: #FFF;
+			border: 1px solid #157ddb;
+        		-webkit-border-radius: 4px 4px 4px 4px;
+		        border-radius: 4px 4px 4px 4px;
+		}
+	}
+
+
+
+/* CSS for Calories Burned Calculator */
+	div#caloriesBurnedCalculator div.formWrapper { border: 4px solid #eaeaea; background-color: #eaeaea; }
+	div#caloriesBurnedCalculator div.formInput { clear: both; padding: 4px; margin: 4px 4px; }
+	div#caloriesBurnedCalculator div.formInput div.ilabel { width: 100px; float: left; }
+	div#caloriesBurnedCalculator a.BurnedCalculatorLink { float: none; margin-right: 10px; }
+
+	div#caloriesBurnedCalculator div.introDiv,
+	div#caloriesBurnedCalculator div.inputDiv { padding: 6px; background-color: #f3f3f3; }
+
+	div#caloriesBurnedCalculator div.fullWidthInputs.buttonsArea { background-color: #eaeaea; height: 35px; padding: 10px; }
+	div#caloriesBurnedCalculator div.fullWidthInputs.buttonsArea div.toolButtons{ text-align: center; margin-left: auto; margin-right: auto; }
+
+	div#caloriesBurnedCalculator div#ResultContent { margin-top: 0; }
+	div#caloriesBurnedCalculator div#ResultContent div.ResultLabel3 { height: initial; clear: left;}
+	div#caloriesBurnedCalculator div#ResultContent div.ResultField, 
+	div#caloriesBurnedCalculator div#ResultContent div.ResultField1 { height: initial; clear: right; padding-left: 0; padding-top: 10px; }
+	div#caloriesBurnedCalculator div#ResultContent div.ResultField1 { padding-top: 4px; }
+	
+	div#caloriesBurnedCalculator div#container { padding: 0; }
+	div#caloriesBurnedCalculator div#ResultContent h2 { 
+		background: transparent; color: #2d2d2d; 
+		font-size: 18px; font-family: "myriad-pro-1", "myriad-pro-2"; 
+		line-height: 35px; padding-left: 0 
+	}
+	div#caloriesBurnedCalculator div.formInput input[type=text] { padding: 4px; font-size: 20px; width: 40%; }
+	div#caloriesBurnedCalculator div.formInput select { padding: 4px; font-size: 12px; width: 182px; height: 35px; }
+	div#caloriesBurnedCalculator div.formInput select { padding: 4px; font-size: 12px; width: 182px; height: 35px; }
+	div.caloriesBurnedToolPrint div.ResultField,
+	div.caloriesBurnedToolPrint div.ResultField1 { width: 50%; }
+        
+	@media only screen and (max-width : 480px) {
+		div#caloriesBurnedCalculator div#ResultContent h2 { padding-left: 0; }
+		div#caloriesBurnedCalculator div#ResultContent { 
+			width: 93%;
+			padding: 2%;
+			border: 4px solid #d2eaff;
+		}
+		div#caloriesBurnedCalculator div#ResultContent div.ResultBottomFiled{
+			width: 100%;
+		}
+		div#caloriesBurnedCalculator div#ResultContent div.ResultField,
+		div#caloriesBurnedCalculator div#ResultContent div.ResultField1 {
+			width: 40%;
+			float: left;
+		}
+		div#caloriesBurnedCalculator div#ResultContent div.ResultLabel3 { 
+			width: 40%;
+		}
+		div#caloriesBurnedCalculator div.formInput select { width: 82%; }
+	}
+
+/* CSS for Smoking Cost Calculator */
+	#smokingCostTool h2{
+        	font-family: "myriad-pro-1","myriad-pro-2";
+	        font-size: 18px;
+        	color: #004685;
+	        line-height: 30px;
+        	font-weight: 600;
+	
+        	background-color: transparent;
+	        padding: 0;
+        	width: 460px;
+	        float: none;
+        	clear: both;
+	}
+	div#smokingCostTool {}
+	div#smokingCostTool div.formWrapper {
+		border: 4px solid #eaeaea; background-color: #f7f7f7;
+	}
+	div#smokingCostTool div.formWrapper p { color: #000; padding: 3px; line-height: 16px; }
+	div#smokingCostTool img.featureImage {
+		float: left; width: 146px; height: 96px; padding: 4px 6px 4px 4px;
+	}
+	div#smokingCostTool div.introDiv { display: inline-block; }
+	div#smokingCostTool div.inputBox input {
+		font-size: 20px; padding: 4px; width: 75px;
+	}
+	div#smokingCostTool div.fullWidthInputs div.toolInputs { 
+		clear: both; 
+		width: 92%;
+		padding: 12px 2% 10px 2%;
+		display: inline-block;
+	}
+	div#smokingCostTool div.fullWidthInputs div.toolInputs div.inputBox { width: 35%; float: right; }
+	div#smokingCostTool div.fullWidthInputs div.toolInputs div.labelBox { width: 60%%; float: left; padding-top: 6px; }
+	div#smokingCostTool div.fullWidthInputs div.toolInputs div.inputBox { padding-left: 5%; text-align: right;}
+	div#smokingCostTool div.fullWidthInputs.buttonsArea { 
+		background-color: #eaeaea; 
+		display: inline-block;
+		width: 100%;
+		padding: 10px 0;
+	}
+	div#smokingCostTool div.fullWidthInputs.buttonsArea div.toolButtons{ width: 100%; margin-left: auto; margin-right: auto; display: inline-block; text-align: center;}
+	div#smokingCostTool a.BurnedCalculatorLink { font-weight: bold; width: initial; float: none; }
+	div#smokingCostTool input.btnCalculateGreenButton  { margin-left: 15px; float: none; }
+	div#smokingCostTool input.bmi_inputs {
+		font-size: 20px; padding: 4px;
+	}
+	div#smokingCostTool span.h4clone { font-size: 25px; color: #64574b; font-family: "myriad-pro-1", "myriad-pro-2"; font-weight: 600; padding: 0 6px 0 0; margin: 0; text-shadow: 0px 1px 0px #ffffff; }
+
+
+	div#smokingCostTool div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 10px;
+		/* display: none; */
+	}
+	div#smokingCostTool div.resultLevels div.level {
+		/* display: inline-block; */
+		float: left;
+		width: 50%;
+		padding: 0 0 0 0;
+	}
+	div#smokingCostTool div.resultLevels div.level div.label,
+	div#smokingCostTool div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	div#smokingCostTool div.resultLevels div.level div.value{
+		background-color: #ffffff;
+		vertical-align: top;
+	}
+	div#smokingCostTool div.resultLevels div.indication {
+		display: inline-block;
+		float: left;
+		width: 45%;
+		padding: 0 0 0 0;
+		text-align: right;
+	}
+	div#smokingCostTool div.resultLevels div.description div.name {
+		color: #000000;
+		background-color: #ffffff;
+		font-weight: bold;
+		width: 96%;
+		padding-left: 4%;
+	}
+	div#smokingCostTool div#resultsWrapper input { font-size: 20px; padding: 4px;}
+	div#smokingCostTool div.resultLevels div.description p {
+		line-height: 16px;
+		padding: 1% 0 0 4%;
+	}
+	div#smokingCostTool div#resultsWrapper { margin-top: 20px; }
+
+
+
+/* CSS for Bowel Cancer Risk Test */
+	div#bowelcancerrisktest {}
+	div#bowelcancerrisktest div.introDiv img {
+		width: 90px;
+		height: 94px;
+		float: left; 
+		padding: 0 4px 4px 4px;
+	}
+	div#bowelcancerrisktest div.introDiv p {
+		padding-left: 4px;
+	}
+	#bowelcancerrisktest div.buttonsArea { text-align: center; }
+	#bowelcancerrisktest div.buttonsArea a.BurnedCalculatorLink { float: none; margin-right: 20px; }
+
+	#bowelcancerrisktest div.resultLevels {
+		background-color: #e9f5ff;
+		border: 4px solid #d2eaff;
+		padding: 2px;
+		float: left;
+		display: block;
+		width: 97%;
+		max-width: 450px;
+		margin-bottom: 20px;
+	}
+	#bowelcancerrisktest div.resultLevels div.level {
+		float: left;
+		width: 25%;
+		padding: 0 0 0 0;
+	}
+	#bowelcancerrisktest div.resultLevels div.level div.label,
+	#bowelcancerrisktest div.resultLevels div.indication div.label{
+		background-color: #d2eaff;
+		border-bottom: 1px solid #aeaeae;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		margin-bottom: 4px;
+	}
+	#bowelcancerrisktest div.resultLevels div.indication div.description {
+		padding: 0 10px 0 10px;
+	}
+	#bowelcancerrisktest div.inputDiv label.yesno { padding: 6px 6px; }
+
+
+
+
+

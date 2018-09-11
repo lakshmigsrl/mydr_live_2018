@@ -1,0 +1,25 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, imagemagick]
+    timezone: UTC
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: default, ip: 192.168.33.99, memory: '512', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+apache:
+    install: '1'
+    docroot: /var/www/mydr/mydr.com.au/app/
+    servername: 2016.mydr.com.au
+mysql:
+    install: '1'
+    root_password: 'password'
+    database: mydr
+    user: user
+    password: password
+    dump: ''
+php:
+    install: '1'
+    ppa: php-7.0
+
+

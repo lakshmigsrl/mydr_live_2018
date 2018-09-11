@@ -1,0 +1,22 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, imagemagick]
+    timezone: UTC
+    locale: en_US.UTF-8
+apache:
+    install: '1'
+    docroot: /var/www/mydr/mydr.com.au/app/
+    servername: qa-drme.mydr.com.au
+mysql:
+    install: '1'
+    root_password: 'password'
+    database: mydr
+    user: user
+    password: password
+    dump: ''
+php:
+    install: '1'
+    ppa: php-7.0
+
+

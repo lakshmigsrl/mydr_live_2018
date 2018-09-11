@@ -1,0 +1,87 @@
+.form_error_message {
+        display:block;
+        margin:0;
+        background-image:url('/img/errors-bg.png');
+        font-weight:bold;
+        border:1px dashed #C00;
+        color:#900;
+        padding:5px;
+        width:348px;
+}
+
+#errorMessage, #successMessage {
+        font-size:12px;
+        margin:10px 0;
+        padding:7px;
+        font-weight:bold;
+        width:340px;
+}
+#errorMessage {
+background-image:url('/img/errors-bg.png');
+border:1px dashed #C00;
+color:#900;
+padding:10px;
+}
+#errorMessage p {
+color:#900;
+}
+
+#successMessage {
+background-image:url('/img/sucess-bg.png');
+border:1px dashed #0A0;
+color:#080;
+padding:10px;
+}
+
+#printdisclaimer{
+	clear: both;
+	border: 1px solid #f1eb20;
+	padding: 20px;
+	padding-top: 30px;
+	margin-top: 60px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	font-size: 12px;
+}
+
+
+.box_shadow
+ {
+	-moz-box-shadow: 1px 2px 4px #ffffff; /* Firefox F3.5+ */
+	-webkit-box-shadow: 1px 2px 4px #ffffff; /* Safari3.0+, Chrome */
+	 box-shadow: 1px 2px 4px #ffffff; /* Opera 10.5, IE 9.0 */
+	 filter:  progid:DXImageTransform.Microsoft.dropshadow(OffX=0px, OffY=0px, Color='#ffffff'); /* IE6, IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0px, OffY=0px, Color='#ffffff')"; /* IE8 */
+}
+.box_round
+{
+	-moz-border-radius: 4px; /* FireFox 1+ */
+	-webkit-border-radius: 4px; /* Safari 3+, Chrome */
+	 border-radius: 4px; /* Opera 10.5, IE 9 */
+}
+input.prTextInput
+{
+	padding: 3px;
+}
+
+input.btnCalculateGreenButton
+{
+	color: #FCFCFC;
+	font-weight: bold;
+	background: url(/images/netstarter/backgrounds/strip_lightgreenbutton.png) repeat-x; 
+	height: 36px; 
+	line-height: 36px; 
+	width: 150px;
+	border: none;
+	cursor: pointer;
+
+	-moz-border-radius: 4px; /* FireFox 1+ */
+	-webkit-border-radius: 4px; /* Safari 3+, Chrome */
+	 border-radius: 4px; /* Opera 10.5, IE 9 */
+}
+
+input.btnCalculateGreenButton:hover
+{
+	background: url(/images/netstarter/backgrounds/strip_greenbutton.png) repeat-x; 
+
+}

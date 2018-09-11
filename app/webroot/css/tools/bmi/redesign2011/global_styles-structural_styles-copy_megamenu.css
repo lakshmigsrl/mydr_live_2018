@@ -1,0 +1,4831 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* from /css/redesign2011/global.css  -  css integration */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+.form_error_message {
+        display:block;
+        margin:0;
+        background-image:url('/img/errors-bg.png');
+        font-weight:bold;
+        border:1px dashed #C00;
+        color:#900;
+        padding:5px;
+        width:348px;
+}
+
+#errorMessage, #successMessage {
+        font-size:12px;
+        margin:10px 0;
+        padding:7px;
+        font-weight:bold;
+        width:340px;
+}
+#errorMessage {
+background-image:url('/img/errors-bg.png');
+border:1px dashed #C00;
+color:#900;
+padding:10px;
+}
+#errorMessage p {
+color:#900;
+}
+
+#successMessage {
+background-image:url('/img/sucess-bg.png');
+border:1px dashed #0A0;
+color:#080;
+padding:10px;
+}
+
+#printdisclaimer{
+	clear: both;
+	border: 1px solid #f1eb20;
+	padding: 20px;
+	padding-top: 30px;
+	margin-top: 60px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	font-size: 12px;
+}
+
+
+.box_shadow
+ {
+	-moz-box-shadow: 1px 2px 4px #ffffff; /* Firefox F3.5+ */
+	-webkit-box-shadow: 1px 2px 4px #ffffff; /* Safari3.0+, Chrome */
+	 box-shadow: 1px 2px 4px #ffffff; /* Opera 10.5, IE 9.0 */
+	 filter:  progid:DXImageTransform.Microsoft.dropshadow(OffX=0px, OffY=0px, Color='#ffffff'); /* IE6, IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0px, OffY=0px, Color='#ffffff')"; /* IE8 */
+}
+.box_round
+{
+	-moz-border-radius: 4px; /* FireFox 1+ */
+	-webkit-border-radius: 4px; /* Safari 3+, Chrome */
+	 border-radius: 4px; /* Opera 10.5, IE 9 */
+}
+input.prTextInput
+{
+	padding: 3px;
+}
+
+input.btnCalculateGreenButton
+{
+	color: #FCFCFC;
+	font-weight: bold;
+	background: url(/images/netstarter/backgrounds/strip_lightgreenbutton.png) repeat-x; 
+	height: 36px; 
+	line-height: 36px; 
+	width: 150px;
+	border: none;
+	cursor: pointer;
+
+	-moz-border-radius: 4px; /* FireFox 1+ */
+	-webkit-border-radius: 4px; /* Safari 3+, Chrome */
+	 border-radius: 4px; /* Opera 10.5, IE 9 */
+}
+
+input.btnCalculateGreenButton:hover
+{
+	background: url(/images/netstarter/backgrounds/strip_greenbutton.png) repeat-x; 
+
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* from /css/redesign2011/netstarter/Styles_Structural.css  -  css integration */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+html,body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,blockquote,fieldset,input {
+	margin: 0;
+	padding: 0;
+	
+}
+
+html
+{
+	font-size:1em !important;
+}
+
+html,body
+{
+	color:#000000;
+	font-family:Verdana, Arial; 
+	font-size:11px;
+	padding:0px 0px 0px 0px; 
+	margin:0px 0px 0px 0px;
+	height:100%;
+
+}
+
+.PageBreak		{PAGE-BREAK-AFTER: always;}
+
+img	{border-width: 0px 0px 0px 0px;}
+
+div	{padding:0px 0px 0px 0px;border-width: 0px 0px 0px 0px;}
+
+
+
+/************************************************************************
+* 	Main Containers & Borders
+************************************************************************/
+div#Background
+{
+	width:100%;
+	
+	position: absolute; 
+	top: 0px;
+	left: 0px;
+	/* height: 2000px; */
+	height: 2000px;
+	padding-top:0px;
+	
+		
+}
+
+div#MainWrapper
+{
+	width:100%;
+	float:left;
+	z-index: 100;
+	position: relative;
+	top: 0px;
+	margin: 0px auto;
+	padding: 0px; 
+	height: auto;
+	/* min-height: 2000px; */
+	min-height: 800px;
+}
+
+
+div#BannerAd
+{
+	width:728px;
+	/* height:110px; */
+	margin:auto;
+	text-align:center;
+	overflow: hidden;
+	
+}
+
+.advertisetmentHeader
+{
+/*	display: none; */
+}
+
+div#MainContainer
+{
+	width:980px;
+	margin:auto;
+}
+
+/************************************************************************
+*	Header
+************************************************************************/
+div#HeaderContainer
+{
+	width:980px;
+	height:158px;
+	float:left;
+	padding:0px 0px 0px 0px;
+	background-image: url(/images/netstarter/backgrounds/headerFill.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color:#ffffff;	
+}
+
+div#mainSkipLink
+{
+    /* border: 1px solid red; */
+    position: relative;
+    display: block;
+    height: 16px;
+    padding: 2px;
+    text-align: center;
+}
+div#mainSkipLink a{
+    position: absolute;
+    left: -999999px;
+}
+div#mainSkipLink a:focus
+{
+    position: relative;
+    left: 0;
+    z-index: 15000;
+    text-align: center;
+    position: relative;
+}
+
+div#logoContainer
+{
+	width:310px;
+	float:left;
+	padding:0px 20px 0px 20px;
+}
+div#logoContainer a div.logoHouse {
+	background: transparent url(/images/myDr_homepage_logo.png) no-repeat left top; 
+	width: 310px;
+	height: 60px;
+}
+
+
+div#SearchContainer
+{
+	width:446px;
+	height:53px;
+	float:left;
+	padding:12px 12px 0px 12px;
+	background-image: url(/images/netstarter/backgrounds/SearchBg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+div#SearchContainerTop
+{
+	width:446px;
+	display:block;
+	float:left;
+	height:38px;
+	
+	
+	}
+div#SearchContainerBottom
+{
+	width:446px;
+	float:left;
+	
+	text-align:right;
+
+	
+	}
+
+div#HeaderTopRight
+{
+	width:125px;
+	float:right;
+	height:48px;
+	padding:10px 15px 0px 10px;
+	text-align:center;
+		
+}
+
+	a.btnHelthInfo
+	{
+	display:block;
+	width:70px;
+	float:left;
+	height:14px;
+	padding:4px 10px 6px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-image: url(/images/netstarter/backgrounds/bgHealthInfo.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	text-decoration: none;
+	text-align:left;
+	border: 1px solid #ffffff;		
+		}
+		
+		a.btnHelthInfo:link
+	{
+	display:block;
+	width:70px;
+	float:left;
+	height:14px;
+	padding:4px 10px 6px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-image: url(/images/netstarter/backgrounds/bgHealthInfo.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	text-decoration: none;
+	text-align:left;
+	border: 1px solid #ffffff;
+		
+		}
+	div.results ul li a.abstract {
+		color: #a0a0a0;
+	}
+		
+			a.btnHelthInfo:visited
+	{
+	display:block;
+	width:70px;
+	float:left;
+	height:14px;
+	padding:4px 10px 6px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-image: url(/images/netstarter/backgrounds/bgHealthInfo.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	text-decoration: none;
+	text-align:left;
+	border: 1px solid #ffffff;
+		
+		}
+		
+			a.btnHelthInfo:active
+	{
+	display:block;
+	width:70px;
+	float:left;
+	height:14px;
+	padding:4px 10px 6px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-image: url(/images/netstarter/backgrounds/bgHealthInfo.gif);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	text-decoration: none;
+	text-align:left;
+	border: 1px solid #ffffff;
+		
+		}	
+		
+	a.btnHelthInfo:hover
+	{
+		display:block;
+		width:70px;
+		float:left;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #666666;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 75px 10px;
+		background-color: #eef7ff;
+		text-align:left;
+		border: 1px solid #aac9e5;
+		
+		}	
+
+
+	a.btnRegister
+	{
+		display:block;
+		width:35px;
+		float:left;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #eef7ff;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+	}
+
+	a.btnLogout
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #eef7ff;
+		/* background-image: url(/images/netstarter/downArrow.png); */
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+		
+	}
+	
+	a.btnLogin
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #eef7ff;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+		
+	}
+	
+	
+
+	
+			a.btnLogin:link
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #4086c6;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+		
+	}
+	
+	
+		a.btnLogin:active
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #4086c6;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+		
+	}
+	
+		a.btnLogin:visited
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #4086c6;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		text-align:left;
+		border: 1px solid #f0f0f0;
+		
+		
+	}
+	
+
+	
+		a.btnLogin:hover, a.btnLogin.selected
+	{
+		display:block;
+		width:42px;
+		float:right;
+		height:14px;
+		padding:4px 10px 6px 8px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #4086c6;
+		background-image: url(/images/netstarter/downArrow.png);
+		background-repeat: no-repeat;
+		background-position: 45px 10px;
+		text-decoration: none;
+		background-color: #eef7ff;
+		text-align:left;
+		border: 1px solid #aac9e5;
+		
+	}
+	
+
+
+div#NavigationContainer
+{
+	width:980px;
+	float:left;
+}
+
+div#NavigationLeft
+{
+	width:20px;
+	height:87px;
+	float:left;
+	background-image: url(/images/netstarter/backgrounds/NavLeft.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+
+div#Navigation
+{
+	width:940px;
+	height:87px;
+	float:left;
+	background-image: url(/images/netstarter/backgrounds/NavFill.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+
+div#NavigationTop
+{
+   width:940px;
+   float:left;
+}
+
+div#NavigationBottom
+{
+   width:940px;
+   float:left;
+
+}
+
+div#NavBottomBox1
+{
+	width:555px;
+	float:left;
+	padding:5px 0px 0px 0px ;
+	
+}
+
+div#Alphabetic
+{
+	width:472px;
+	float:left;
+	padding-left:2px;
+}
+
+
+
+
+
+div#AlphabeticLabel
+{
+	width:75px;
+	float:left;
+	font-size:12px; color:#3670a4; font-weight:normal; line-height:15px; font-family:Arial;
+}
+
+
+div#NavBottomBox1 a
+{
+	padding:1px 4px 1px 4px;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size: 12px;
+	color: #157ddb;
+	display:block;
+	float:left;
+	text-decoration: none;
+	border: 1px solid #d8ecff;
+	line-height:12px;
+}
+div#NavBottomBox1 a:link
+{
+	padding:1px 4px 1px 4px;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size: 12px;
+	color: #157ddb;
+	display:block;
+	float:left;
+
+	text-decoration: none;
+	border: 1px solid #d8ecff;
+	line-height:12px;
+}
+
+div#NavBottomBox1 a:active
+{
+	padding:1px 4px 1px 4px;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size: 12px;
+	color: #157ddb;
+	display:block;
+	float:left;
+
+	text-decoration: none;
+	border: 1px solid #d8ecff;
+	line-height:12px;
+}
+div#NavBottomBox1 a:visited
+{
+	padding:1px 4px 1px 4px;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size: 12px;
+	color: #157ddb;
+	display:block;
+	float:left;
+
+	text-decoration: none;
+	border: 1px solid #d8ecff;
+	line-height:12px;
+}
+
+
+
+div#NavBottomBox1 a:hover
+{
+	padding:1px 4px 1px 4px;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-size: 12px;
+	color: #157ddb;
+	display:block;
+	float:left;
+
+	background-color:#eef7ff;
+	text-decoration: none;
+	border: 1px solid #aac9e5;
+	line-height:12px;
+}
+
+
+
+div#NavBottomBox2
+{
+	width:95px;
+	float:left;
+	padding:5px 0px 0px 0px;
+	
+}
+
+div#NavBottomBox2Label
+{
+	width:56px;
+	float:left;
+	padding:2px 0px 0px 0px;
+	font-size:12px; color:#3670a4; font-weight:normal; line-height:15px; font-family:Arial;
+	white-space: nowrap;
+}
+
+div#NavBottomBox4Label
+{
+	width:35px;
+	float:left;
+	padding:2px 0px 0px 0px;
+	font-size:12px; color:#3670a4; font-weight:normal; line-height:15px; font-family:Arial;
+}
+
+
+.IconBox
+{
+	display:block;
+	float:left;
+	padding:1px;
+	width:16px;
+	padding:0px 2px 0px 2px;
+	
+}
+
+
+
+div#NavBottomBox3
+{
+	width:90px;
+	float:left;
+	padding:2px 0px 0px 0px;
+}
+
+div#NavBottomBox4
+{
+	width:120px;
+	float:right;
+	padding:4px 0px 0px 12px;
+	
+}
+
+div#NavBottomBoxGooglePlus
+{
+	width:50px;
+	float:right;
+	padding:6px 0px 0px 5px;
+}
+
+div#NavigationRight
+{
+	width:20px;
+	height:87px;
+	float:left;
+	background-image: url(/images/netstarter/backgrounds/NavRight.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.SearchBox
+{
+	width:270px;
+	padding:5px 5px 3px 5px;
+	float:left;
+	border:1px none #ffffff;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 13px;
+	color: #666;
+	font-weight: normal!important;
+	font-variant: normal;
+}
+div#SearchInputBox
+{
+	width:280px;
+	float:left;
+	height:34px;
+	margin-right:5px;
+
+}
+
+
+.SearchButton
+{
+	width:67px;
+	float:right;
+	height:26px;
+	display:block;
+	background-image: url(/images/netstarter/buttons/btnSearch.png);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+
+.SearchButton:hover
+{
+	width:67px;
+	float:right;
+	height:26px;
+	display:block;
+	background-image: url(/images/netstarter/buttons/btnSearch_r.png);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+
+
+div#LoginContainer
+{
+	width:203px;
+	float:left;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #60b1fd;
+	padding:10px 0px 0px 0px;
+	right:15px;
+	position:absolute;
+	right:10px;
+	top:36px;
+	background-color:#FFF;
+	z-index: 12500;
+	
+	box-shadow: 0 4px 15px  #5c5b5b;
+	-moz-box-shadow: 0 4px 15px #5c5b5b; /* FF3.5+ */
+  -webkit-box-shadow: 0 4px 15px #5c5b5b; /* Saf3.0+, Chrome */
+    box-shadow: 0 4px 15px #5c5b5b; /* Opera 10.5, IE9, Chrome 10+ */
+	behavior: url(PIE.htc);
+}
+
+	.LoignLabel
+	{
+		width:192px;
+		float:left;
+		display:block;
+		padding:6px 0px 4px 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #323232;
+	}
+	
+	.ForgotPassLabel
+	{
+		width:192px;
+		float:left;
+		display:block;
+		padding:0px 0px 12px 10px;
+	}
+	
+	.LoginInputContainer
+	{
+		width:192px;
+		float:left;
+		padding:0px 0px 0px 10px;
+		height:32px;
+		}
+		
+	.LoginTextInput
+	{
+		width:164px;
+		float:left;
+		padding:2px 5px 3px 5px;
+		border: 1px solid #b3b3b3;
+		}
+		
+		div#JoinmyDrContainer
+		{
+			display:block;
+			height:23px;
+			width:192px;
+			float:left;
+			padding:12px 2px 9px 8px;
+			background-color:#eaeaea;
+			margin-top:10px;
+			
+			
+		}
+		
+		div#LoginbuttonContainer
+		{
+			width:193px;
+			float:left;
+			padding:0px 0px 0px 10px;
+		}
+		div#LoginbuttonContainer img
+		{
+			cursor: pointer;
+		}
+
+#HeaderTop
+{
+	position:relative;
+}
+
+#SearchContainer
+{
+	position:relative;
+}
+
+.jq_dropdown_content
+{
+	z-index:9999;
+}
+
+
+
+#HealthInfoDrop, 
+#HealthInfoDropMobile
+{
+	width:104px;
+	background-color:#FFF;
+	position:absolute;
+	top:38px;
+	right:82px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #60b1fd;
+	
+	z-index: 15000;
+	box-shadow: 0 4px 9px  #5c5b5b;
+	 -moz-box-shadow: 0 4px 9px  #5c5b5b; /* FF3.5+ */
+  	-webkit-box-shadow: 0 4px 9px  #5c5b5b; /* Saf3.0+, Chrome */
+	box-shadow: 0 4px 9px  #5c5b5b; /* Opera 10.5, IE9, Chrome 10+ */
+		  
+		   behavior: url(PIE.htc);
+	
+}
+#HealthInfoDropMobile{
+	width:80px;
+	top:18px;
+	right:30px;
+
+}
+#HealthInfoDropMobile a.HealthInfo{
+	width:60px;
+	padding: 2px 10px 2px 10px;
+}
+
+	a.HealthInfo
+	{
+		width:84px;
+		float:left;
+		padding:5px 10px 5px 10px;
+		
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #323232;
+	text-decoration: none;
+	}
+	
+	
+		a.HealthInfo:link;
+	{
+	width:84px;
+	float:left;
+	padding:5px 10px 5px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #323232;
+	text-decoration: none;
+	}
+	
+			a.HealthInfo:active
+	{
+	width:84px;
+	float:left;
+	padding:5px 10px 5px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #323232;
+	text-decoration: none;
+	}
+	
+			a.HealthInfo:visited
+	{
+	width:84px;
+	float:left;
+	padding:5px 10px 5px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #323232;
+	text-decoration: none;
+	}
+			a.HealthInfo:hover
+	{
+	width:84px;
+	float:left;
+	padding:5px 10px 5px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #323232;
+	text-decoration: none;
+	background-color:#d2eaff;
+	}
+/************************************************************************
+*	MainBody
+************************************************************************/
+div#MainBodyContainer
+{
+	width:940px;
+	width:980px;
+	min-height:800px;
+	float:left;
+	padding:14px 20px 0px 20px;
+	background-color:#ffffff;
+	
+}
+
+div#MainBodyLeftPane
+{
+	width:620px;
+	float:left;
+	padding:0px 0px 10px 0px;
+	}
+	
+
+div#NewsMainContainer
+{
+	width:620px;
+	float:left;
+	
+	
+}
+
+
+
+div#MainNewsHeading
+{
+	width:620px;
+	float:left;
+	padding:6px 0px 10px 0px;
+}
+
+				div.BlackCapital
+				{
+					font-family: Arial;
+					font-size: 12px;
+					font-weight: bold;
+					color: #333333;
+					text-transform: uppercase;
+					width: 100px;
+					float: left;
+				}
+				div#marqueeID{
+					height: 15px;
+					width:  510px;
+					float:  right;
+					display: none;
+				}
+				
+				.MainCopyBLue
+				{
+					font-family: Arial;
+					font-size: 12px;
+					font-weight: normal;
+					color: #157ddb;
+
+				}
+				
+div#NewsHeader
+{
+					
+}
+
+div#carouselContainer
+{
+	width:620px;
+	height:255px;
+	float:left;
+	padding:6px 0px 20px 0px;
+	overflow: hidden;
+}
+
+div.carouselImageContainer
+{
+	width:360px;
+	float:left;
+}
+
+div.carouselTextContainer
+{ 
+	width:240px;
+	float:right;
+}
+
+div.carouselMainText
+{
+	width:240px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666666;	
+	line-height:20px;
+}
+
+div.carouselOtherPosts
+{
+	width:240px;
+	float:left;
+	padding:5px 0px 0px 0px;
+}
+
+		ul.carouselTitles
+		{
+			list-style:none;
+			padding:0px;
+			margin:0px;
+		}
+		
+		ul.carouselTitles li
+		{
+			list-style:none;
+			padding:0px 0px 0px 0px;
+			margin:0px;
+			background-image:none;
+		}
+		
+		ul.carouselTitles li a
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:22px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 7px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.carouselTitles li a:link
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:22px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 7px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.carouselTitles li a:visited
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:22px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 7px;
+			background-repeat: no-repeat;			
+		}
+		
+		ul.carouselTitles li a:active
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:22px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 7px;
+			background-repeat: no-repeat;		}
+		
+		ul.carouselTitles li a:hover
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #2e9cff;
+			line-height:22px;
+			text-decoration: underline;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 7px;
+			background-repeat: no-repeat;
+		}
+						
+
+div#carouselBottomPosts
+{
+	width:620px;
+	float:left;
+	height:75px;
+	padding:5px 0px 20px 0px;
+	
+}
+
+			div.carouselBottomPostBox
+			{
+				width:206px;
+				float:left;
+				height:75px;
+			}
+			div.carouselBottomPostImage
+			{
+				width:76px;
+				float:left;
+			}
+
+			div.carouselBottomPostImage
+			{
+				width:76px;
+				float:left;
+			}
+			
+			div.carouselBottomPostText
+			{
+				width:107px;
+				float:right;
+				padding:0px 15px 0px 0px;
+			}
+			
+			
+
+div#NewsMainBottom1
+{
+	width:620px;
+	float:left;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;	
+	padding:20px 0px 20px 0px;
+	
+	}
+
+
+
+
+
+div#NewsMainBottom2
+{
+	width:620px;
+	float:left;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;	
+	padding:20px 0px 5px 0px;
+	
+	}
+
+
+			div.imageBox
+			{
+				width:100px;
+				float:left;
+				display:block;
+				padding:0px 30px 0px 0px;
+				height:110px;
+			}
+			div.imageBoxRight
+			{
+				width:100px;
+				float:left;
+				display:block;
+				padding:0px 0px 0px 0px;	
+				height:110px;			
+			}
+
+	
+div#MainBodyRightPane
+{
+	width:300px;
+	float:right;
+}
+
+div.BannerContainer
+	{
+		/* width:300px; */
+		width: 100%;
+		float:left;
+		padding:5px 0px 0px 0px;
+		overflow: hidden;
+	}
+div.cmiAdsense
+	{
+		width:300px;
+	}
+
+
+
+
+div.GrayBox
+{
+	width:280px;
+	float:left;
+	background-color:#eaeaea;
+	margin-top:10px;
+	min-width:100px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;	
+	padding:0px 10px 0px 10px;
+	display:block;
+}
+
+		.GrayboxPadding
+		{
+			display:block;
+			padding:4px 0px 8px 0px;
+			float:left;
+			width:100%;
+		}
+		
+		.EmailSubscriptionContainer
+		{
+			width:272px;
+			float:left;
+			/* height:30px; */
+			background-image: url(/images/netstarter/backgrounds/EmailNewsletterBg.png);
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding:3px 0px 10px 8px;
+		}
+		
+		.NewsLetterInput
+		{
+	width:194px;
+	float:left;
+	padding:5px 2px 2px 2px;
+	border:1px none #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #888888;
+		}
+		.SignupButton
+		{
+			width:67px;
+			float:right;
+			height:22px;
+			padding:2px 0px 0px 3px;
+			background-image: url(/images/netstarter/buttons/btnSignUp.png);
+			background-repeat: no-repeat;
+			background-position: left 1px;			
+			position: absolute;
+			}
+			
+		.SignupButton:hover
+		{
+			width:67px;
+			float:right;
+			height:22px;
+			padding:2px 0px 0px 3px;
+			background-image: url(/images/netstarter/buttons/btnSignUp_r.png);
+			background-repeat: no-repeat;
+			background-position: left 1px;			
+			}
+			
+			
+		div#BMIContent
+		{
+			width:256px;
+			float:right;
+			display:block;
+			padding:20px 0px 15px 24px;
+			background-color:#f7f7f7;
+		}
+		
+		div.LabelConatiner
+		{
+			width:55px;
+			float:left;
+			height:32px;
+			text-align:right;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			color: #333333;
+			padding:4px 10px 2px 0px;			
+		}
+		div.BMITextInputConatiner
+		{
+			width:150px;
+			float:left;
+			height:35px;
+			background-image: url(/images/netstarter/backgrounds/smallTextInput.png);
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding:5px 0px 0px 5px;
+		}
+		
+		.BMITextInput
+		{
+			width:65px;
+			float:left;
+			border:1px none #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			text-align:right;
+			font-weight: normal;
+			color: #888888;
+			padding:3px 0px 3px 3px;
+			
+		}
+		
+		.UnitContainer
+		{
+			display:block;
+			width:22px;
+			float:left;
+			padding:3px 2px 0px 2px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #333333;
+			font-weight: 500;
+			margin-right:15px;
+		}
+		
+		.CalculateButtonContainer
+		{
+			width:229px;
+			float:left;
+			height:37px;
+			display:block;
+			background-image: url(/images/netstarter/buttons/btnCalculateBMI.png);
+			background-repeat: no-repeat;
+			background-position: left top;
+			margin-top:15px;
+			
+		}
+		
+		.CalculateButtonContainer:hover
+		{
+			width:229px;
+			float:left;
+			height:37px;
+			display:block;
+			background-image: url(/images/netstarter/buttons/btnCalculateBMI_r.png);
+			background-repeat: no-repeat;
+			background-position: left top;
+			margin-top:15px;
+			
+		}
+		
+
+div#Box1
+{
+	width:199px;
+	float:left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b3b3b3;
+}
+
+div.SubHeadingContainer
+{
+	display:block;
+	padding:0px 0px 10px 0px;
+	
+	}
+
+
+		ul.BulletLinks
+		{
+			width:99%;
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			display:block;
+			float:left;
+		}
+		
+		ul.BulletLinks li
+		{
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			background-image:none;
+			
+		}
+		
+		ul.BulletLinks li a
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:20px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.BulletLinks li a:link
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:20px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.BulletLinks li a:visited
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:20px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;			
+		}
+		
+		ul.BulletLinks li a:active
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:20px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;		}
+		
+		ul.BulletLinks li a:hover
+		{
+			display:block;
+			padding:0px 0px 0px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #2e9cff;
+			line-height:20px;
+			text-decoration: underline;
+			background-image: url(/images/netstarter/bullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;			
+		}
+
+
+div#Box2
+{
+	width:190px;
+	float:left;
+	padding:0px 10px 0px 9px ;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b3b3b3;
+}
+
+	.JumpMenuContainer
+	{
+		width:100%;
+		float:left;
+	}
+	.JumpMenu
+	{
+	width:120px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4b4949;
+	border: 1px solid #b3b3b3;
+	margin:1px 0px 0px 0px;	
+	}
+	.MedicineSearchImput
+	{
+	width:120px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #b3b3b3;
+	padding:2px 5px 2px 5px;
+	}
+
+	.GoMedicineSearch,	
+	.GoButtonContainer
+	{
+	width:38px;
+	float:left;
+	height:21px;
+	background-image: url(/images/netstarter/buttons/btnGo.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	}
+	.GoMedicineSearch{
+	margin: 8px 2px 2px 0px;
+
+	}
+
+
+	.GoButtonContainer:hover
+	{
+	width:38px;
+	float:left;
+	height:21px;
+	background-image: url(/images/netstarter/buttons/btnGo_r.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	}
+
+
+div#Box3
+{
+	width:190px;
+	float:right;
+	padding:0px 10px 0px 10px ;
+}
+
+/************************************************************************
+*	Internal
+************************************************************************/
+div#BreadcrumbContainer
+{
+	width:620px;
+	float:left;
+	padding:6px 0px 12px 0px;
+}
+
+	.BreadcrumbActivePost
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999999;		
+	}
+
+div#MainContentBox
+{
+	width:100%;
+	float:left;
+	padding:0px 0px 15px 0px;
+
+}
+
+
+div#ContentLinkContainer
+{
+	width:100%;
+	float:left;
+	padding:15px 0px 15px 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+}
+
+div.ContentLinkContainer
+{
+	width:100%;
+	float:left;
+	padding:15px 0px 15px 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+}
+
+	
+	div.GrayBoxLong
+		{
+			width:596px;
+			margin-top:0px 10px 10px 10px;
+			float:left;
+			background-color:#f7f7f7;
+			margin-top:0px 10px 10px 10px;
+			min-width:100px;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: #3687c8;
+			padding:12px ;
+			display:block;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #cccccc;
+			margin-bottom:15px;
+		}
+	
+	ul.OrangeBulletLinks
+		{
+			width:198px;
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			display:block;
+			float:left;
+		}
+		
+		ul.OrangeBulletLinks li
+		{
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			background-image:none;
+		}
+		
+		ul.OrangeBulletLinks li a
+		{
+			display:block;
+			padding:0px 0px 0px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:21px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/OrangeBullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.OrangeBulletLinks li a:link
+		{
+			display:block;
+			padding:0px 0px 0px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:21px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/OrangeBullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;
+		}
+		
+		ul.OrangeBulletLinks li a:visited
+		{
+			display:block;
+			padding:0px 0px 0px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:21px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/OrangeBullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;			
+		}
+		
+		ul.OrangeBulletLinks li a:active
+		{
+			display:block;
+			padding:0px 0px 0px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #157ddb;
+			line-height:21px;
+			text-decoration: none;
+			background-image: url(/images/netstarter/OrangeBullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;		}
+		
+		ul.OrangeBulletLinks li a:hover
+		{
+			display:block;
+			padding:0px 0px 0px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #8c8c8c;
+			line-height:21px;
+			text-decoration: underline;
+			background-image: url(/images/netstarter/OrangeBullet.png);
+			background-position: left 6px;
+			background-repeat: no-repeat;			
+		}
+		
+		ul.OrangeBulletLinks li a.selected
+		{
+			color: #8c8c8c;
+		}
+		
+div#TopicBottomLinks
+{
+	width:620px;
+	float:left;
+	padding:15px 0px 15px 0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;
+}
+
+div.HeaderContainer
+{
+	display:block;
+	width:100%;
+	float:left;
+	padding:0px 0px 10px 0px;
+}
+
+div.smallLinkBox h3
+{
+	line-height:20px;
+
+}
+
+div#FeaturedContainer
+{
+	width:600px;
+	float:left;
+	background-color:#f3f3f3;
+	padding:5px 10px 0px 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b3b3b3;
+}
+
+div.GrayBoxLight
+		{
+			width:596px;
+			margin-top:0px 10px 10px 10px;
+			float:left;
+			background-color:#f7f7f7;
+			margin-top:0px 10px 10px 10px;
+			min-width:100px;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: #3687c8;
+			padding:12px ;
+			display:block;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #cccccc;
+			margin-bottom:15px;
+		}
+div#MainBodyLeftPane div.GrayBoxMobile {
+	display: none;
+}
+		
+
+
+
+/************************************************************************
+*	healthcentre
+************************************************************************/	
+.smallLinkBox
+{
+	width:195px;
+	float:left;
+	display:block;
+	padding:0px 10px 0px 0px;
+	
+	
+	}
+	
+.MediumLinkBox
+{
+	width:300px;
+	float:left;
+	display:block;
+	padding:0px 10px 0px 0px;
+}
+/************************************************************************
+*	Tools
+************************************************************************/	
+
+div#ShareButtonsContainer, div#ShareButtonsContainerBottom 
+{
+	width:460px;
+	float:left;
+	padding:5px 0px 5px 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #cccccc;
+	border-bottom-color: #cccccc;
+	margin-bottom:10px;
+	
+	
+}
+div#ShareButtonsContainerBottom { display: none; }
+
+div#ShareButtons
+{
+	width:312px;
+	float:left;
+}
+
+div#InternalLeft
+{
+	width:460px;
+	float:left;
+}
+
+div#InternalRight
+{
+	width:140px;
+	float:right;
+}
+div.cmi-tab.inner-tabs div#InternalRight
+{
+	margin-top: 12px;
+}
+div#PrintContainer
+{
+	width:130px;
+	float:right;
+	padding:0px 13px 0px 0px;
+	
+}
+
+	.btnEmail
+	{
+		width:60px;
+		float:right;
+		height:20px;
+		background-image: url(/images/netstarter/buttons/btnEmail.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		margin-left: 2px;
+	}
+	
+		.btnEmail:hover
+	{
+		width:60px;
+		float:right;
+		height:20px;
+		background-image: url(/images/netstarter/buttons/btnEmail_r.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	
+		.btnPrint
+	{
+		width:60px;
+		float:right;
+		height:20px;
+		background-image: url(/images/netstarter/buttons/btnPrint.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	
+		.btnPrint:hover
+	{
+		width:60px;
+		float:right;
+		height:20px;
+		background-image: url(/images/netstarter/buttons/btnPrint_r.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+
+div.MiddleLinkContainer
+	{
+	width:145px;
+	float:left;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;
+	padding:0px 0px 10px 0px;
+	margin-bottom:15px;
+	}
+		div.LinkHeader
+		{
+	width:135px;
+	float:left;
+	padding:10px 5px 5px 5px;
+	background-color: #f3f3f3;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+		}
+		
+		div#BurnedCalculatorContainer
+		{
+		width:440px;
+		float:left;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-color: #3687c8;
+		background-color:#eaeaea;
+		padding:14px 10px 10px 10px;
+		}
+		
+		.SmallTextInput
+		{
+			width:87px;
+			float:left;
+			border:1px none #ffffff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #888888;
+			padding:3px 0px 3px 3px;
+			margin-right:15px;
+		}
+		
+		
+		
+		div#BurnedCalculatorFormContainer
+		{
+			width:440px;
+			float:left;
+			background-color:#f7f7f7;
+			padding:5px 0px 5px 0px;
+		}
+		
+		div.BurnedCalculatorLabel, 
+		.ToolsNetstarterLabel
+		{
+			width:110px;
+			float:left;
+			height:32px;
+			text-align:right;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			color: #333333;
+			padding:0px 10px 2px 0px;
+		}
+		div.BurnedCalculatorField
+		{
+			width:315px;
+			float:left;
+			height:35px;
+			background-image: url(/images/netstarter/backgrounds/smallTextInput.png);
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding:3px 0px 0px 5px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #333333;
+		}
+		
+		
+		div.BurnedCalculatorField2
+		{
+			width:320px;
+			float:left;
+			height:35px;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #333333;
+		}
+		
+		.RadioBox
+		{
+			padding:2px 0px 0px 0px ;
+			
+		}
+		
+		
+		.RadioTxt
+		{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding:0px 0px 0px 5px;
+			}
+		
+		
+		.BurnedCalculatorDropDown
+		{
+			width:310px;
+			float:left;
+			border: 1px solid #abadb3;			
+		}
+		
+		.RadioText
+		{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #333333;
+			text-decoration: none;			
+			
+		}
+		
+		div#BurnedCalculatorCalculateContainer
+		{
+			width:410px;
+			float:left;
+			padding:10px 0px 05px 10px;
+			
+			}
+			
+			.BurnedCalculatorLink
+			
+				{
+					width:100px;
+					float:left;
+					text-align:right;
+					padding:10px 0px 0px 0px;
+				}
+				
+				div#BurnedCalculatorCalculateContainer img
+				{
+					width:169px;
+					float:left;
+					padding:0px 0px 0px 8px;
+				}
+				
+				div#ResultContainer
+				{
+					width:460px;
+					float:left;
+					padding:0px 0px 0px 0px;
+					border-bottom-width: 1px;
+					border-bottom-style: solid;
+					border-bottom-color: #cccccc;
+				}
+				
+				
+				.btnPrintResult
+				{
+					width:100px;
+					float:right;
+					display:block;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					color: #157ddb;
+					background-image: url(/images/netstarter/buttons/icnPrint.png);
+					background-repeat: no-repeat;
+					background-position: left 8px;
+					padding:0px 0px 3px 25px;
+					
+				}
+				
+				.btnPrintResult2
+				{
+					width:100px;
+					float:left;
+					display:block;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					color: #157ddb;
+					background-image: url(/images/netstarter/buttons/icnPrint.png);
+					background-repeat: no-repeat;
+					background-position: left 3px;
+					padding:4px 0px 5px 25px;				
+				}
+				
+				
+				div#ResultContent
+				{
+					width:420px;
+					float:left;
+					background-color:#e9f5ff;
+					padding:10px;
+					margin:10px 0px 10px 0px;
+					border: 10px solid #d2eaff;
+				}
+				
+				div.ResultLabel
+				{
+					width:167px;
+					float:left;
+					height:30px;
+					text-align:right;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					font-weight: bold;
+					color: #333333;
+					padding:6px 10px 2px 0px;
+				}
+				div.ResultLabel3
+				{
+					width:167px;
+					float:left;
+					height:30px;
+					text-align:right;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					font-weight: bold;
+					color: #333333;
+					padding:8px 10px 2px 0px;
+				}
+				
+				div.ResultField
+				{
+					width:235px;
+					float:right;
+					height:33px;
+					padding:7px 0px 0px 5px;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					color: #333333;
+				}
+				
+				div.ResultField2
+				{
+	width:235px;
+	float:right;
+	height:33px;
+	padding:5px 0px 0px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #888888;
+	font-weight: bolder;
+				}
+				
+				div.ResultBottomFiled
+				{
+					width:420px;
+					float:left;
+					border-bottom-width: 2px;
+					border-bottom-style: solid;
+					border-bottom-color: #e9f5ff;
+					background-color: #ffffff;
+				}
+				
+				div.ResultLabel2
+				{
+					width:167px;
+					float:left;
+					height:38px;
+					text-align:right;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					font-weight: bold;
+					color: #888888;
+					padding:6px 10px 2px 0px;
+				}
+				
+			div#ReferenceHeaderCaontainer	
+			{
+				width:460px;
+				float:left;
+			}
+				
+				a.HeaderReference
+				{
+	float:left;
+	font-size:16px;
+	font-weight:600;
+	color:#157ddb;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	background-image: url(/images/netstarter/TopBullet.png);
+	background-repeat: no-repeat;
+	background-position: right 7px;
+	padding:0px 20px 0px 0px;
+	margin-right:367px;
+	text-decoration: none;					
+				}
+				
+				a.HeaderReference.down
+				{
+					background-image: url(/images/netstarter/TopBulletDown.png)!important;
+					background-repeat: no-repeat!important;
+					
+					
+				}
+				
+				a.HeaderReference:link
+				{
+	
+					float:left;
+					font-size:16px;
+					color:#157ddb;
+					font-family: "myriad-pro-1","myriad-pro-2";
+					background-image: url(/images/netstarter/TopBullet.png);
+					background-repeat: no-repeat;
+					background-position: right 7px;
+					padding:0px 20px 0px 0px;
+					margin-right:367px;
+						text-decoration: none;						
+					
+				}
+
+				a.HeaderReference:active
+				{
+	
+					float:left;
+					font-size:16px;
+					color:#157ddb;
+					font-family: "myriad-pro-1","myriad-pro-2";
+					background-image: url(/images/netstarter/TopBullet.png);
+					background-repeat: no-repeat;
+					background-position: right 7px;
+					padding:0px 20px 0px 0px;
+					margin-right:367px;
+						text-decoration: none;						
+					
+				}
+				
+				a.HeaderReference:visited
+				{
+	
+					float:left;
+					font-size:16px;
+					color:#157ddb;
+					font-family: "myriad-pro-1","myriad-pro-2";
+					background-image: url(/images/netstarter/TopBullet.png);
+					background-repeat: no-repeat;
+					background-position: right 7px;
+					padding:0px 20px 0px 0px;
+					margin-right:367px;
+						text-decoration: none;						
+					
+				}
+				a.HeaderReference:hover
+				{
+	
+					float:left;
+					font-size:16px;
+					color:#157ddb;
+					font-family: "myriad-pro-1","myriad-pro-2";
+					background-image: url(/images/netstarter/TopBullet.png);
+					background-repeat: no-repeat;
+					background-position: right 7px;
+					padding:0px 20px 0px 0px;
+					margin-right:367px;
+						text-decoration: none;						
+					
+				}
+				div#DisqusComment
+				{
+					width:460px;
+					float:left;
+					border-top-width: 2px;
+					border-top-style: solid;
+					border-top-color: #3687c8;
+					padding:10px 0px 10px 0px;
+				}
+				
+				div#DisqusComment ul li
+				{
+					background-image:none;
+
+
+				}
+				
+				div#disqus_thread
+				{
+					width:460px;
+					float:left;
+				}
+				.ResultField1
+				{
+				
+					width:220px;
+					float:left;
+					height:30px;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 18px;
+					font-weight: bold;
+					color: #333333;
+					padding:5px 10px 2px 5px;
+					
+				}
+		
+/************************************************************************
+*	Medicine
+************************************************************************/
+
+div#SearchMediContainer
+{
+	width:460px;
+	float:left;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;
+	padding:5px 0px 5px 0px;
+}
+div#SearchMediHeader
+{
+	width:460px;
+	float:left;
+	padding:0px 0px 5px 0px;
+}
+
+div#SearchMediHeaderText
+{
+	width:435px;
+	float:left;
+}
+
+
+.SearcinfoIcon
+{
+	width:22px;
+	height:20px;
+	float:right;
+	padding:3px 0px 0px 0px;
+}
+
+div.searchMedicineForm, 
+div#SearchFromContainer
+{
+	width:436px;
+	float:left;
+	background-color:#ddefff;
+	padding:25px 12px 25px 12px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #cccccc;
+	border-bottom-color: #cccccc;	
+	}
+
+div.searchMedicineForm{
+	height: 75px;
+	margin-bottom: 10px;
+	padding: 4px 12px 20px 12px;
+}
+div.searchMedicineForm p.medicineNote {
+	font-style: italic;
+	font-size: 10px;
+	clear: both;
+	line-height: 16px;
+	padding-top: 2px;
+}
+	
+	.SearchMediDropDown
+	{
+		
+	width:140px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4b4949;
+	border: 1px solid #b3b3b3;
+	margin:1px 0px 0px 0px;	
+	}
+div.medicineSearchBox,
+div#SearchBoxContainer
+{
+	width:380px;
+	height:21px;
+	float:left;
+	/* background-image: url(/images/netstarter/backgrounds/searchMediBg.png); */
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding:4px 0px 0px 10px;
+	border:none;
+}
+div.medicineSearchBox input {
+	padding: 6px;
+	width: 360px;
+
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow:inset 2px 2px 2px 2px #D6D6D6;
+	box-shadow:inset 2px 2px 2px 2px #D6D6D6;
+}
+
+	.SearchMediTxtinput
+	{
+	width:200px;
+	float:left;
+	border:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 13px;
+	}
+
+		.SearchMediDropDown
+			{
+			width:138px;
+			float:left;
+			height:22px;
+			display:block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #4b4949;
+			margin:0px 5px 0px 0px;
+			
+			}
+			
+		div.GrayBoxMedium
+		{
+			width:436px;
+			margin-top:0px 10px 10px 10px;
+			float:left;
+			background-color:#eaeaea;
+			margin-top:0px 10px 10px 10px;
+			min-width:100px;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: #3687c8;
+			padding:12px ;
+			display:block;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #cccccc;
+			margin-bottom:15px;
+		}
+
+		
+		div#MediLinkContainer
+			{
+	display:block;
+	width:460px;
+	float:left;
+	padding:15px 0px 15px 0px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #3687c8;
+
+			}
+		
+		div.MediLinkBox
+			{
+				width:220px;
+				float:left;
+				display:block;
+				padding:0px 10px 0px 0px;
+				
+				
+				}
+				
+		div#MediTabContainer
+		{
+			width:440px;
+			float:left;
+			padding:10px 10px 10px 10px;
+			background-color:#f3f3f3;
+			margin-bottom:15px;
+
+
+			}	
+			
+		div#MediTabContainer .tabs
+		{
+			float:left;
+			position:relative;
+			display:block;	
+		}
+		div#MediTabContainer .selected
+		{
+			float:left;
+			position:relative;
+			display:block;	
+		}
+		
+		
+		div.MeditipsBox
+		{
+			width:160px;
+			float:left;
+		}
+		div.MeditipsBox1
+		{
+			width:140px;
+			float:left;
+		}
+		
+		div#MediTipContentBoxContainer
+		{
+			display:block;
+			width:460px;
+			float:left;
+			padding:5px 0px 5px 0px;
+		}
+		div#MediTipContainer
+		{
+			display:block;
+			width:460px;
+			float:left;
+			padding:5px 0px 10px 0px;
+		}
+		
+		a.MediTipsText
+		{
+			display:block;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #157ddb;
+			text-decoration: none;			
+			
+		}
+		
+		a.MediTipsText:link
+		{
+			display:block;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #157ddb;
+			text-decoration: none;			
+			
+		}
+		
+	
+		a.MediTipsText:active
+		{
+			display:block;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #157ddb;
+			text-decoration: none;			
+			
+		}
+				a.MediTipsText:visited
+		{
+			display:block;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #157ddb;
+			text-decoration: none;			
+			
+		}
+		
+				a.MediTipsText:hover
+		{
+			display:block;
+			padding:5px 0px 5px 0px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #157ddb;
+			text-decoration: underline;			
+			
+		}
+		
+ul.tabNavigation
+{
+	display:Block;
+	width:440px;
+	float:left;
+	display:block;
+	margin:0px;
+	padding:0px;
+	z-index:10!important;
+	position:relative;
+}
+
+div#MediTabContainer ul.tabNavTail {
+	display: none;	
+}
+
+ul.tabNavigation li
+{
+
+	list-style:none;
+	padding:0px!important;
+	margin:0px!important;
+	background-image:none!important;
+	
+	
+	
+}
+
+
+
+
+div#tabContentContainer
+{
+	width:440px;
+	float:left;
+	margin-top:-1px;
+	position:relative;
+	z-index:0;
+
+
+}
+
+div.TabinsideBox
+{
+	width:190px;
+	float:left;
+	padding-right:15px;
+}
+div.TabinsideBox-Narrow {
+	width: 132px;
+	padding-right: 6px;
+}
+
+
+
+ul.tabNavigation a.tabLink
+{
+	display:block;
+	float:left;
+	padding:5px 10px 5px 10px;
+	margin:0px 3px 0px 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-left-color: #cccccc;
+	text-decoration: none;
+	background-color:#e9f5ff;	
+}
+
+ul.tabNavigation a.tabLink.selected
+{
+	display:block;
+	float:left;
+	padding:5px 10px 5px 10px;
+	margin:0px 3px 0px 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #ffffff;
+	border-left-color: #cccccc;
+	text-decoration: none;
+
+	background-color:#ffffff;
+	
+}
+
+ul.tabNavigation a.tabLink:hover
+{
+	display:block;
+	float:left;
+	padding:5px 10px 5px 10px;
+	margin:0px 3px 0px 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #ffffff;
+	border-left-color: #cccccc;
+	text-decoration: none;
+	background-color:#ffffff;
+	
+}
+
+
+
+.tabContent
+{
+	
+	width:418px;	
+	background-color:#ffffff;
+	border: 1px solid #cccccc;
+	padding:10px 10px 10px 10px;
+	margin:0px;	
+	display:none;
+	
+}
+
+.tabWrapper
+{
+	height:320px;
+	overflow:hidden;
+}
+
+.tabContent.selected
+{
+	display:block;
+}
+
+
+.ExpandListingContainer
+{
+	width:100%;
+	float:left;
+	padding:5px 0px 5px 0px;
+}
+
+
+a.brnExpandList
+{
+	width:90px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList
+{
+	width:90px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList:link
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList:visited
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList:active
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList:hover
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/downArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}		
+	
+	
+
+
+
+
+
+
+
+
+
+a.brnExpandList.collapse
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/upArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+a.brnExpandList.collapse:link
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/upArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+
+a.brnExpandList.collapse:visited
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/upArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+a.brnExpandList.collapse:active
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/upArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+a.brnExpandList.collapse:hover
+{
+	width:100px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #157ddb;
+	background-image: url(/images/netstarter/upArrow.png)!important;
+	background-repeat: no-repeat;
+	background-position: right 6px;
+}
+
+div.GrayBoxMediumLight
+		{
+			width:436px;
+			margin-top:0px 10px 10px 10px;
+			float:left;
+			background-color:#f7f7f7;
+			margin-top:0px 10px 10px 10px;
+			min-width:100px;
+			border-top-width: 2px;
+			border-top-style: solid;
+			border-top-color: #3687c8;
+			padding:12px ;
+			display:block;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #cccccc;
+			margin-bottom:15px;
+		}
+	
+	
+	
+		
+/************************************************************************
+*	BlackBg Tempaltes\
+************************************************************************/		
+		
+		
+
+
+div#MainBodyContainerBlack
+{
+	width:940px;
+	float:left;
+	padding:0px 20px 0px 20px;
+	
+}
+
+div#FooterWrapperBlack
+{
+	width:100%;
+	float:left;
+	background-color:#000000;
+	background-position: left top;
+}
+
+/************************************************************************
+*	Article
+************************************************************************/
+div#ReferenceLinkContainer
+
+{
+	width: 450px;
+	float:left;
+	padding:5px 0px 5px 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 2px;
+}
+
+div#ReferenceContain
+{
+	width: 450px;
+	float:left;
+	padding:10px 0px 10px 0px;
+}
+
+div#ReferenceContain ol li
+{
+	width: 450px;
+	float: left;
+	word-wrap: break-word;
+}
+/************************************************************************
+*	Footer
+************************************************************************/
+div#FooterWrapper
+{
+	width:100%;
+	float:left;
+	background-image: url(/images/netstarter/backgrounds/FooterBg2.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+div#FooterContainer
+{
+	width:980px;
+	margin:auto;
+	/* min-height:950px;  */
+	background-image: url(/images/netstarter/backgrounds/FooterBg2.jpg);
+	background-repeat: repeat-x;
+
+	
+}
+
+div#FooterTopBorder
+{
+	width:940px;
+	float:left;
+	padding:10px 20px 0px 20px;
+	
+	
+}
+div#FooterSEOLinkContainer
+{
+	width:950px;
+	float:left;
+	padding:4px 10px 20px 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #c9bfb5;
+}
+
+
+
+
+
+		div#FooterSEOLinkBox1
+		{
+			width:400px;
+			float:left;
+			display: none;
+		}
+		
+			div#HealthBox1
+			{
+				width:160px;
+				float:left;
+			}
+			
+			div#HealthBox2
+			{
+				width:160px;
+				float:left;
+			}
+		
+		div#FooterSEOLinkBox2
+		{
+			width:240px;
+			float:left;
+		}
+		
+		.FooterSEOLinkBox2Row
+		{
+			width:240px;
+			display:block;
+			float:left;
+			padding:25px 0px 0px 0px;
+		}
+		
+		
+		div#FooterSEOLinkBox3
+		{
+			width:160px;
+			float:left;
+		}
+		
+		div#FooterSEOLinkBox4
+		{
+			width:150px;
+			float:left;
+		}
+
+
+
+
+
+ul.SEOLinks
+		{
+			width:99%;
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			display:block;
+			float:left;
+		}
+		
+		ul.SEOLinks li
+		{
+			list-style:none;
+			padding:0px 0px 0px 0px;
+			background-image:none;
+		}
+		
+		ul.SEOLinks li a
+		{
+			display:block;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #939392;
+			line-height:20px;
+			text-decoration: none;
+
+		}
+		
+		ul.SEOLinks li a:link
+		{
+			display:block;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #939392;
+			line-height:20px;
+			text-decoration: none;
+
+		}
+		
+		ul.SEOLinks li a:visited
+		{
+			display:block;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #939392;
+			line-height:20px;
+			text-decoration: none;
+			
+		}
+		
+		ul.SEOLinks li a:active
+		{
+			display:block;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #939392;
+			line-height:20px;
+			text-decoration: none;
+		}
+		
+		ul.SEOLinks li a:hover
+		{
+			display:block;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			color: #595959;
+			line-height:20px;
+			text-decoration: underline;		
+		}
+
+
+
+
+
+
+
+
+div#FooterLogoContainer
+{
+	width:940px;
+	float:left;
+	padding:10px 20px 20px 20px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFF;
+	border-bottom-color: #c9bfb5;
+}
+
+		.LogoBox
+		{
+			float:left;
+			padding:0px 7px 0px 7px ;
+		}
+
+div#FooterDisclaimerContainer
+{
+	width:940px;
+	float:left;
+	padding:10px 20px 15px 20px;
+	text-align:center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+}
+div#FooterLInkContainer
+{
+	width:640px;
+	float:left;
+	padding:0px 170px 30px 170px;
+	text-align:center;
+}
+div#FooterBottomContainer
+{
+	width:640px;
+	float:left;
+	padding:0px 170px 30px 170px;
+	text-align:center;
+}
+
+div#FooterLinkBox
+{width:640px;
+	
+	}
+
+ul#FooterLinksContainer
+{
+	margin:0px;
+	padding:0px;
+	}
+	
+	
+ul#FooterLinksContainer li
+{
+	list-style:none;
+	float:left;
+	padding:5px 8px 0px 8px;
+	background-image:none!important;
+
+	}
+
+div#FooterCopyConatiner
+{
+	width:640px;
+	float:left;
+	padding:10px 0px 10px 0px;
+	
+}
+
+.btnBlueLogin{
+	width:67px;
+	float:left;
+	height:26px;
+	display:block;
+	background-image: url(/images/netstarter/buttons/btnLogin.png);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+
+
+
+/* Responsive layout additions */
+div#NavigationContainerMobile {
+	display: none;
+	background: transparent;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 56px;
+	z-index: 300;
+	position: relative;
+	clear:both;
+}
+div#NavigationContainerMobile div#menuMobile{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #3687c8;
+	width: 30px;
+	height: 20px;
+	padding: 8px;
+	float: right;
+	margin-right: 0px;
+}
+div#NavigationContainerMobile div#mobileList ul li {
+	list-style: none;
+	background:none;
+}
+div#menuMobileButton{
+	display: none;
+}
+div#menuMobileButton{
+        width: 35px;
+        height: 35px;
+        background: #3687c8 url(/images/resp-nav-icon.png) no-repeat 8px 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	float: right;
+	/* margin: 6px 10px 10px 10px; */
+	margin: 6px 2px 0px 10px;
+	cursor: pointer;
+}
+
+
+/* Search mobile */
+div#SearchContainerMobile{
+	width: 296px;	
+        height: 38px;
+        float:left;
+	background: url(/images/netstarter/backgrounds/shortSearchBg_1x48.png) repeat-x;
+        padding: 10px 12px 0px 12px;
+	margin: 0;
+
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+
+}
+div#SearchContainerTopMobile{
+	width: 292px;
+        display:block;
+        float:left;
+	height: 26px;
+	position: relative;
+	z-index: 600;
+
+	background-color: #ffffff;
+	padding: 2px;	
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+}
+div#SearchContainerMobile div#SearchInputBoxMobile {
+	width: 126px;
+}
+div#SearchContainerMobile div#SearchInputBoxMobile input.SearchBox {
+	width: 160px;
+	height: 18px;
+}
+div#SearchContainerMobile a.SearchButton {
+	width: 25px;
+ 	background-image: url(/images/netstarter/buttons/shortGoSearchBtn.png);
+}
+
+/* Sliding Menu */
+div#menuMobileList{
+	background-color: #3687c8;
+	width: 100%;
+	position: absolute;
+	display:none;
+	z-index: 1000;
+}
+div#menuMobileList ul li {
+	background: none;
+}
+div#menuMobileList ul li:hover {
+	background-image: url(/images/netstarter/backgrounds/menuHoverBg.png);
+	background-repeat: repeat-x 
+}
+div#menuMobileList ul li a,
+div#menuMobileList ul li a:visited {
+	background: none;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	color: #FFF;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: none;
+	text-shadow: 0 -1px 0 #0A477E
+}
+	div.mobileAdsense {
+		display:none;
+	}
+
+
+/* Search Health-info */
+
+input.bigRoundTextInput, 
+div#search-myDr input.contentPrimaryLink {
+        padding: 6px;
+	font-size: 20px;
+
+        -webkit-border-radius: 8px 8px 8px 8px;
+        border-radius: 8px 8px 8px 8px;
+        -webkit-box-shadow:inset 2px 2px 2px 2px #D6D6D6;
+        box-shadow:inset 2px 2px 2px 2px #D6D6D6;
+
+}
+a.healthInfoSearch,
+a.healthInfoSearch:hover {
+	float: left;
+}
+
+/* Go Button Blue Link */
+a.GoButtonSearch:visited, a.GoButtonSearch:link {
+	color: #FFFFFF;
+}
+a.GoButtonSearch {
+	background: #00529c;
+	background-image: -webkit-linear-gradient(top, #00529c, #1263ad);
+	background-image: -moz-linear-gradient(top, #00529c, #1263ad);
+	background-image: -ms-linear-gradient(top, #00529c, #1263ad);
+	background-image: -o-linear-gradient(top, #00529c, #1263ad);
+	background-image: linear-gradient(to bottom, #00529c, #1263ad);
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 6px 10px;
+	text-decoration: none;
+	float: left;
+	clear: right;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+a.GoButtonSearch:hover {
+	color: #ffffff;
+	background: #1b7dd7;
+	background-image: -webkit-linear-gradient(top, #1b7dd7, #1f79cb);
+	background-image: -moz-linear-gradient(top, #1b7dd7, #1f79cb);
+	background-image: -ms-linear-gradient(top, #1b7dd7, #1f79cb);
+	background-image: -o-linear-gradient(top, #1b7dd7, #1f79cb);
+	background-image: linear-gradient(to bottom, #1b7dd7, #1f79cb);
+	text-decoration: none;
+}
+div#searchform form a.GoButtonSearch {
+	color: #ffffff;
+}
+
+/* Orange Button Link */
+a.OrangeLinkButton:visited, a.OrangeLinkButton:link {
+	color: #FFFFFF;
+}
+a.OrangeLinkButton {
+	margin: 4px;
+	background: #d64c00;
+	background-image: -webkit-linear-gradient(top, #d64c00, #ea5300);
+	background-image: -moz-linear-gradient(top, #d64c00, #ea5300);
+	background-image: -ms-linear-gradient(top, #d64c00, #ea5300);
+	background-image: -o-linear-gradient(top, #d64c00, #ea5300);
+	background-image: linear-gradient(to bottom, #d64c00, #ea5300);
+
+	-webkit-box-shadow: 0px 2px 1px #ab3d00;
+	-moz-box-shadow: 0px 2px 1px #ab3d00;
+	box-shadow: 0px 2px 1px #ab3d00;
+
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 6px 10px;
+	text-decoration: none;
+	float: left;
+	clear: right;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+a.OrangeLinkButton:hover {
+	color: #ffffff;
+	background: #ff7e00;
+	background-image: -webkit-linear-gradient(top, #ff7e00, #ff6400);
+	background-image: -moz-linear-gradient(top, #ff7e00, #ff6400);
+	background-image: -ms-linear-gradient(top, #ff7e00, #ff6400);
+	background-image: -o-linear-gradient(top, #ff7e00, #ff6400);
+	background-image: linear-gradient(to bottom, #ff7e00, #ff6400);
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* from /css/redesign2011/netstarter/Styles_Copy.css  -  css integration */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---- BEGIN STANDARD NETSTARTER CSS -- */
+
+p               {font-size:12px; color:#666666; font-weight:normal; line-height:20px; font-family:Arial; padding:0px; margin:0px; padding-bottom: 6px;}
+.LargeCopy	{ font-size:16px; color:#878787; font-weight:normal; line-height:26px; font-family:Arial;}
+.LargeCopyAsh	{ font-size:16px; color:#666666; font-weight:normal; line-height:22px; font-family:Arial;}
+.LargeCopyBlack	{ font-size:16px; color:#2d2d2d; font-weight:600; line-height:22px; font-family: "myriad-pro-1","myriad-pro-2";}
+
+.MainCopy	{ font-size:14px; color:#323232; font-weight:normal; line-height:20px; font-family:Arial;}
+.MainCopy1 {  font-size:12px; color:#333333; font-weight:normal; line-height:15px; font-family:Arial;}
+.SmallCopy	{ font-size:12px; color:#666666; font-weight:normal; line-height:15px; font-family:Arial;}
+.MainCopyBlack	{ font-size:14px; color:#323232; font-weight:normal; line-height:20px; font-family:Arial;}
+.SmallCopyBlue { font-size:12px; color:#157ddb; font-weight:normal; line-height:15px; font-family:Arial;}
+.SmallCopyAsh { font-size:12px; color:#999999; font-weight:normal; line-height:20px; font-family:Arial;}
+.errorMessage
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #F00;
+}
+
+
+h1{
+	font-size:24px;
+	color:#333333;
+	font-weight:600;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	padding:0px;
+	margin:0px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	line-height:28px;
+}
+
+h2{
+	
+	width:610px;
+	float:left;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-size: 21px;
+	font-weight: 600;
+	color: #FFF;
+	background-color:#3687c8;
+	padding:7px 0px 6px 10px;
+	line-height:35px;
+	}
+
+
+
+h3{
+	/* font-size:18px; */
+	font-size:16px;
+	/* color:#2d2d2d; */
+	color: #004685;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-weight: 600;
+	padding:0px;
+	margin:0px;
+	line-height:35px;
+	clear: both;
+	
+}
+h4{
+	font-size:15px;
+	color:#64574b;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-weight: 600;
+	padding:0px;
+	margin:0px;
+	text-shadow: 0px 1px 0px #ffffff;
+	line-height:22px;
+	
+	}
+h5{
+	font-size:13px;
+	color:#2d2d2d;
+	font-weight: 600;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	padding:0px;
+	margin:0px;
+	line-height:22px;
+	
+	
+	}
+h6{
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-size: 18px;
+	color: #004685;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+
+h8{
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-size: 16px;
+	color: #004685;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+
+.advertisetmentHeader, .advertisetmentHeader_leaderboard{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #b9b9b9;
+	text-transform: uppercase;
+	/* line-height: 25px; */
+	padding-top: 4px;
+
+	width:728px;
+	float:left;
+	text-align:left;
+}
+
+.advertisetmentHeader{
+	width: 300px;
+	clear: both;
+}
+
+ol 
+{
+	display:block;
+	float:left; 
+	padding:0px 0px 0px 15px;
+	margin:0px;
+}
+ol li{font-size:12px; color:#333333; font-weight:normal; line-height:20px; font-family:Arial; padding:0px 0px 5px 0px;}
+
+ul
+{
+ 	padding:5px 0px 5px 0px;
+	margin:0px;
+}
+
+ul li
+{
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-size:14px; */
+	font-size:12px;
+	list-style: none;
+	background-image:url(/images/netstarter/bullet.png);
+	background-repeat:no-repeat;
+	background-position:0px 7px;
+	padding:4px 0px 8px 15px;
+	color:#323232;
+	font-weight:normal;	
+}
+
+
+
+
+
+hr {color: #dddddd;border: none;height: 1px;}
+
+.datatable, .datatable td { border: solid 1px #ccc;font-size:12px; color:#666666; font-weight:normal; line-height:20px; font-family:Arial;}
+
+a:link
+{
+	color:#157ddb;
+	text-decoration:none;
+	font-family:Arial;
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+a:active
+{
+	
+	color:#157ddb;
+	text-decoration:none;
+	font-family:Arial;
+	font-size: 12px;
+	font-weight: normal;
+	
+	}
+a:visited
+{
+	color:#157ddb;
+	text-decoration:none;
+	font-family:Arial;
+	font-size: 12px;
+	font-weight: normal;
+	
+	
+	}
+a:hover
+{
+	color:#2e9cff;
+	text-decoration:underline;
+	font-family:Arial;
+	font-size: 12px;
+	font-weight: normal;
+	
+	}
+
+a.ResetButton_blue {
+	color: #157ddb; 
+	text-decoration: none; 
+	margin-left: 10px; 
+	margin-top: 6px; 
+	font-family: Arial; 
+	font-weight: bold; 
+	float: left; 
+	font-size: 14px; width:initial;
+}
+	
+.imageBorder
+{
+	border: 1px solid #bababa;	
+}
+
+.LeftAlignimageBorder
+{
+	border: 1px solid #bababa;
+	margin:0px 20px 0px 0px;
+		
+	
+}
+
+.IconLeftAlign
+{
+	margin:0px 10px 0px 0px;
+	float:left;	
+}
+
+
+a.FooterLinks
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-decoration: underline;
+}
+
+a.FooterLinks:link
+{
+	
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-decoration: underline;	
+}
+a.FooterLinks:visited
+{
+	
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-decoration: underline;	
+}
+a.FooterLinks:active
+{
+	
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-decoration: underline;	
+}
+a.FooterLinks:hover
+{
+	
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-decoration: underline;	
+}	
+
+
+a.LargeLinks
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #157ddb;
+	line-height: 24px;
+}
+
+
+
+
+a.BookmarkText
+{
+	height:19px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3770a4;
+	background-image: url(/images/netstarter/buttons/icnFavorite.png);
+	background-repeat: no-repeat;
+	background-position: 4px 1px;
+	padding:3px 0px 0px 28px;
+	border: 1px solid #dbeeff;
+	text-decoration: none;
+	line-height:14px;
+}
+
+a.BookmarkText:link
+{
+	height:19px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3770a4;
+	background-image: url(/images/netstarter/buttons/icnFavorite.png);
+	background-repeat: no-repeat;
+	background-position: 4px 1px;
+	padding:3px 0px 0px 28px;
+	border: 1px solid #dbeeff;
+	text-decoration: none;
+	line-height:14px;
+}
+
+a.BookmarkText:active
+{
+	height:19px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3770a4;
+	background-image: url(/images/netstarter/buttons/icnFavorite.png);
+	background-repeat: no-repeat;
+	background-position: 4px 1px;
+	padding:3px 0px 0px 28px;
+	border: 1px solid #dbeeff;
+	text-decoration: none;
+	line-height:14px;
+}
+
+a.BookmarkText:visited
+{
+	height:19px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #3770a4;
+	background-image: url(/images/netstarter/buttons/icnFavorite.png);
+	background-repeat: no-repeat;
+	background-position: 4px 1px;
+	padding:3px 0px 0px 28px;
+	border: 1px solid #dbeeff;
+	text-decoration: none;
+	line-height:14px;
+}
+
+a.BookmarkText:hover
+{
+	height:19px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #2e9cff;
+	background-image: url(/images/netstarter/buttons/icnFavorite.png);
+	background-repeat: no-repeat;
+	background-position: 4px 1px;
+	padding:3px 0px 0px 28px;
+	background-color:#eef7ff;
+	border: 1px solid #aac9e5;
+	text-decoration: none;
+	line-height:14px;
+}
+
+
+
+
+a.textDecrease
+{
+	width:6px;
+	height:12px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:11px;
+	text-decoration: none;
+	padding:2px 5px 3px 5px !important;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 12px;
+}
+
+a.textDecrease:link
+{
+	width:6px;
+	height:12px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:11px;
+	text-decoration: none;
+	padding:2px 5px 3px 5px!important;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 12px;
+}
+
+a.textDecrease:active
+{
+	width:6px;
+	height:12px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:11px;
+	text-decoration: none;
+	padding:2px 5px 3px 5px!important;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 12px;
+}
+
+a.textDecrease:visited
+{
+	width:6px;
+	height:12px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:11px;
+	text-decoration: none;
+	padding:2px 5px 3px 5px!important;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 12px;
+}
+
+a.textDecrease:hover
+{
+	width:6px;
+	height:12px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:11px;
+	text-decoration: none;
+	padding:2px 5px 3px 5px!important;
+	background-image: url(/images/netstarter/backgrounds/bgText.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #aac9e5;
+	line-height: 12px;
+}
+
+
+
+
+
+
+
+
+a.textIncrease
+{
+	width:7px;
+	height:14px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:13px;
+	text-decoration: none;
+	padding:0px 5px 3px 4px;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 16px;
+}
+
+a.textIncrease:link
+{
+	width:7px;
+	height:14px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:13px;
+	text-decoration: none;
+	padding:0px 5px 3px 4px;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 16px;
+}
+
+a.textIncrease:active
+{
+	width:7px;
+	height:14px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:13px;
+	text-decoration: none;
+	padding:0px 5px 3px 4px;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 16px;
+}
+
+a.textIncrease:visited
+{
+	width:7px;
+	height:14px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:13px;
+	text-decoration: none;
+	padding:0px 5px 3px 4px;
+	background-image: url(/images/netstarter/backgrounds/bgText_r.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #daeeff;
+	line-height: 16px;
+}
+
+a.textIncrease:hover
+{
+	width:7px;
+	height:14px;
+	float:left;
+	font-family: "myriad-pro-1", "myriad-pro-2";
+	font-size:13px;
+	text-decoration: none;
+	padding:0px 5px 3px 4px;
+	background-image: url(/images/netstarter/backgrounds/bgText.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border: 1px solid #aac9e5;
+	line-height: 16px;
+}
+
+
+
+a.largelink
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2475bf;
+	text-decoration: none;
+	line-height: 20px;
+}
+a.largelink:link
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2475bf;	
+	text-decoration: none;
+	line-height: 20px;
+}
+a.largelink:active
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2475bf;	
+	text-decoration: none;
+	line-height: 20px;
+}
+a.largelink:visited
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2475bf;
+	text-decoration: none;
+	line-height: 20px;	
+}
+a.largelink:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2475bf;
+	text-decoration: underline;
+	line-height: 20px;	
+}
+
+
+a.MiddleLink
+{
+	width:140px;
+	display:block;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #157ddb;
+	padding:4px 0px 3px 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-decoration: none;
+}
+
+a.MiddleLink:link
+{
+	width:140px;
+	display:block;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #157ddb;
+	padding:4px 0px 3px 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-decoration: none;
+}
+
+a.MiddleLink:active
+{
+	width:140px;
+	display:block;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #157ddb;
+	padding:4px 0px 3px 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-decoration: none;
+}
+
+a.MiddleLink:visited
+{
+	width:140px;
+	display:block;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #157ddb;
+	padding:4px 0px 3px 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-decoration: none;
+}
+
+a.MiddleLink:hover
+{
+	width:140px;
+	display:block;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #2e9cff;
+	padding:4px 0px 3px 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-decoration: none;
+}
+
+
+a.SearchLinks
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #84858A;
+	text-decoration: none;
+}
+
+a.SearchLinks:link
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #84858A;
+	text-decoration: none;
+}
+a.SearchLinks:active
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #84858A;
+	text-decoration: none;
+}
+a.SearchLinks:visited
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #84858A;
+	text-decoration: none;
+}
+a.SearchLinks:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #84858A;
+	text-decoration: none;
+}
+/* ---- END STANDARD NETSTARTER CSS -- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* from /css/redesign2011/netstarter/Megamenu.css  -  css integration */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+ul#topnav {
+	display:block;
+	margin: 0; padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+	font-size: 1.1em;
+	z-index:12000;
+	position:relative;
+	padding: 7px 0px 0px 0px;
+	float:left;
+	
+}
+ul#topnav li {
+	float: left;
+	margin: 0;
+	position: relative;
+	list-style:none;
+	text-align:center;
+	padding:0px;
+	background-image:none!important;
+
+}
+
+
+ul#topnav li a {
+	float: left;
+	height: 30px;
+	font-size: 13px;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-style: normal;
+  	font-weight: 600;
+   	text-decoration: none;
+  	text-transform: none;
+	text-shadow: 0 -1px 0 #0A477E;
+  	letter-spacing: 0em;
+  	word-spacing: 0em;
+  	line-height: 1.2;
+  	padding:12px 0px 0px 0px;
+  
+	
+	
+			
+}
+ul#topnav li:hover a, ul#topnav li a:hover { background-position: left bottom; 	background-image: url(/images/netstarter/backgrounds/menuHoverBg.png);
+	background-repeat: repeat-x;
+	background-position: left top; }
+	
+ul#topnav li a.Selected
+{ background-position: left bottom; 	background-image: url(/images/netstarter/backgrounds/menuHoverBg.png);
+	background-repeat: repeat-x;
+	background-position: left top; }	
+
+	
+	
+	
+ul#topnav a.Centers {
+	width: 107px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;	 
+	
+}
+ul#topnav a.Conditions {
+	width: 86px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+
+}
+ul#topnav a.Medicines {
+	
+	width: 85px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+	 
+}
+ul#topnav a.Symptoms {
+	
+	width: 87px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+
+}
+ul#topnav a.Lifestyle {
+	
+	width: 122px;
+		border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+
+}
+
+ul#topnav a.Directories {
+	width: 151px;
+		border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+
+}
+ul#topnav a.HealthTools {
+	
+	width: 97px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #3e72a1;
+		border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+}
+
+ul#topnav a.Professionals {
+	width: 188px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #6fa6d7;	
+
+}
+
+
+
+ul#topnav li .sub {
+	
+	diplay:block;
+	float:left;
+	position: absolute;	
+	top: 42px; left: 0;
+	background-color:#ffffff;
+	padding: 15px 2px 15px 2px;
+	float: left;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #60b1fd;
+	margin-top:-3px;
+	display: none;
+	z-index:2000 !important;
+	
+	box-shadow: 0 4px 15px  #5c5b5b;
+	 -moz-box-shadow: 0 4px 15px  #5c5b5b; /* FF3.5+ */
+  	-webkit-box-shadow: 0 4px 15px  #5c5b5b; /* Saf3.0+, Chrome */
+    box-shadow: 0 4px 15px  #5c5b5b; /* Opera 10.5, IE9, Chrome 10+ */
+	
+		  
+		   behavior: url(PIE.htc);
+	
+	}
+
+ul#topnav li #Conditions .sub {
+	width:850px;
+	diplay:block;
+	float:left;
+	position: absolute;	
+	top: 42px; left: 0;
+	background-color:#ffffff;
+	
+	padding: 0px 2px 0px 2px;
+	float: left;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #60b1fd;
+	margin-top:-3px;
+	display: none;
+	z-index:2000 !important;
+	
+
+	
+	}
+
+ul#topnav li .row {clear: both; float: left; width: 100%; margin-bottom: 10px;}
+ul#topnav li .sub ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	float: left;
+
+}
+
+ul#topnav li #Conditions ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 241px;
+	float: left;
+	
+
+
+
+}
+
+ul#topnav li #Conditions ul h4{
+
+
+
+}
+
+ul#topnav li #Conditions ul.ConditionsRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+
+}
+
+
+ul#topnav li #Lifestyle ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 160px;
+	float: left;
+
+}
+
+ul#topnav #Lifestyle
+{
+	margin-left:-86px;
+	
+	}
+
+
+
+ul#topnav li #Lifestyle ul.LifestyleRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+
+}
+
+ul#topnav li #Medicines ul.MedicinesRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+}
+
+ul#topnav li #Centers ul.CentersRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+}
+
+ul#topnav li #Symptoms ul.SymptomsRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+}
+
+ul#topnav li #HealthTools ul.HealthToolsRow{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cccccc;
+}
+
+ul#topnav .sub ul li {
+	width: 100%;
+	color: #000;
+	text-align:left ;
+}
+ul#topnav .sub ul h5 {
+	padding: 0px 0px 0px 13px;  margin: 0;
+	text-align:left;
+
+}
+
+ul#topnav .sub ul h5:hover {
+	background-color:none;
+	text-align:left;
+
+
+}
+
+ul#topnav .sub ul li a {
+	float: none;
+	text-indent: 0; /*--Reset text indent--*/
+	height: auto;
+	/* background: url(navlist_arrow.png) no-repeat 5px 12px; */
+	background: none;
+	padding: 5px 5px 4px 15px;
+	display: block;
+	text-decoration: none;
+	color: #157ddb;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: none;
+}
+ul#topnav .sub ul li a:hover {color: #157ddb; background-color:#d2eaff; background-position: 5px 12px ;}
+
+ul#topnav .sub ul li a.skipTabNext {
+	position: absolute;
+	left: -9999999px;
+}
+ul#topnav .sub ul li a.skipTabNext:focus {
+	position: relative;
+	left: 0;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* from /css/redesign2011/netstarter/simpleFadeSlideShow.css  -  css integration */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+.sfs_content{
+	margin:0;
+	width: 620px;
+	position:relative;
+	height: 533px;
+	padding:0;
+	z-index:15;
+	}
+
+.sfs_content li.panel{
+	padding:0;
+	margin:0;
+	width:620px;
+	list-style:none;
+	position:absolute;
+	top:0;
+    left:0;
+    z-index:8;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	
+	/* IE 5-7 */
+	filter: alpha(opacity=0);
+	
+	/* Netscape */
+	-moz-opacity: 0;
+	
+	/* Safari 1.x */
+	-khtml-opacity: 0;
+	
+	/* Good browsers */
+	opacity: 0;
+	}
+	
+
+.sfs_content .active {
+    z-index:10 !important;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	
+	/* IE 5-7 */
+	filter: alpha(opacity=100);
+	
+	/* Netscape */
+	-moz-opacity: 1;
+	
+	/* Safari 1.x */
+	-khtml-opacity: 1;
+	
+	/* Good browsers */
+	opacity: 1;
+}
+
+.sfs_content .last-active {
+    z-index:9 !important;
+}
+
+.sfs_wrapper {
+	width:100%;
+	margin:0 auto;	
+	position: relative;
+}
+
+.sfs_wrapper .start-stop {
+	display:none;
+}
+
+.sfs_nav
+{
+	z-index:16;
+	position: absolute;
+	top: 250px;
+}
+
+.sfs_nav ul{
+	padding:0;
+	margin:-45px 0 0 12px;
+	list-style:none;
+	background:url(/images/netstarter/ContentImages/carousel-bg.png) top left repeat;
+	height:26px;
+}
+
+.sfs_nav ul li{
+	/* float:left; */
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	background-image:none;
+	display: inline;	
+}
+
+.sfs_nav ul li a{
+	margin-top: -3px; 
+	width: 23px;
+	height:26px;	
+	display:block;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	line-height:24px;
+	font-weight:bold;
+	text-decoration:none;
+	display: inline-block;
+}
+
+.sfs_nav ul li a img{
+	margin-top:6px;
+}
+
+.sfs_nav ul li a.cur{
+	color:#00529c;
+	background-color:#FFF;
+
+	}
+
+h4.health_title
+{
+	text-shadow:none!important;
+}
+
+#healthSlideGallery li{
+	background-image: none; margin:0; padding:0;
+}
+.SlideWrapper{
+	width: 620px; height: 380px; overflow: hidden;
+}
+
+/* Handler for adsense getting trimmed off. */
+div.adGuardian{
+	padding: 4px 4px 4px 12px;
+	margin-bottom: 12px;
+	clear: both;
+}
+div.adGuardian div{
+	float: none;
+	overflow: visible;
+}
+
+/* For view toggle button. */
+div#HeaderSwitchButtonContainer {
+	position: relative;
+}
+a.btnViewToggle,
+a.btnViewToggle:visited {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+  color: #ffffff;
+}
+.btnViewToggle {
+  text-decoration: none;
+  background: #df4f00;
+  background-image: -webkit-linear-gradient(top, #df4f00, #e07c45);
+  background-image: -moz-linear-gradient(top, #df4f00, #e07c45);
+  background-image: -ms-linear-gradient(top, #df4f00, #e07c45);
+  background-image: -o-linear-gradient(top, #df4f00, #e07c45);
+  background-image: linear-gradient(to bottom, #df4f00, #e07c45);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.btnViewToggle:hover {
+  color: #ffffff;
+  background: #df4f00;
+  text-decoration: none;
+}
+
+/* For support-groups search. */
+div.supportgroup div.lineDiv {
+	width: 100%;
+	clear: both;
+	margin: 2px 0;
+}
+div.supportgroup div.lineDiv div.leftDiv {
+	width: 78%;
+	display: inline-block;
+	padding: 1%;
+}
+div.supportgroup div.lineDiv div.rightDiv {
+	width: 18%;
+	display: inline-block;
+	padding: 1%;
+}
+div.supportgroup div.lineDiv.topHead div {
+	text-align: center;
+	font-style: italic;
+	color: #D94400;
+}
+
+
+/* cmi index letters */
+div.index-links a {
+	padding: 2px 4px;
+	margin: 1px;
+	background: #df4f00;
+	background: #a1a1a1;
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
+	border: 1px solid #ababab;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	display: inline-block;
+}
+
+div.index-links a.active {
+	color: #157ddb;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* cmi index list */
+div#showcmi ul li a span.cmiDescription {
+	color: #666666; 
+	font-style: italic;
+}
+
+/* cmi pages */
+div#showcmi ul{
+ 	padding: 5px 0px 5px 10px;
+	margin: 0px;
+	clear: both
+}
+div#showcmi p{
+	clear: both;
+}
+
+/* CMIs right and left tab for related articles. */
+div.cmi-tab.inner-tabs {
+	padding-top: 4px;
+}
+div#showcmi h2 {
+	width: 100%;
+}
+
+
+/**
+ *
+ * Redesign dec-redesign 
+ *
+ **/
+
+/* Adjustments for adding the new footer header redesign dec2015. */
+div.panel ul li.media {
+	background-image: none;
+}
+div#TopicBottomLinks h3,
+div.ContentLinkContainer h3 {
+	font-size: 16px;
+	color: #004685;
+	margin-bottom: 0px;
+	font-family: "myriad pro 1", "myriad pro 2";
+	font-weight: bold;
+	line-height: 35px;
+}
+div#BreadcrumbContainer {
+	display: none;
+}
+div#bc1 a.btn-default {
+	font-size: 14px;
+}
+div#bs-example-navbar-collapse-1 ul.nav li {
+	background-image: none;
+	padding: 0;
+}
+/* Add padding to h5 in nav links */
+div#bs-example-navbar-collapse-1 ul.dropdown-menu li {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+nav.navbar ul.nav {
+	padding: 0;
+}
+nav.navbar ul.nav li a {
+	font-size: 14px;
+}
+
+
+/* Homepage section */
+div.carouselBottomPostText {
+	width: 122px; /* width: 107px; float: right; padding: 0px 15px 0px 0px; */
+}
+div#carouselBottomPosts {
+	height: 100px; /* width: 620px; float:left; height:75px; padding:5px 0px 20px 0px; */
+}
+
+/* Medicines section */
+div#InternalLeft h3 {
+	font-size: 16px;
+	color: #004685;
+	font-family: "myriad pro 1", "myriad pro 2";
+	font-weight: 600;
+	line-height: 35px;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+div#InternalLeft div.searchMedicineForm {
+	width: 100%;
+	height: 95px;
+}
+div#InternalRight div.MiddleLinkContainer div.LinkHeader,
+div#InternalRight div.MiddleLinkContainer a.MiddleLink {
+	width: 100%;
+}
+
+/* Footer */
+section.fluid-container div.row ul li.col-xs-4 {
+	background-image: none;
+}
+section.fluid-container div.row ul.footer-sitelinks li {
+	background-image: none;
+}
+
+div#tool * {
+	box-sizing: content-box;
+}

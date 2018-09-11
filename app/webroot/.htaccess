@@ -1,0 +1,343 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    #Redirect previous practice URL to new url.
+    RewriteRule ^practice/(.*)$  http://directory.mydr.com.au/$1 [R=301,L]
+
+    # remove trailing slash
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    #Redirect old cmis pdf path.
+    RewriteRule ^cmis/PDFs/(.*)$ https://s3-ap-southeast-2.amazonaws.com/cirrusdevteam/cmis/PDFs/$1 [R=301,L]
+    RewriteRule ^cmis/ReducedPDFs/(.*)$ https://s3-ap-southeast-2.amazonaws.com/cirrusdevteam/cmis/ReducedPDFs/$1 [R=301,L]
+
+    #Articles
+    RedirectMatch 301 /babies-pregnancy/babies-and-vomiting$ /babies-pregnancy/reflux-in-babies
+    RedirectMatch 301 /skin-hair/dry-skin-treatments /skin-hair/dry-skin
+    RedirectMatch 301 /respiratory-health/whooping-cough$ /respiratory-health/whooping-cough-overview
+    RedirectMatch 301 /womens-health/period-pain-treatment /womens-health/period-pain
+    RedirectMatch 301 /babies-pregnancy/nappy-rash-treatments /babies-pregnancy/nappy-rash
+    RedirectMatch 301 /sports-fitness/muscular-aches-and-pains /sports-fitness/muscle-aches-and-pains-treatments
+    RedirectMatch 301 /first-aid-self-care/insomnia-treatments /first-aid-self-care/insomnia
+    RedirectMatch 301 /skin-hair/dandruff-treatments /skin-hair/dandruff
+
+    RedirectMatch 301 /kids-teens-health/epilepsy-diagnosis-and-treatment /kids-teens-health/epilepsy
+    RedirectMatch 301 /kids-teens-health/epilepsy-partial-seizures /kids-teens-health/epilepsy
+    RedirectMatch 301 /babies-pregnancy/morning-sickness-how-to-cope /babies-pregnancy/morning-sickness
+    RedirectMatch 301 /tests-investigations/pcr-status-and-hepatitis-c-transmission /tests-investigations/hepatitis-c-and-pcr-testing
+    RedirectMatch 301 /sexual-health/retarded-ejaculation /sexual-health/delayed-ejaculation
+    RedirectMatch 301 /articles/about-us /about
+    RedirectMatch 301 /articles/privacy-policy /privacy
+    RedirectMatch 301 /articles/contact-us /contact
+    RedirectMatch 301 /articles/disclaimer /disclaimer
+    RedirectMatch 301 /articles/advertising-policy /advertising-policy
+    RedirectMatch 301 /articles/site-map /site-map
+    RedirectMatch 301 /articles/terms-and-conditions /terms-and-conditions
+    RedirectMatch 301 /skin-hair/head-lice /pharmacy-care/headlice
+    RedirectMatch 301 /travel-health/insect-borne-disease-prevention /travel-health/mosquito-borne-disease-prevention
+    RedirectMatch 301 /gastrointestinal-health/helicobacter-pylori-and-peptic-ulcers /tests-investigations/helicobacter-pylori-test-simple-test-for-stomach-germ
+    RedirectMatch 301 /allergy/immunotherapy-treatment-for-hayfever /allergy/immunotherapy-treatment
+    RedirectMatch 301 /sports-fitness/knee-pain /sports-fitness/patellofemoral-pain-syndrome-kneecap-pain
+    RedirectMatch 301 /respiratory-health/pleurisy-treatments /respiratory-health/pleurisy-what-you-need-to-know
+    RedirectMatch 301 /articles/privacy /privacy
+    RedirectMatch 301 /gastrointestinal-health/hiatus-hernia-what-is-it /gastrointestinal-health/hiatus-hernia-symptoms
+    RedirectMatch 301 /respiratory-health/pneumonia-what-is-it /respiratory-health/pneumonia-symptoms
+    RedirectMatch 301 /addictions/ghb-fantasy-withdrawal-and-treatment /addictions/ghb-fantasy
+    RedirectMatch 301 /addictions/ghb-fantasy-what-is-it /addictions/ghb-fantasy
+    RedirectMatch 301 /addictions/ghb-fantasy-tolerance-and-dependence /addictions/ghb-fantasy
+    RedirectMatch 301 /ghb-fantasy-withdrawal-and-treatment /addictions/ghb-fantasy
+    RedirectMatch 301 /gastrointestinal-health/epsom-salts-safer-for-constipation /pharmacy-care/constipation-self-care
+    RedirectMatch 301 /nutrition-weight/obesity-q-and-a /nutrition-weight/obesity-and-overweight
+    RedirectMatch 301 /heart-stroke/angina-treatments /heart-stroke/angina-treating-symptoms-and-emergency-treatment
+    RedirectMatch 301 /heart-stroke/angina-overview /heart-stroke/angina
+    RedirectMatch 301 /sports-fitness/tibialis-posterior-tendon-injury /sports-fitness/posterior-tibial-tendon-injury
+    RedirectMatch 301 /first-aid-self-care/headache-treatment-options /first-aid-self-care/tension-headache-treatments
+    RedirectMatch 301 /articles/emphysema-treatment /respiratory-health/emphysema
+    RedirectMatch 301 /respiratory-health/emphysema-treatment /respiratory-health/emphysema
+    RedirectMatch 301 /heart-stroke/heart-attack-overview /heart-stroke/heart-attack
+    RedirectMatch 301 /skin-hair/fungal-problems /pharmacy-care/fungal-skin-infections
+    RedirectMatch 301 /gastrointestinal-health/hiatus-hernia-the-2-main-types /gastrointestinal-health/hiatus-hernia-what-is-it
+    RedirectMatch 301 /seniors-health/diabetes-and-your-eyes /diabetes/diabetes-can-affect-your-eyes
+    RedirectMatch 301 /kids-teens-health/diabetes-tips-for-school-age-children /diabetes/diabetes-tips-for-children
+    RedirectMatch 301 /heart-stroke/cholesterol-check-your-levels /tests-investigations/cholesterol-what-is-your-target
+    RedirectMatch 301 /tests-investigations/gallstones-diagnosing-with-ultrasound /tests-investigations/gallstones-diagnosis
+    RedirectMatch 301 /womens-health/fibroids-fast-facts http://www.mydr.com.au/womens-health/fibroids
+    RedirectMatch 301 /pain/pancreatitis-all-you-need-to-know /pain/pancreatitis
+    RedirectMatch 301 /heart-stroke/long-qt-syndrome-the-foley-family-s-story /heart-stroke/long-qt-syndrome-the-foley-familys-story
+    RedirectMatch 301 /medicines/emphysema-treatment /respiratory-health/emphysema
+    RedirectMatch 301 /nutrition-weight/iodine-and-your-thyroid-gland /nutrition-weight/iodine
+    RedirectMatch 301 /respiratory-health/tuberculosis-q-and-a /respiratory-health/tuberculosis
+    RedirectMatch 301 /respiratory-health/emphysema-what-you-need-to-know /respiratory-health/emphysema
+    RedirectMatch 301 /articles/health-centres /health-centres
+    RedirectMatch 301 /articles/directories-and-support /directories-and-support
+    RedirectMatch 301 /directories-support /directories-and-support
+    RedirectMatch 301 /arthritis/gout-overview /arthritis/gout
+    RedirectMatch 301 /medicines/urticaria-treatment /skin-hair/urticaria-hives-treatment
+    RedirectMatch 301 /kids-teens-health/asthma-in-children-under-5 /asthma/asthma-in-children
+    RedirectMatch 301 /medicines/emergency-contraception /babies-pregnancy/emergency-contraception-morning-after-pill
+    RedirectMatch 301 /medicines/weight-loss-medications /nutrition-weight/weight-loss-medicines
+    RedirectMatch 301 /medicines/cough-treating-dry-cough /respiratory-health/cough-dry-cough-treatments
+    RedirectMatch 301 /medicines/depo-provera-contraception /babies-pregnancy/contraception-injection
+    RedirectMatch 301 /medicines/headache-treatment-options /first-aid-self-care/tension-headache-treatments
+    RedirectMatch 301 /medicines/allergy-of-the-eye-treatment /eye-health/eye-allergy-allergic-conjunctivitis
+    RedirectMatch 301 /medicines/period-pain-treatment-options /womens-health/period-pain-treatment
+    RedirectMatch 301 /medicines/prostate-cancer-how-is-it-treated /cancer-care/prostate-cancer-prognosis
+    RedirectMatch 301 /medicines/prostate-cancer-treatment-options /cancer-care/prostate-cancer-treatment
+    RedirectMatch 301 /medicines/cough-treating-productive-or-wet-cough /respiratory-health/cough-productive-or-wet-cough-treatments
+    RedirectMatch 301 /medicines/osteoarthritis-prescription-medications /arthritis/osteoarthritis-prescription-medicines
+    RedirectMatch 301 /medicines/parkinson-s-disease-dopaminergic-therapy /seniors-health/parkinsons-disease-medication-treatment-options
+    RedirectMatch 301 /medicines/haemophilia-treatment-replacement-therapy /heart-stroke/haemophilia-treatment
+    RedirectMatch 301 /medicines/sleeping-difficulties-some-treatment-options /first-aid-self-care/insomnia-treatments
+    RedirectMatch 301 /medicines/chronic-hepatitis-b-infection-reduce-your-viral-load /gastrointestinal-health/chronic-hepatitis-b-infection
+    RedirectMatch 301 /arthritis/rheumatoid-arthritis-caitlin-s-story /arthritis/rheumatoid-arthritis-caitlins-story
+    RedirectMatch 301 /arthritis/rheumatoid-arthritis-isabelle-s-story /arthritis/rheumatoid-arthritis-isabelles-story
+    RedirectMatch 301 /arthritis/juvenile-rheumatoid-arthritis-leanne-s-story /arthritis/juvenile-rheumatoid-arthritis-leannes-story
+    RedirectMatch 301 /seniors-health/osteoporosis-29-year-old-nicola-s-story /seniors-health/osteoporosis-29-year-old-nicolas-story
+    RedirectMatch 301 /womens-health/breast-lumps-and-cancer /womens-health/benign-breast-lumps
+    RedirectMatch 301 /womens-health/breast-cancer-risk-factors /womens-health/breast-cancer
+    RedirectMatch 301 /womens-health/breast-cancer-treatments /womens-health/breast-cancer
+    RedirectMatch 301 /womens-health/breast-cancer-detection-and-diagnosis /womens-health/breast-cancer
+    RedirectMatch 301 /womens-health/breast-cancer-prevention /womens-health/breast-cancer
+    RedirectMatch 301 /gastrointestinal-health/liver-cancer-symptoms /gastrointestinal-health/liver-cancer
+    RedirectMatch 301 /gastrointestinal-health/liver-cancer-treatment /gastrointestinal-health/liver-cancer
+    RedirectMatch 301 /gastrointestinal-health/liver-cancer-types /gastrointestinal-health/liver-cancer
+    RedirectMatch 301 /diabetes/insulin-delivery-devices /diabetes/insulin-treatment-for-diabetes
+    RedirectMatch 301 /mental-health/obsessive-compulsive-disorder-ocd-symptoms-in-children /mental-health/obsessive-compulsive-disorder
+    RedirectMatch 301 /mental-health/obsessive-compulsive-disorder-symptoms /mental-health/obsessive-compulsive-disorder
+    RedirectMatch 301 /mental-health/obsessive-compulsive-disorder-what-is-it /mental-health/obsessive-compulsive-disorder
+    RedirectMatch 301 /respiratory-health/cough-dry-cough-treatments /respiratory-health/cough-dry-cough
+
+    #Medicines redirects
+    RedirectMatch 301 /sexual-health/retarded-ejaculation /sexual-health/delayed-ejaculation
+    RedirectMatch 301 /medicines/cmis/benadryl-for-the-family-chesty-cough-nasal-congestion-oral-liquid /medicines/cmis/benadryl-for-the-family-dry-cough-and-nasal-congestion-oral-liquid
+    RedirectMatch 301 /medicines/cmis/claratyne-tablets /medicines/cmis/claratyne-d-with-decongestant-repetabs
+    RedirectMatch 301 /medicines/cmis/demazin-cold-relief /medicines/cmis/demazin-6-hour-relief-tablets
+    RedirectMatch 301 /medicines/cmis/lexapro /medicines/cmis/lexapro-tablets
+    RedirectMatch 301 /medicines/cmis/sandoz-flufeme-capsules /medicines/cmis/flufeme-150-mg-capsule
+    RedirectMatch 301 /medicines/cmis/yaz-flex /medicines/cmis/yaz-flex-tablets
+    RedirectMatch 301 /medicines/cmis/imdur-durules-sustained-release-tablet /medicines/cmis/imdur-durules-sustained-release-tablets
+    RedirectMatch 301 /medicines/cmis/estelle-35-ed-tablets%20pack /medicines/cmis/estelle-35-ed-tablets
+    RedirectMatch 301 /medicines/cmis/picolax-powder /medicines/cmis/picolax-powder-for-oral-solution
+    RedirectMatch 301 /medicines/cmis/natrilix-sr /medicines/cmis/natrilix-sr-sustained-release-tablets
+    RedirectMatch 301 /medicines/cmis/norinyl-1-28-s-tablets /medicines/cmis/norinyl-1-28-day-tablets
+    RedirectMatch 301 /medicines/cmis/plaquenil /medicines/cmis/plaquenil-tablets
+    RedirectMatch 301 /medicines/cmis/bisolvon-chesty-tablets /medicines/cmis/bisolvon-chesty-forte-tablets
+    RedirectMatch 301 /medicines/cmis/nicotinell-patch /medicines/cmis/nicotinell-patch-transdermal-patch
+    RedirectMatch 301 /medicines/cmis/microlut /medicines/cmis/microlut-tablets
+    RedirectMatch 301 /medicines/cmis/xylocaine-ampoules-with-adrenaline-1-100-000-injection /medicines/cmis/xylocaine-plain-and-xylocaine-with-adrenaline
+    RedirectMatch 301 /medicines/cmis/naltrexone-generichealth-tablets /medicines/cmis/naltrexone-gh-tablets
+    RedirectMatch 301 /medicines/cmis/zyban-sr-sustained-release-tablets /medicines/cmis/zyban-sustained-release-sustained-release-tablets
+    RedirectMatch 301 /medicines/cmis/anapen-junior-auto-injector-solution-for-injection /medicines/cmis/anapen
+    RedirectMatch 301 /medicines/cmis/lucentis-intravitreal-injection /medicines/cmis/lucentis-vial-intravitreal-injection
+    RedirectMatch 301 /medicines/cmis/vivaxim-injection /medicines/cmis/vivaxim-solution-for-injection
+    RedirectMatch 301 /medicines/cmis/boostrix-suspension-for-injection /medicines/cmis/boostrix-ipv-suspension-for-injection
+    RedirectMatch 301 /medicines/cmis/stamaril-injection /medicines/cmis/stamaril-powder-for-injection
+    RedirectMatch 301 /medicines/cmis/infanrix-ipv-suspension-for-injection /medicines/cmis/infanrix-ipv-preservative-free-suspension-for-injection
+    RedirectMatch 301 /medicines/cmis/prevenar-suspension-for-injection /medicines/cmis/prevenar-13-suspension-for-injection
+    RedirectMatch 301 /medicines/cmis/rogaine-for-men-regular-strength /medicines/cmis/regaine-for-men-regular-strength-application
+    RedirectMatch 301 /medicines/cmis/fluvax-government-funded-program-solution-for-injection /medicines/cmis/fluvax-suspension-for-injection
+
+    #Topics/Teasers redirects
+    RedirectMatch 301 /topics/accidents-and-injuries /first-aid-self-care/first-aid-in-an-emergency
+    RedirectMatch 301 /topics/addictions-related-articles /addictions
+    RedirectMatch 301 /topics/adhd-attention-deficit-hyperactivity-disorder /mental-health/adhd-symptoms-and-diagnosis
+    RedirectMatch 301 /topics/air-travel-dvt-and-jet-lag /travel-health/dvt-and-flying
+    RedirectMatch 301 /topics/alcohol-and-alcohol-abuse /addictions/alcohol
+    RedirectMatch 301 /topics/alcohol-smoking-and-drug-use-in-pregnancy /addictions/fetal-alcohol-spectrum-disorder
+    RedirectMatch 301 /topics/allergic-rhinitis-hay-fever-and-sinusitis /allergy/allergic-rhinitis
+    RedirectMatch 301 /topics/allergy-and-your-eyes /eye-health/eye-allergy-allergic-conjunctivitis
+    RedirectMatch 301 /topics/allergy-prevention /allergy/allergy-proof-your-home
+    RedirectMatch 301 /topics/alzheimers-disease-and-dementia /seniors-health/alzheimers-disease
+    RedirectMatch 301 /topics/amphetamines /addictions/amphetamines-speed-what-are-the-effects
+    RedirectMatch 301 /topics/anxiety-disorders /mental-health/anxiety
+    RedirectMatch 301 /topics/arthritis-and-your-lifestyle /arthritis
+    RedirectMatch 301 /topics/arthritis-basics /arthritis/arthritis-overview
+    RedirectMatch 301 /topics/arthritis-treatments /arthritis/osteoarthritis-treatments
+    RedirectMatch 301 /topics/asthma-and-a-healthy-lifestyle /asthma/asthma-and-exercise
+    RedirectMatch 301 /topics/asthma-and-children /asthma/asthma-in-children
+    RedirectMatch 301 /topics/asthma-management-and-treatment /asthma/asthma-treatments
+    RedirectMatch 301 /topics/asthma-triggers /asthma/asthma-checklist-of-common-triggers
+    RedirectMatch 301 /topics/autism /kids-teens-health/autism-spectrum-disorders
+    RedirectMatch 301 /topics/a-z-of-complementary-medicine /complementary-medicine/acupuncture
+    RedirectMatch 301 /topics/a-z-of-ear-health-and-hearing /hearing-health/ear-problems
+    RedirectMatch 301 /topics/a-z-of-eye-conditions-and-eye-health /eye-health/conjunctivitis
+    RedirectMatch 301 /topics/baby-and-child-nutrition /kids-teens-health/healthy-diet-for-children
+    RedirectMatch 301 /topics/babys-health /babies-pregnancy/baby-s-health-the-apgar-score
+    RedirectMatch 301 /topics/benzodiazepines-tranquillisers /addictions/benzodiazepines-what-are-the-effects
+    RedirectMatch 301 /topics/bites-and-stings /first-aid-self-care/first-aid-for-bites-and-stings
+    RedirectMatch 301 /topics/bladder-cancers /cancer-care/bladder-cancer
+    RedirectMatch 301 /topics/blood-and-bone-marrow-cancers /cancer-care/leukaemia
+    RedirectMatch 301 /topics/blood-and-the-circulatory-system /heart-stroke/blood-and-bleeding
+    RedirectMatch 301 /topics/blood-and-the-rhesus-factor /heart-stroke/rhesus-negative-blood-and-pregnancy
+    RedirectMatch 301 /topics/blood-pressure /heart-stroke/blood-pressure-what-is-your-target
+    RedirectMatch 301 /topics/bowel-cancers /gastrointestinal-health/bowel-cancer
+    RedirectMatch 301 /topics/bowel-health /gastrointestinal-health/inflammatory-bowel-disease-ibd
+    RedirectMatch 301 /topics/breast-cancer /womens-health/breast-cancer-q-and-a
+    RedirectMatch 301 /topics/cancer-care-related-articles /cancer-care
+    RedirectMatch 301 /topics/cannabis-marijuana /addictions/cannabis-marijuana-what-are-the-effects
+    RedirectMatch 301 /topics/cardiovascular-conditions /heart-stroke/heart-attack
+    RedirectMatch 301 /topics/cervical-cancers /cancer-care/cervical-cancer
+    RedirectMatch 301 /topics/childbirth-and-pain-relief /pain/epidurals
+    RedirectMatch 301 /topics/child-rearing-and-child-development /babies-pregnancy/child-development-milestones
+    RedirectMatch 301 /topics/childrens-gastrointestinal-disorders /kids-teens-health/constipation-in-children
+    RedirectMatch 301 /topics/child-safety /first-aid-self-care/accidental-poisoning
+    RedirectMatch 301 /topics/cholesterol /heart-stroke/cholesterol-overview
+    RedirectMatch 301 /topics/cocaine /addictions/cocaine-what-are-the-effects
+    RedirectMatch 301 /topics/colds-and-flu /respiratory-health/common-cold
+    RedirectMatch 301 /topics/common-childhood-concerns-a-g /kids-teens-health
+    RedirectMatch 301 /topics/common-childhood-concerns-h-z /kids-teens-health
+    RedirectMatch 301 /topics/complementary-treatments-for-pain /complementary-medicine/acupuncture
+    RedirectMatch 301 /topics/constipation-diarrhoea-and-digestion-problems /gastrointestinal-health/indigestion
+    RedirectMatch 301 /topics/contraception /babies-pregnancy/contraception-the-mini-progestogen-only-pill
+    RedirectMatch 301 /topics/copd-and-emphysema /respiratory-health/chronic-obstructive-pulmonary-disease-copd
+    RedirectMatch 301 /topics/cough-and-whooping-cough /respiratory-health/cough-dry-cough
+    RedirectMatch 301 /topics/dealing-with-illness /kids-teens-health/when-to-see-your-doctor
+    RedirectMatch 301 /topics/dehydration-and-heat /travel-health/dehydration-and-hot-weather
+    RedirectMatch 301 /topics/dental-health /first-aid-self-care/dental-caries
+    RedirectMatch 301 /topics/depression-and-mania /mental-health/depression-q-and-a
+    RedirectMatch 301 /topics/diabetes-and-your-body /diabetes/animation-diabetes-and-your-body
+    RedirectMatch 301 /topics/diabetes-and-your-lifestyle /diabetes/diabetes-living-with-diabetes
+    RedirectMatch 301 /topics/diabetes-basics /diabetes
+    RedirectMatch 301 /topics/diabetes-in-special-groups /seniors-health/diabetes-in-seniors
+    RedirectMatch 301 /topics/diabetes-testing-and-treatment /diabetes/diabetes-monitoring-and-treating
+    RedirectMatch 301 /topics/diabetic-conditions-and-complications /diabetes/diabetes-complications
+    RedirectMatch 301 /topics/disease-and-complementary-therapies /complementary-medicine
+    RedirectMatch 301 /topics/eating-during-pregnancy /babies-pregnancy/eating-well-in-pregnancy
+    RedirectMatch 301 /topics/ecstasy /addictions/ecstasy-effects-on-the-body
+    RedirectMatch 301 /topics/epilepsy-and-seizures /kids-teens-health/epilepsy
+    RedirectMatch 301 /topics/erections-and-erectile-dysfunction-impotence /sexual-health/impotence-causes
+    RedirectMatch 301 /topics/exercise /sports-fitness/aerobic-exercise-the-health-benefits
+    RedirectMatch 301 /topics/eye-health-for-seniors /eye-health/dry-eye
+    RedirectMatch 301 /topics/fantasy-ghb /addictions/ghb-fantasy
+    RedirectMatch 301 /topics/fertility-and-conception /babies-pregnancy/getting-pregnant
+    RedirectMatch 301 /topics/first-aid-related-articles /first-aid-self-care
+    RedirectMatch 301 /topics/food-and-drink-allergies-and-intolerances /nutrition-weight/food-allergy
+    RedirectMatch 301 /topics/foot-health /skin-hair/feet-how-to-care-for-your-feet
+    RedirectMatch 301 /topics/gastroenteritis-tummy-bugs-and-food-safety /kids-teens-health/gastroenteritis-in-children
+    RedirectMatch 301 /topics/genital-herpes /sexual-health/genital-herpes-10-common-myths
+    RedirectMatch 301 /topics/glaucoma /eye-health/glaucoma-acute-glaucoma
+    RedirectMatch 301 /topics/gord-reflux-and-your-oesophagus /gastrointestinal-health/gastro-oesophageal-reflux-disease
+    RedirectMatch 301 /topics/hair-health /skin-hair/hair-loss-overview
+    RedirectMatch 301 /topics/hallucinogenic-drugs /addictions/hallucinogens-what-are-the-effects
+    RedirectMatch 301 /topics/hand-and-nail-health /skin-hair/fungal-nail-problems
+    RedirectMatch 301 /topics/headache-and-migraine /first-aid-self-care/headaches-the-different-types
+    RedirectMatch 301 /topics/healthy-eating /nutrition-weight/dietary-guidelines-for-healthy-eating
+    RedirectMatch 301 /topics/hepatitis-a-b-and-c /gastrointestinal-health/hepatitis-a-b-and-c-an-overview
+    RedirectMatch 301 /topics/heroin /addictions/heroin-what-are-the-effects
+    RedirectMatch 301 /topics/hiatus-hernia /gastrointestinal-health/hiatus-hernia-symptoms
+    RedirectMatch 301 /topics/hiv-and-aids /sexual-health/hiv-and-aids-12-common-questions-answered
+    RedirectMatch 301 /topics/infectious-diseases-for-kids-and-teens /kids-teens-health/infectious-diseases-when-can-my-child-go-back-to-school-or-child-care
+    RedirectMatch 301 /topics/inhalants-and-solvent-abuse /addictions/inhalants-what-are-the-effects
+    RedirectMatch 301 /topics/liver-cancer /gastrointestinal-health/liver-cancer-symptoms
+    RedirectMatch 301 /topics/living-with-asthma /pharmacy-care/asthma-self-care
+    RedirectMatch 301 /topics/lung-cancer /cancer-care/lung-cancer-what-you-need-to-know
+    RedirectMatch 301 /topics/malaria-and-other-mosquito-borne-diseases /travel-health/mosquito-borne-diseases
+    RedirectMatch 301 /topics/medicines-in-pregnancy /medicines/medicines-understanding-your-medicines
+    RedirectMatch 301 /topics/menopause-and-hormone-replacement-therapy /womens-health/menopause
+    RedirectMatch 301 /topics/mens-health-checks /tests-investigations/health-checks-men-should-have
+    RedirectMatch 301 /topics/mens-health-related-articles /mens-health
+    RedirectMatch 301 /topics/menstruation /womens-health/menstruation-problems
+    RedirectMatch 301 /topics/mental-health-for-teens /mental-health/suicide-in-teenagers
+    RedirectMatch 301 /topics/methadone /addictions/methadone-what-is-it
+    RedirectMatch 301 /topics/miscarriage-and-stillbirth /babies-pregnancy/miscarriage-overview
+    RedirectMatch 301 /topics/more-about-mental-health /mental-health/mental-illness-available-treatments
+    RedirectMatch 301 /topics/musculoskeletal-pain /sports-fitness/muscular-aches-and-pains
+    RedirectMatch 301 /topics/nerve-pain /pain/neuropathic-pain
+    RedirectMatch 301 /topics/oesophageal-cancer /gastrointestinal-health/oesophageal-cancer-what-is-it
+    RedirectMatch 301 /topics/osteoporosis /seniors-health/osteoporosis-what-it-does-to-your-bones
+    RedirectMatch 301 /topics/other-pain /pain/pain-and-how-you-sense-it
+    RedirectMatch 301 /topics/other-travel-risks /travel-health/travel-tips-for-overseas-trips
+    RedirectMatch 301 /topics/ovarian-cancers /womens-health/ovarian-cancer-what-you-need-to-know
+    RedirectMatch 301 /topics/pain-treatments /pain/chronic-pain-management
+    RedirectMatch 301 /topics/parkinsons-disease /seniors-health/parkinsons-disease-q-a
+    RedirectMatch 301 /topics/postnatal-depression /babies-pregnancy/postnatal-depression-what-is-it
+    RedirectMatch 301 /topics/pregnancy /babies-pregnancy
+    RedirectMatch 301 /topics/pregnancy-and-travel /babies-pregnancy/pregnancy-holidays-and-travel
+    RedirectMatch 301 /topics/pre-trip-planning-and-checklists /travel-health/travel-medical-kit-checklist
+    RedirectMatch 301 /topics/prostate-cancer-and-prostate-health /cancer-care/prostate-enlargement
+    RedirectMatch 301 /topics/respiratory-health-other /respiratory-health
+    RedirectMatch 301 /topics/safe-eating-and-drinking /gastrointestinal-health/food-poisoning
+    RedirectMatch 301 /topics/safety-of-medicines /medicines/prescription-medicines-10-tips-for-using-them-safely
+    RedirectMatch 301 /topics/schizophrenia-and-psychosis /mental-health/schizophrenia
+    RedirectMatch 301 /topics/seniors-health-related-articles /seniors-health
+    RedirectMatch 301 /topics/seniors-health-tests-and-treatments /tests-investigations
+    RedirectMatch 301 /topics/sexual-health-for-older-men /sexual-health/sex-and-the-ageing-process
+    RedirectMatch 301 /topics/sexual-health-related-articles /sexual-health
+    RedirectMatch 301 /topics/sexually-transmitted-infections /sexual-health/sexually-transmitted-infections-stis
+    RedirectMatch 301 /topics/skin-allergies /skin-hair
+    RedirectMatch 301 /topics/skin-cancer /skin-hair/melanoma
+    RedirectMatch 301 /topics/skin-problems-and-conditions /skin-hair
+    RedirectMatch 301 /topics/sleep-and-sleep-disorders /first-aid-self-care/sleep-top-tips-for-restful-sleep
+    RedirectMatch 301 /topics/slideshows /pain/slideshow-top-10-causes-of-joint-pain
+    RedirectMatch 301 /topics/spina-bifida-and-hydrocephalus /babies-pregnancy/spina-bifida-occulta
+    RedirectMatch 301 /topics/sport-and-your-body /sports-fitness/physical-activity-benefits-to-your-body
+    RedirectMatch 301 /topics/sports-injuries-and-accidents /sports-fitness/sports-injury-prevention
+    RedirectMatch 301 /topics/sports-nutrition-and-hydration /sports-fitness/nutrition-and-hydration-for-exercise
+    RedirectMatch 301 /topics/sports-related-articles /sports-fitness
+    RedirectMatch 301 /topics/stress /mental-health/stress
+    RedirectMatch 301 /topics/stroke-and-vascular-disease /heart-stroke/stroke-signs-symptoms-and-treatment
+    RedirectMatch 301 /topics/sudden-infant-death-syndrome-sids /babies-pregnancy/sudden-infant-death-syndrome-sids
+    RedirectMatch 301 /topics/sun-safety /skin-hair/sun-safety-tips
+    RedirectMatch 301 /topics/taking-medicines /medicines/medicines-understanding-your-medicines
+    RedirectMatch 301 /topics/teenage-troubles /kids-teens-health/adolescents-advice-for-parents
+    RedirectMatch 301 /topics/testicle-health-and-testicular-cancer /mens-health/testicular-cancer
+    RedirectMatch 301 /topics/tests-and-investigations-a-k /tests-investigations
+    RedirectMatch 301 /topics/tests-and-investigations-for-cancer /tests-investigations/screening-tests
+    RedirectMatch 301 /topics/tests-and-investigations-l-z /tests-investigations
+    RedirectMatch 301 /topics/tests-and-treatments-for-heart-health /heart-stroke
+    RedirectMatch 301 /topics/tests-during-pregnancy /tests-investigations/maternal-serum-screening-test
+    RedirectMatch 301 /topics/tests-for-gastrointestinal-diseases /tests-investigations
+    RedirectMatch 301 /topics/thyroid-gland-and-thyroid-disorders /health-images/thyroid-gland-and-thyroid-hormones
+    RedirectMatch 301 /topics/tobacco-smoking-and-quitting /addictions/quitting-smoking
+    RedirectMatch 301 /topics/travellers-with-chronic-conditions /travel-health/travellers-with-special-needs
+    RedirectMatch 301 /topics/treatments-for-cancer /cancer-care
+    RedirectMatch 301 /topics/ulcers /gastrointestinal-health/peptic-ulcers
+    RedirectMatch 301 /topics/urinary-incontinence /womens-health/urinary-incontinence-explained
+    RedirectMatch 301 /topics/uterine-cancers /cancer-care/uterine-cancer
+    RedirectMatch 301 /topics/vaccination-and-immunisation /kids-teens-health/vaccination-australian-standard-vaccination-schedule
+    RedirectMatch 301 /topics/vaccinations-for-travel /travel-health/travel-vaccinations
+    RedirectMatch 301 /topics/vitamins-minerals-and-nutrients /nutrition-weight/vitamins
+    RedirectMatch 301 /topics/vulval-conditions /womens-health/vulval-problems-a-self-help-guide
+    RedirectMatch 301 /topics/water-safety-and-diving /travel-health/water-safety
+    RedirectMatch 301 /topics/weight-loss-and-weight-control /nutrition-weight/achieving-and-maintaining-a-healthy-weight
+    RedirectMatch 301 /topics/womens-health-a-z /womens-health
+    RedirectMatch 301 /topics/womens-health-testing-and-screening /womens-health/health-checks-women-should-have
+    RedirectMatch 301 /topics/your-body /kids-teens-health/when-to-see-your-doctor
+    RedirectMatch 301 /topics/your-breasts /womens-health/breasts-inside-womens-breasts
+    RedirectMatch 301 /topics/your-gallbladder /gastrointestinal-health/gallbladder-and-the-biliary-tract
+    RedirectMatch 301 /topics/your-liver /gastrointestinal-health/liver
+    RedirectMatch 301 /topics/your-pancreas /gastrointestinal-health/pancreas-and-insulin
+    RedirectMatch 301 /topics/your-spine-and-spinal-cord-injury /first-aid-self-care/spinal-cord
+
+    # Misc Redirects
+    RedirectMatch 301 /directory http://directory.mydr.com.au
+
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 week"
+ExpiresByType image/jpeg "access 1 week"
+ExpiresByType image/gif "access 1 week"
+ExpiresByType image/png "access 1 week"
+ExpiresByType text/css "access 1 week"
+ExpiresByType text/html "access 1 week"
+ExpiresByType application/pdf "access 1 week"
+ExpiresByType text/x-javascript "access 1 week"
+ExpiresByType application/x-shockwave-flash "access 1 week"
+ExpiresByType image/x-icon "access 1 week"
+ExpiresDefault "access 1 week"
+</IfModule>
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>

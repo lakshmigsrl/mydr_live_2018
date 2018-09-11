@@ -1,0 +1,3 @@
+google.com, pub-7744916688087346, RESELLER, f08c47fec0942fa0
+spotxchange.com, 225367, DIRECT, 7842df1d2fe2db34
+spotx.tv, 225367, DIRECT, 7842df1d2fe2db34

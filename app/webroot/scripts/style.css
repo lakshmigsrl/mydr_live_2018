@@ -1,0 +1,13 @@
+              *{
+                        color: #004685;
+                        font-family: Tahoma;
+                }
+                h1, h2{font-family: Arial; color: #004685; font-size: 28px;}
+                h2{display: inline;}
+		li{padding: 3px;}
+                li a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #004685;
+                }
+

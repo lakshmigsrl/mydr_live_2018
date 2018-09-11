@@ -1,0 +1,3 @@
+ExpiresActive On                  # enable expirations
+ExpiresDefault "access plus 3 months"
+

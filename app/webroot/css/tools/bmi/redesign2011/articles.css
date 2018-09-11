@@ -1,0 +1,68 @@
+
+/* Overrride default h2<->h6
+ * original style can be found at Styles_Copy.css
+ */
+h2{
+	font-family: "myriad-pro-1","myriad-pro-2";
+	font-size: 18px;
+	color: #004685;
+	line-height: 30px;
+	font-weight: 600;
+
+	background-color: transparent;
+	padding: 0;
+	width: 460px;
+	float: none;
+	clear: both;
+}
+
+ol li {
+	/* list-style-type: none; */
+}
+
+#emailresult {
+	background-color:#F3F8FC;
+	border:1px solid #A1BEDC;
+	padding:6px 10px;
+	margin:0 9px 10px 10px;
+	border-width:1px;
+	color:#013370;
+}
+
+/* For support-group search page styles. */
+div#searchSupportGroupsContainer ul li {
+	list-style-type: none; 
+	background: none;
+}
+div.searchBar{
+	background: #f1f1f1; 
+	padding: 6px;
+	clear: both;
+
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+div.searchBar a{
+	background: url(/images/searchagain.png) no-repeat;
+	padding-left: 20px;
+	color: #D94400;
+	font-weight: bold;
+}
+.ui-autocomplete-category {
+	/* for styling categories on the support-group search autocomplete widget. */
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+    color: #5795CD;
+    color: #004685;
+}
+.imageCaption {
+	font-weight:bold;
+	text-align:left;
+	font-size: 0.9em;
+	color: #013370;
+
+}

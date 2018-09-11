@@ -1,0 +1,9 @@
+---
+- name: PHP | Check if Composer is installed.
+  stat: "path=/usr/local/bin/composer"
+  register: composer_bin
+
+- name: PHP | Install Composer
+  shell: curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+  when: not composer_bin.stat.exists
+  sudo: true

@@ -1,0 +1,16 @@
+# Vagrantfile configuration
+boxipaddress: "192.168.33.99"
+boxname: "mydr.dev"
+
+# host
+webserver_hostname: 'mydr.dev'
+
+# Give VM 1/4 of system memory
+memory: 8224
+# Give VM access to all cpu cores on the host
+# To find out the number of cores, run the following commands:
+#   Mac: sysctl -n hw.ncpu
+#   Linux: nproc
+cpus: 8
+
+

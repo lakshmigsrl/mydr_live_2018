@@ -1,0 +1,5 @@
+
+#AuthUserFile /var/www/prod/cakemydr/.htpasswd
+#AuthType Basic
+#AuthName "MyDr Backend Site..."
+#Require valid-user
